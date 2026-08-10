@@ -1,18 +1,35 @@
-const CACHE_NAME = "logopeda-v4";
+const CACHE_NAME = "logopeda-v24";
 const APP_FILES = [
   "./",
   "./index.html",
   "./app.css",
   "./app.js",
   "./manifest.webmanifest",
-  "./assets/images/dummy_parrot.svg",
+  "./assets/assets.md",
+  "./assets/images/pa_papuga.svg",
   "./assets/images/icon-192.png",
   "./assets/images/icon-512.png",
-  "./assets/sounds/dummy_parrot.wav",
+  "./assets/sounds/pa_papuga.wav",
 ];
 
+async function cacheAppFiles() {
+  const cache = await caches.open(CACHE_NAME);
+  await Promise.all(APP_FILES.map((url) => cache.add(new Request(url, { cache: "reload" }))));
+
+  const assetMapUrl = new URL("./assets/assets.md", self.registration.scope);
+  const response = await fetch(assetMapUrl);
+  const markdown = await response.text();
+  const assetUrls = new Set(
+    [...markdown.matchAll(/\]\((\.\/(?:images|sounds)\/[^)]+)\)/g)]
+      .map((match) => new URL(match[1], assetMapUrl).href),
+  );
+  await Promise.all(
+    [...assetUrls].map((url) => cache.add(new Request(url, { cache: "reload" }))),
+  );
+}
+
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_FILES)));
+  event.waitUntil(cacheAppFiles());
   self.skipWaiting();
 });
 

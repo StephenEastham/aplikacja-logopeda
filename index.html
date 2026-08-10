@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#246b5f">
     <meta name="description" content="Lekka aplikacja do ćwiczeń logopedycznych.">
     <link rel="manifest" href="./manifest.webmanifest">
-    <link rel="icon" href="./assets/images/dummy_parrot.svg" type="image/svg+xml">
+    <link rel="icon" href="./assets/images/pa_papuga.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./app.css">
     <title>Logopeda</title>
   </head>
@@ -14,7 +14,7 @@
     <header class="app-header">
       <a class="brand" href="./" data-route aria-label="Logopeda, strona główna">
         <span class="brand-mark" aria-hidden="true">L</span>
-        <span>Logopeda by Stephen</span>
+        <span>Logopeda</span>
       </a>
       <div class="header-actions">
         <button id="install-button" class="secondary-button" type="button" hidden>Zainstaluj</button>
@@ -22,39 +22,36 @@
       </div>
     </header>
 
+    <nav id="order-controls" class="order-controls" aria-label="Kolejność elementów">
+      <span class="order-label">Kolejność</span>
+      <div class="order-buttons">
+        <button id="order-ascending" class="order-button" type="button" data-order="ascending" aria-label="Kolejność rosnąca" aria-pressed="true" title="Rosnąco">↑</button>
+        <button id="order-descending" class="order-button" type="button" data-order="descending" aria-label="Kolejność malejąca" aria-pressed="false" title="Malejąco">↓</button>
+        <button id="order-random" class="random-order-button" type="button" data-order="random" aria-pressed="false">Losowo</button>
+      </div>
+    </nav>
+
     <main id="home-view" class="page-shell">
       <section class="intro" aria-labelledby="page-title">
-        <p class="eyebrow">Ćwiczenia wymowy</p>
-        <h1 id="page-title">Papuga</h1>
-        <p class="lead">Powtarzaj dźwięki we własnym tempie.</p>
+        <h1 id="page-title">Wybierz dźwięk</h1>
       </section>
 
-      <section class="exercise-grid" aria-label="Dźwięki papugi">
-        <button class="sound-tile" type="button" data-sound aria-label="Odtwórz dźwięk papugi 1">
-          <img src="./assets/images/dummy_parrot.svg" alt="Zielona papuga">
-          <span>Papuga 1</span>
-        </button>
-        <button class="sound-tile" type="button" data-sound aria-label="Odtwórz dźwięk papugi 2">
-          <img src="./assets/images/dummy_parrot.svg" alt="Zielona papuga">
-          <span>Papuga 2</span>
-        </button>
-        <button class="sound-tile" type="button" data-sound aria-label="Odtwórz dźwięk papugi 3">
-          <img src="./assets/images/dummy_parrot.svg" alt="Zielona papuga">
-          <span>Papuga 3</span>
-        </button>
-        <button class="sound-tile" type="button" data-sound aria-label="Odtwórz dźwięk papugi 4">
-          <img src="./assets/images/dummy_parrot.svg" alt="Zielona papuga">
-          <span>Papuga 4</span>
-        </button>
-        <button class="sound-tile" type="button" data-sound aria-label="Odtwórz dźwięk papugi 5">
-          <img src="./assets/images/dummy_parrot.svg" alt="Zielona papuga">
-          <span>Papuga 5</span>
-        </button>
-        <button class="sound-tile" type="button" data-sound aria-label="Odtwórz dźwięk papugi 6">
-          <img src="./assets/images/dummy_parrot.svg" alt="Zielona papuga">
-          <span>Papuga 6</span>
-        </button>
+      <nav id="sound-index" class="sound-index" aria-label="Wybierz dźwięk"></nav>
+    </main>
+
+    <main id="exercise-view" class="page-shell" hidden>
+      <nav class="page-navigation" aria-label="Nawigacja między dźwiękami">
+        <a id="previous-sound" class="page-nav-button" href="#" data-route aria-label="Poprzedni dźwięk">←</a>
+        <a class="index-button" href="./" data-route aria-label="Wszystkie dźwięki">Wszystkie</a>
+        <a id="next-sound" class="page-nav-button" href="#" data-route aria-label="Następny dźwięk">→</a>
+      </nav>
+
+      <section class="intro exercise-intro" aria-labelledby="exercise-title">
+        <h1 id="exercise-title" tabindex="-1"></h1>
+        <p id="exercise-progress" hidden></p>
       </section>
+
+      <section id="exercise-grid" class="exercise-grid" aria-label="Sylaby"></section>
     </main>
 
     <main id="settings-view" class="page-shell settings-page" hidden>
@@ -73,7 +70,7 @@
       </section>
     </main>
 
-    <audio id="exercise-audio" src="./assets/sounds/dummy_parrot.wav" preload="auto"></audio>
+    <audio id="exercise-audio" src="./assets/sounds/pa_papuga.wav" preload="auto"></audio>
     <script src="./app.js" defer></script>
   </body>
 </html>
