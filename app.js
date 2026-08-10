@@ -47,7 +47,7 @@ async function toggleSound(button) {
 }
 
 function renderRoute() {
-  const showSettings = window.location.pathname === "/settings";
+  const showSettings = window.location.hash === "#settings";
   homeView.hidden = showSettings;
   settingsView.hidden = !showSettings;
   document.title = showSettings ? "Ustawienia | Logopeda" : "Logopeda";
@@ -112,5 +112,5 @@ loadPreferences();
 renderRoute();
 
 if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js"));
+  window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js"));
 }

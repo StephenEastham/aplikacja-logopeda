@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#246b5f">
     <meta name="description" content="Lekka aplikacja do ćwiczeń logopedycznych.">
-    <link rel="manifest" href="/manifest.webmanifest">
-    <link rel="icon" href="/assets/images/dummy_parrot.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/app.css">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="icon" href="./assets/images/dummy_parrot.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./app.css">
     <title>Logopeda</title>
   </head>
   <body>
     <header class="app-header">
-      <a class="brand" href="/" data-route aria-label="Logopeda, strona główna">
+      <a class="brand" href="./" data-route aria-label="Logopeda, strona główna">
         <span class="brand-mark" aria-hidden="true">L</span>
         <span>Logopeda</span>
       </a>
       <div class="header-actions">
         <button id="install-button" class="secondary-button" type="button" hidden>Zainstaluj</button>
-        <a class="settings-link" href="/settings" data-route>Ustawienia</a>
+        <a class="settings-link" href="./#settings" data-route>Ustawienia</a>
       </div>
     </header>
 
@@ -31,34 +31,34 @@
 
       <section class="exercise-grid" aria-label="Dźwięki papugi">
         <button class="sound-tile" type="button" data-sound aria-label="Odtwórz dźwięk papugi 1">
-          <img src="/assets/images/dummy_parrot.svg" alt="Zielona papuga">
+          <img src="./assets/images/dummy_parrot.svg" alt="Zielona papuga">
           <span>Papuga 1</span>
         </button>
         <button class="sound-tile" type="button" data-sound aria-label="Odtwórz dźwięk papugi 2">
-          <img src="/assets/images/dummy_parrot.svg" alt="Zielona papuga">
+          <img src="./assets/images/dummy_parrot.svg" alt="Zielona papuga">
           <span>Papuga 2</span>
         </button>
         <button class="sound-tile" type="button" data-sound aria-label="Odtwórz dźwięk papugi 3">
-          <img src="/assets/images/dummy_parrot.svg" alt="Zielona papuga">
+          <img src="./assets/images/dummy_parrot.svg" alt="Zielona papuga">
           <span>Papuga 3</span>
         </button>
         <button class="sound-tile" type="button" data-sound aria-label="Odtwórz dźwięk papugi 4">
-          <img src="/assets/images/dummy_parrot.svg" alt="Zielona papuga">
+          <img src="./assets/images/dummy_parrot.svg" alt="Zielona papuga">
           <span>Papuga 4</span>
         </button>
         <button class="sound-tile" type="button" data-sound aria-label="Odtwórz dźwięk papugi 5">
-          <img src="/assets/images/dummy_parrot.svg" alt="Zielona papuga">
+          <img src="./assets/images/dummy_parrot.svg" alt="Zielona papuga">
           <span>Papuga 5</span>
         </button>
         <button class="sound-tile" type="button" data-sound aria-label="Odtwórz dźwięk papugi 6">
-          <img src="/assets/images/dummy_parrot.svg" alt="Zielona papuga">
+          <img src="./assets/images/dummy_parrot.svg" alt="Zielona papuga">
           <span>Papuga 6</span>
         </button>
       </section>
     </main>
 
     <main id="settings-view" class="page-shell settings-page" hidden>
-      <a class="back-link" href="/" data-route>Wróć</a>
+      <a class="back-link" href="./" data-route>Wróć</a>
       <section aria-labelledby="settings-title">
         <p class="eyebrow">Aplikacja</p>
         <h1 id="settings-title" tabindex="-1">Ustawienia</h1>
@@ -73,7 +73,7 @@
       </section>
     </main>
 
-    <audio id="exercise-audio" src="/assets/sounds/dummy_parrot.wav" preload="auto"></audio>
-    <script src="/app.js" defer></script>
+    <audio id="exercise-audio" src="./assets/sounds/dummy_parrot.wav" preload="auto"></audio>
+    <script src="./app.js" defer></script>
   </body>
 </html>

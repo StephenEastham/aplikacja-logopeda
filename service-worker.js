@@ -1,14 +1,14 @@
-const CACHE_NAME = "logopeda-v3";
+const CACHE_NAME = "logopeda-v4";
 const APP_FILES = [
-  "/",
-  "/index.html",
-  "/app.css",
-  "/app.js",
-  "/manifest.webmanifest",
-  "/assets/images/dummy_parrot.svg",
-  "/assets/images/icon-192.png",
-  "/assets/images/icon-512.png",
-  "/assets/sounds/dummy_parrot.wav",
+  "./",
+  "./index.html",
+  "./app.css",
+  "./app.js",
+  "./manifest.webmanifest",
+  "./assets/images/dummy_parrot.svg",
+  "./assets/images/icon-192.png",
+  "./assets/images/icon-512.png",
+  "./assets/sounds/dummy_parrot.wav",
 ];
 
 self.addEventListener("install", (event) => {
@@ -31,7 +31,9 @@ self.addEventListener("fetch", (event) => {
   }
 
   if (event.request.mode === "navigate") {
-    event.respondWith(fetch(event.request).catch(() => caches.match("/index.html")));
+    event.respondWith(
+      fetch(event.request).catch(() => caches.match(new URL("./index.html", self.registration.scope))),
+    );
     return;
   }
 
