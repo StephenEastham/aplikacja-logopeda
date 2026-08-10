@@ -1,0 +1,103 @@
+flowchart TB
+  Human(["Human intent<br/>therapy goals + editorial judgment"])
+  Users(["Users<br/>latest online + reliable offline app"])
+
+  subgraph Design["1. AI-assisted creation and maintenance loop"]
+    direction TB
+    Ask["Ask AI to shape structure and content<br/>sounds, syllables, words, naming, coverage"]
+    Review["Human reviews meaning, suitability,<br/>Polish language, and clinical usefulness"]
+    Contract["assets/assets.md<br/>living, reviewable content specification"]
+    Inspect["AI compares desired content<br/>with current rows and files"]
+
+    Ask --> Contract
+    Contract --> Review
+    Review -->|refine| Ask
+    Review -->|approve| Inspect
+  end
+
+  subgraph Create["2. AI materializes the specification"]
+    direction TB
+    Delta["Select only missing or changed rows"]
+    Visual["Create matching SVG<br/>recognizable image + lowercase word"]
+    Voice["Create matching Polish WAV<br/>Edge TTS + FFmpeg normalization"]
+    Link["Write predictable filenames<br/>and links back into assets.md"]
+    Validate["Validate the contract<br/>unique rows + files exist + previews + audio"]
+
+    Inspect --> Delta
+    Delta --> Visual & Voice
+    Visual --> Link
+    Voice --> Link
+    Link --> Validate
+    Validate -->|asset or mapping issue| Inspect
+    Validate -->|content issue| Ask
+  end
+
+  subgraph Bind["3. One table binds content to minimal code"]
+    direction TB
+    Parser["app.js generic parser<br/>builds groups + syllable-to-asset lookup"]
+    UI["One reusable UI<br/>renders every current and future exercise"]
+    Discovery["service-worker.js reads the same links<br/>discovers every offline SVG and WAV"]
+
+    Contract --> Parser --> UI
+    Contract --> Discovery
+  end
+
+  subgraph Evolve["4. AI-assisted codebase evolution loop"]
+    direction TB
+    CodeIntent["Ask AI to improve the codebase<br/>UI, parser, generator, validation, or caching"]
+    CodeChange["AI makes focused code changes<br/>without hard-coding individual exercises"]
+    Compatibility["Check contract compatibility<br/>assets.md remains the shared interface"]
+    CodeTest["Test current content end to end<br/>rendering + links + audio + offline behavior"]
+
+    CodeIntent --> CodeChange --> Compatibility --> CodeTest
+    CodeTest -->|implementation issue| CodeIntent
+    Contract -. "contract constrains code changes" .-> Compatibility
+  end
+
+  subgraph Release["5. Publish and refresh loop"]
+    direction TB
+    Version["Approve change<br/>commit static files + bump CACHE_NAME"]
+    Deploy["Push main<br/>GitHub Actions deploys without a build step"]
+    Pages["GitHub Pages<br/>serves the latest static version"]
+    Update["Browser detects updated service worker<br/>skip waiting + claim clients"]
+    Cache["Delete old cache<br/>precache shell + all links from assets.md"]
+
+    Validate -->|pass| Version --> Deploy --> Pages --> Update --> Cache
+    CodeTest -->|pass| Version
+  end
+
+  Human --> Ask
+  Human --> CodeIntent
+  UI --> Pages
+  Discovery --> Update
+  Pages --> Users
+  Cache --> Users
+  Users -. "usage feedback or new therapy need" .-> Human
+
+  Advantage["Compounding advantage<br/>AI can evolve content, assets, and code;<br/>the contract keeps every layer aligned while<br/>generic automation publishes and refreshes the result"]
+  Contract ==> Advantage
+  UI ==> Advantage
+  CodeTest ==> Advantage
+  Cache ==> Advantage
+
+  classDef human fill:#FFF1BF,stroke:#9A6700,color:#3B2A00,stroke-width:2px
+  classDef ai fill:#E4F0FA,stroke:#356A9A,color:#153A59,stroke-width:2px
+  classDef contract fill:#DDF3E4,stroke:#247A47,color:#123F27,stroke-width:3px
+  classDef asset fill:#EFE7F6,stroke:#74538E,color:#3D2850,stroke-width:2px
+  classDef runtime fill:#DFF3F0,stroke:#277A70,color:#123F3A,stroke-width:2px
+  classDef release fill:#FBE5DC,stroke:#A64B32,color:#552416,stroke-width:2px
+  classDef outcome fill:#E5EAF7,stroke:#405A91,color:#1D2D52,stroke-width:3px
+
+  class Human,Review human
+  class Ask,Inspect,Delta,CodeIntent,CodeChange ai
+  class Contract,Compatibility contract
+  class Visual,Voice,Link,Validate asset
+  class Parser,UI,Discovery,CodeTest runtime
+  class Version,Deploy,Pages,Update,Cache release
+  class Users,Advantage outcome
+
+  style Design fill:#F6FAFD,stroke:#7EA8C8,stroke-width:2px
+  style Create fill:#FBF8FD,stroke:#9B7CAF,stroke-width:2px
+  style Bind fill:#F4FBF8,stroke:#68A89A,stroke-width:2px
+  style Evolve fill:#F6FAFD,stroke:#7EA8C8,stroke-width:2px
+  style Release fill:#FFF8F5,stroke:#CB816B,stroke-width:2px
