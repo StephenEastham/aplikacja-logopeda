@@ -92,7 +92,7 @@ def slug(word: str) -> str:
 
 def svg_content(word: str, emoji: str, index: int) -> str:
     accent, surface, ink = PALETTES[index % len(PALETTES)]
-    label = word.lower()
+    label = word
     font_size = 42 if len(label) <= 8 else 34 if len(label) <= 11 else 28
     escaped_word = html.escape(word)
     escaped_label = html.escape(label)
