@@ -12,6 +12,7 @@ ASSETS_MD = ROOT / "assets" / "assets.md"
 IMAGES_DIR = ROOT / "assets" / "images"
 SOUNDS_DIR = ROOT / "assets" / "sounds"
 VOICE = "pl-PL-ZofiaNeural"
+CUSTOM_SVG = "CUSTOM_SVG"
 
 ENTRIES = [
     ("ba", "balon", "🎈"), ("be", "beczka", "🛢️"), ("bo", "bocian", "🐦"),
@@ -26,7 +27,7 @@ ENTRIES = [
     ("fu", "futbol", "⚽"), ("fi", "filiżanka", "☕"), ("fy", "żyrafy", "🦒"),
     ("ga", "garnek", "🍲"), ("ge", "gepard", "🐆"), ("go", "gołąb", "🕊️"),
     ("gu", "guzik", "🔘"), ("gi", "gitara", "🎸"),
-    ("ha", "hamak", None), ("he", "helikopter", "🚁"), ("ho", "hotel", "🏨"),
+    ("ha", "hamak", CUSTOM_SVG), ("he", "helikopter", "🚁"), ("ho", "hotel", "🏨"),
     ("hu", "hulajnoga", "🛴"), ("hi", "hipopotam", "🦛"), ("hy", "hybryda", "🚗"),
     ("ja", "jabłko", "🍎"), ("je", "jeż", "🦔"), ("jo", "jogurt", "🥣"),
     ("ju", "judo", "🥋"),
@@ -130,7 +131,7 @@ def update_markdown() -> None:
 
 def create_svgs() -> None:
     for index, (syllable, word, emoji) in enumerate(ENTRIES):
-        if syllable == "pa" or emoji is None:
+        if syllable == "pa" or emoji == CUSTOM_SVG:
             continue
         filename = f"{syllable}_{slug(word)}.svg"
         (IMAGES_DIR / filename).write_text(svg_content(word, emoji, index), encoding="utf-8")
@@ -167,7 +168,7 @@ async def main() -> None:
     if len(ENTRIES) != 156 or len(set(syllables)) != 156:
         raise RuntimeError(f"Expected 156 unique syllables, found {len(ENTRIES)} / {len(set(syllables))}")
     generated_svg_count = sum(
-        syllable != "pa" and emoji is not None for syllable, _, emoji in ENTRIES
+        syllable != "pa" and emoji != CUSTOM_SVG for syllable, _, emoji in ENTRIES
     )
     update_markdown()
     create_svgs()
