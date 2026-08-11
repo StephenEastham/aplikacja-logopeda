@@ -2,8 +2,6 @@
 
 -- the following images were generated as custom images on 260811 --
 
-As far as possible, reuse as much as possible of the existing svg image. And always create the custom image in the same style.
-
 | Word | File to improve | Current problem | Required improvement |
 | --- | --- | --- | --- |
 | bocian | `bo_bocian.svg` | The bird is not recognizably a white stork. | Keep the existing stork shape, but make the bird white. |
@@ -18,7 +16,13 @@ As far as possible, reuse as much as possible of the existing svg image. And alw
 
 -- the images above were generated as custom images on 260811 --
 
+-- the following images must be generated as custom images --
+
+instructions: As far as possible, reuse as much as possible of the existing svg image. And always create the custom image in the same style: 
+
 | Word | File to improve | Current problem | Required improvement |
 | --- | --- | --- | --- |
-| worek | `wo_worek.svg` | The image shows a rucksack (pleca). | Show a simple bag (worek). |
+| worek | `wo_worek.svg` | The image shows a rucksack (plecak). | Show a simple bag (worek). |
 | wentylator | `we_wentylator.svg` | The image shows a hand-held fan that you use to cool down on hot days. | Show a simple wentylator. |
+
+-- the images above must be generated as custom images --
