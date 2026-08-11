@@ -17,3 +17,8 @@ As far as possible, reuse as much as possible of the existing svg image. And alw
 | szyszka | `szy_szyszka.svg` | The image shows a pine tree. | Show a pine cone. |
 
 -- the images above were generated as custom images on 260811 --
+
+| Word | File to improve | Current problem | Required improvement |
+| --- | --- | --- | --- |
+| worek | `wo_worek.svg` | The image shows a rucksack (pleca). | Show a simple bag (worek). |
+| wentylator | `we_wentylator.svg` | The image shows a hand-held fan that you use to cool down on hot days. | Show a simple wentylator. |
