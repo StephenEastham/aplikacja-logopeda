@@ -1,11 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
   <title id="title">szyszka</title>
-  <desc id="description">Ilustracja przedstawiająca: szyszka.</desc>
+  <desc id="description">Ilustracja przedstawiająca brązową szyszkę sosnową.</desc>
   <rect width="512" height="512" rx="48" fill="#fff8df"/>
   <circle cx="84" cy="82" r="54" fill="#ffd166" opacity="0.72"/>
   <circle cx="438" cy="150" r="34" fill="#ffd166" opacity="0.48"/>
   <path d="M0 386 Q128 330 256 386 T512 386 V512 H0Z" fill="#ffd166" opacity="0.58"/>
-  <text x="256" y="292" font-family="Segoe UI Emoji, Apple Color Emoji, sans-serif" font-size="176" text-anchor="middle">🌲</text>
+  <path d="M256 115 Q188 139 171 218 Q157 292 211 347 Q256 376 301 347 Q355 292 341 218 Q324 139 256 115Z" fill="#8b5a32" stroke="#5a3923" stroke-width="8"/>
+  <g fill="#b8793e" stroke="#5a3923" stroke-width="5" stroke-linejoin="round">
+    <path d="M256 126 L222 169 L256 187 L290 169Z"/>
+    <path d="M212 160 L181 207 L218 224 L249 190Z"/>
+    <path d="M300 160 L331 207 L294 224 L263 190Z"/>
+    <path d="M256 185 L218 231 L256 251 L294 231Z"/>
+    <path d="M192 211 L169 260 L213 276 L246 236Z"/>
+    <path d="M320 211 L343 260 L299 276 L266 236Z"/>
+    <path d="M256 246 L214 288 L256 313 L298 288Z"/>
+    <path d="M185 269 L192 318 L231 337 L248 298Z"/>
+    <path d="M327 269 L320 318 L281 337 L264 298Z"/>
+    <path d="M256 307 L222 343 L256 360 L290 343Z"/>
+  </g>
+  <path d="M247 119 Q243 92 264 82 Q278 99 265 123" fill="#6b492b" stroke="#5a3923" stroke-width="6"/>
   <rect x="48" y="400" width="416" height="76" rx="20" fill="#ffffff" opacity="0.9"/>
   <text x="256" y="451" fill="#173f3a" font-family="Trebuchet MS, sans-serif" font-size="42" font-weight="700" text-anchor="middle">szyszka</text>
 </svg>

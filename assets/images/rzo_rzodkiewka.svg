@@ -1,11 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
   <title id="title">rzodkiewka</title>
-  <desc id="description">Ilustracja przedstawiająca: rzodkiewka.</desc>
+  <desc id="description">Ilustracja przedstawiająca fioletową rzodkiewkę z zielonymi liśćmi.</desc>
   <rect width="512" height="512" rx="48" fill="#f2fff6"/>
   <circle cx="84" cy="82" r="54" fill="#b7e4c7" opacity="0.72"/>
   <circle cx="438" cy="150" r="34" fill="#b7e4c7" opacity="0.48"/>
   <path d="M0 386 Q128 330 256 386 T512 386 V512 H0Z" fill="#b7e4c7" opacity="0.58"/>
-  <text x="256" y="292" font-family="Segoe UI Emoji, Apple Color Emoji, sans-serif" font-size="176" text-anchor="middle">🥕</text>
+  <path d="M256 326 Q246 365 218 377 Q246 354 249 322Z" fill="#e8d7ed" stroke="#77408b" stroke-width="4"/>
+  <path d="M178 228 Q170 295 221 330 Q256 354 291 330 Q342 295 334 228 Q326 184 256 180 Q186 184 178 228Z" fill="#8d4ca3" stroke="#5e2d70" stroke-width="8"/>
+  <path d="M197 234 Q210 206 253 202" fill="none" stroke="#b878cc" stroke-width="11" stroke-linecap="round" opacity="0.8"/>
+  <path d="M247 186 Q200 151 218 101 Q264 112 270 174Z" fill="#4f9465" stroke="#2f6847" stroke-width="6"/>
+  <path d="M267 184 Q282 123 335 116 Q343 169 283 201Z" fill="#65a96f" stroke="#2f6847" stroke-width="6"/>
+  <path d="M244 186 Q207 178 178 142 Q215 119 257 174Z" fill="#78b77b" stroke="#2f6847" stroke-width="6"/>
+  <path d="M256 181 L231 126 M269 181 L318 133 M246 181 L194 150" stroke="#2f6847" stroke-width="5" stroke-linecap="round"/>
   <rect x="48" y="400" width="416" height="76" rx="20" fill="#ffffff" opacity="0.9"/>
   <text x="256" y="451" fill="#174d45" font-family="Trebuchet MS, sans-serif" font-size="34" font-weight="700" text-anchor="middle">rzodkiewka</text>
 </svg>

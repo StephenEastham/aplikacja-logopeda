@@ -1,11 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
   <title id="title">deska</title>
-  <desc id="description">Ilustracja przedstawiająca: deska.</desc>
+  <desc id="description">Ilustracja przedstawiająca płaską drewnianą deskę.</desc>
   <rect width="512" height="512" rx="48" fill="#fff2ee"/>
   <circle cx="84" cy="82" r="54" fill="#ffb4a2" opacity="0.72"/>
   <circle cx="438" cy="150" r="34" fill="#ffb4a2" opacity="0.48"/>
   <path d="M0 386 Q128 330 256 386 T512 386 V512 H0Z" fill="#ffb4a2" opacity="0.58"/>
-  <text x="256" y="292" font-family="Segoe UI Emoji, Apple Color Emoji, sans-serif" font-size="176" text-anchor="middle">🪵</text>
+  <g transform="rotate(-10 256 252)">
+    <path d="M100 207 Q105 193 122 194 L407 194 Q423 197 420 213 L406 298 Q403 311 387 310 L105 310 Q91 306 94 291Z" fill="#c98748" stroke="#74472e" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M124 224 C177 206 223 241 279 220 S358 229 396 214" fill="none" stroke="#9a5e37" stroke-width="7" stroke-linecap="round" opacity="0.8"/>
+    <path d="M116 273 C168 255 211 289 257 270 S335 280 391 257" fill="none" stroke="#e1ad6b" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+    <ellipse cx="183" cy="251" rx="22" ry="13" fill="none" stroke="#74472e" stroke-width="6"/>
+    <circle cx="183" cy="251" r="5" fill="#74472e"/>
+    <path d="M109 206 L102 297 M411 207 L398 301" stroke="#f0c681" stroke-width="4" opacity="0.7"/>
+  </g>
   <rect x="48" y="400" width="416" height="76" rx="20" fill="#ffffff" opacity="0.9"/>
   <text x="256" y="451" fill="#5c2b29" font-family="Trebuchet MS, sans-serif" font-size="42" font-weight="700" text-anchor="middle">deska</text>
 </svg>

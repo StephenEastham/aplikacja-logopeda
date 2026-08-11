@@ -1,11 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
   <title id="title">sito</title>
-  <desc id="description">Ilustracja przedstawiająca: sito.</desc>
+  <desc id="description">Ilustracja przedstawiająca kuchenne sito z siatką i uchwytem.</desc>
   <rect width="512" height="512" rx="48" fill="#f2fff6"/>
   <circle cx="84" cy="82" r="54" fill="#b7e4c7" opacity="0.72"/>
   <circle cx="438" cy="150" r="34" fill="#b7e4c7" opacity="0.48"/>
   <path d="M0 386 Q128 330 256 386 T512 386 V512 H0Z" fill="#b7e4c7" opacity="0.58"/>
-  <text x="256" y="292" font-family="Segoe UI Emoji, Apple Color Emoji, sans-serif" font-size="176" text-anchor="middle">🥣</text>
+  <ellipse cx="225" cy="218" rx="112" ry="48" fill="#dce7e2" stroke="#45645e" stroke-width="8"/>
+  <path d="M115 220 Q130 329 225 336 Q320 329 335 220" fill="#eef5f2" stroke="#45645e" stroke-width="8"/>
+  <path d="M139 240 L175 322 M172 231 L205 332 M208 226 L238 331 M244 226 L272 322 M281 231 L304 293" stroke="#91aaa3" stroke-width="4"/>
+  <path d="M132 259 H318 M143 285 H307 M162 310 H287" stroke="#91aaa3" stroke-width="4"/>
+  <path d="M330 217 H431 Q446 217 446 232 Q446 247 431 247 H329" fill="#dce7e2" stroke="#45645e" stroke-width="8"/>
+  <circle cx="420" cy="232" r="7" fill="#f2fff6" stroke="#45645e" stroke-width="4"/>
   <rect x="48" y="400" width="416" height="76" rx="20" fill="#ffffff" opacity="0.9"/>
   <text x="256" y="451" fill="#174d45" font-family="Trebuchet MS, sans-serif" font-size="42" font-weight="700" text-anchor="middle">sito</text>
 </svg>

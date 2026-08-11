@@ -1,5 +1,7 @@
 # Candidates to improve
 
+As far as possible, reuse as much as possible of the existing svg image. And always create the custom image in the same style.
+
 | Word | File to improve | Current problem | Required improvement |
 | --- | --- | --- | --- |
 | bocian | `bo_bocian.svg` | The bird is not recognizably a white stork. | Keep the existing stork shape, but make the bird white. |
