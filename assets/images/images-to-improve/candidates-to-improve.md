@@ -13,16 +13,7 @@
 | sito | `si_sito.svg` | The image shows a bowl. | Show a sieve. |
 | rzodkiewka | `rzo_rzodkiewka.svg` | The radish has the wrong color. | Keep the existing radish shape, but make the radish purple. |
 | szyszka | `szy_szyszka.svg` | The image shows a pine tree. | Show a pine cone. |
+| wentylator | `we_wentylator.svg` | The image shows a hand-held fan that you use to cool down on hot days. | Show a simple wentylator. |
+| worek | `wo_worek.svg` | The image shows a rucksack (plecak). | Show a simple bag (worek). |
 
 -- the images above were generated as custom images on 260811 --
-
--- the following images must be generated as custom images --
-
-instructions: As far as possible, reuse as much as possible of the existing svg image. And always create the custom image in the same style: 
-
-| Word | File to improve | Current problem | Required improvement |
-| --- | --- | --- | --- |
-| worek | `wo_worek.svg` | The image shows a rucksack (plecak). | Show a simple bag (worek). |
-| wentylator | `we_wentylator.svg` | The image shows a hand-held fan that you use to cool down on hot days. | Show a simple wentylator. |
-
--- the images above must be generated as custom images --

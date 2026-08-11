@@ -1,11 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
   <title id="title">wentylator</title>
-  <desc id="description">Ilustracja przedstawiająca: wentylator.</desc>
+  <desc id="description">Ilustracja przedstawiająca elektryczny wentylator stołowy z osłoną i podstawą.</desc>
   <rect width="512" height="512" rx="48" fill="#fff8df"/>
   <circle cx="84" cy="82" r="54" fill="#ffd166" opacity="0.72"/>
   <circle cx="438" cy="150" r="34" fill="#ffd166" opacity="0.48"/>
   <path d="M0 386 Q128 330 256 386 T512 386 V512 H0Z" fill="#ffd166" opacity="0.58"/>
-  <text x="256" y="292" font-family="Segoe UI Emoji, Apple Color Emoji, sans-serif" font-size="176" text-anchor="middle">🪭</text>
+  <circle cx="256" cy="218" r="116" fill="#edf4f2" stroke="#45645e" stroke-width="10"/>
+  <circle cx="256" cy="218" r="98" fill="none" stroke="#91aaa3" stroke-width="5"/>
+  <path d="M256 120 V316 M158 218 H354 M187 149 L325 287 M325 149 L187 287" stroke="#91aaa3" stroke-width="4" opacity="0.8"/>
+  <path d="M256 211 Q246 153 278 142 Q312 159 278 211Z" fill="#65a9b4" stroke="#356873" stroke-width="5"/>
+  <path d="M263 218 Q321 208 332 240 Q315 274 263 240Z" fill="#65a9b4" stroke="#356873" stroke-width="5"/>
+  <path d="M256 225 Q266 283 234 294 Q200 277 234 225Z" fill="#65a9b4" stroke="#356873" stroke-width="5"/>
+  <path d="M249 218 Q191 228 180 196 Q197 162 249 196Z" fill="#65a9b4" stroke="#356873" stroke-width="5"/>
+  <circle cx="256" cy="218" r="25" fill="#ffd166" stroke="#45645e" stroke-width="7"/>
+  <path d="M239 336 H273 V373 H239Z" fill="#78918b" stroke="#45645e" stroke-width="7"/>
+  <path d="M205 371 H307 Q325 371 333 393 H179 Q187 371 205 371Z" fill="#78918b" stroke="#45645e" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="293" cy="383" r="5" fill="#ffd166"/>
   <rect x="48" y="400" width="416" height="76" rx="20" fill="#ffffff" opacity="0.9"/>
   <text x="256" y="451" fill="#173f3a" font-family="Trebuchet MS, sans-serif" font-size="34" font-weight="700" text-anchor="middle">wentylator</text>
 </svg>

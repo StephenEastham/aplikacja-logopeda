@@ -53,7 +53,7 @@ ENTRIES = [
     ("siu", "siup", "🤸"), ("si", "sito", CUSTOM_SVG),
     ("ta", "tata", "👨"), ("te", "telefon", "📱"), ("to", "tort", "🎂"),
     ("tu", "tulipan", "🌷"), ("ty", "tygrys", "🐅"),
-    ("wa", "walizka", "🧳"), ("we", "wentylator", "🪭"), ("wo", "worek", "🎒"),
+    ("wa", "walizka", "🧳"), ("we", "wentylator", CUSTOM_SVG), ("wo", "worek", CUSTOM_SVG),
     ("wu", "wujek", "👨"), ("wi", "widelec", "🍴"), ("wy", "wyspa", "🏝️"),
     ("za", "zamek", "🏰"), ("ze", "zebra", "🦓"), ("zo", "zoo", "🦁"),
     ("zu", "zupa", "🍲"), ("zy", "pozytywka", "🎵"),

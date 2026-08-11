@@ -1,11 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
   <title id="title">worek</title>
-  <desc id="description">Ilustracja przedstawiająca: worek.</desc>
+  <desc id="description">Ilustracja przedstawiająca prosty płócienny worek związany sznurkiem.</desc>
   <rect width="512" height="512" rx="48" fill="#f1fcfc"/>
   <circle cx="84" cy="82" r="54" fill="#a8dadc" opacity="0.72"/>
   <circle cx="438" cy="150" r="34" fill="#a8dadc" opacity="0.48"/>
   <path d="M0 386 Q128 330 256 386 T512 386 V512 H0Z" fill="#a8dadc" opacity="0.58"/>
-  <text x="256" y="292" font-family="Segoe UI Emoji, Apple Color Emoji, sans-serif" font-size="176" text-anchor="middle">🎒</text>
+  <path d="M211 137 Q256 119 301 137 L287 181 H225Z" fill="#d7b77c" stroke="#735637" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M225 176 Q191 207 174 276 Q162 328 198 358 Q222 376 256 376 Q290 376 314 358 Q350 328 338 276 Q321 207 287 176Z" fill="#d7b77c" stroke="#735637" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M218 179 Q256 194 294 179" fill="none" stroke="#9e794b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M207 183 Q256 166 305 183" fill="none" stroke="#5f887f" stroke-width="10" stroke-linecap="round"/>
+  <path d="M225 184 Q205 205 192 198 M287 184 Q307 205 320 198" fill="none" stroke="#5f887f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M203 245 Q256 222 309 245 M190 293 Q256 267 322 293 M198 338 Q256 315 314 338" fill="none" stroke="#bd9761" stroke-width="5" opacity="0.72"/>
+  <path d="M229 207 Q210 266 219 338 M283 207 Q302 266 293 338" fill="none" stroke="#e7c990" stroke-width="5" opacity="0.7"/>
   <rect x="48" y="400" width="416" height="76" rx="20" fill="#ffffff" opacity="0.9"/>
   <text x="256" y="451" fill="#1d3557" font-family="Trebuchet MS, sans-serif" font-size="42" font-weight="700" text-anchor="middle">worek</text>
 </svg>
