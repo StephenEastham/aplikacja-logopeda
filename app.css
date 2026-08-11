@@ -356,6 +356,50 @@ input:focus-visible {
   accent-color: var(--leaf);
 }
 
+.help-section h2 {
+  margin: 0 0 18px;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.help-content {
+  max-height: 340px;
+  overflow-y: auto;
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  line-height: 1.6;
+  scrollbar-gutter: stable;
+}
+
+.help-content:focus-visible {
+  outline: 3px solid var(--leaf);
+  outline-offset: 3px;
+}
+
+.help-content h2,
+.help-content h3 {
+  margin: 24px 0 8px;
+  font-family: Georgia, serif;
+}
+
+.help-content h2:first-child,
+.help-content h3:first-child,
+.help-content p:first-child {
+  margin-top: 0;
+}
+
+.help-content p,
+.help-content ul {
+  margin: 0 0 14px;
+}
+
+.help-content li + li {
+  margin-top: 8px;
+}
+
 [hidden] {
   display: none !important;
 }

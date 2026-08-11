@@ -12,6 +12,7 @@ const orderButtons = [...document.querySelectorAll("[data-order]")];
 const soundEnabled = document.querySelector("#sound-enabled");
 const volume = document.querySelector("#volume");
 const installButton = document.querySelector("#install-button");
+const helpContent = document.querySelector("#help-content");
 const parrotImage = "./assets/images/pa_papuga.svg";
 const parrotSound = "./assets/sounds/pa_papuga.wav";
 let soundGroups = [];
@@ -121,6 +122,59 @@ function wordFromSoundUrl(sound, syllable) {
   const basename = filename.replace(/\.[^.]+$/, "");
   const prefix = `${syllable}_`;
   return basename.startsWith(prefix) ? basename.slice(prefix.length).replaceAll("_", " ") : syllable;
+}
+
+function renderHelp(markdown) {
+  const fragment = document.createDocumentFragment();
+  let list = null;
+
+  markdown.split("\n").forEach((line) => {
+    const text = line.trim();
+    if (!text) {
+      list = null;
+      return;
+    }
+
+    const heading = text.match(/^(#{2,3})\s+(.+)$/);
+    if (heading) {
+      const element = document.createElement(`h${heading[1].length + 1}`);
+      element.textContent = heading[2];
+      fragment.append(element);
+      list = null;
+      return;
+    }
+
+    if (text.startsWith("- ")) {
+      if (!list) {
+        list = document.createElement("ul");
+        fragment.append(list);
+      }
+      const item = document.createElement("li");
+      item.textContent = text.slice(2);
+      list.append(item);
+      return;
+    }
+
+    const paragraph = document.createElement("p");
+    paragraph.textContent = text;
+    fragment.append(paragraph);
+    list = null;
+  });
+
+  helpContent.replaceChildren(fragment);
+}
+
+async function loadHelp() {
+  try {
+    const response = await fetch("./assets/pomoc/pomoc.md");
+    if (!response.ok) {
+      throw new Error(`Unable to load help: ${response.status}`);
+    }
+    renderHelp(await response.text());
+  } catch (error) {
+    helpContent.textContent = "Nie udało się wczytać pomocy.";
+    console.error(error);
+  }
 }
 
 function shuffleItems(items) {
@@ -302,6 +356,7 @@ window.addEventListener("appinstalled", () => {
 
 async function initializeApp() {
   loadPreferences();
+  loadHelp();
 
   try {
     const response = await fetch("./assets/assets.md");
