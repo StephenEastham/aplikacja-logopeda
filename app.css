@@ -320,7 +320,7 @@ h1 {
 .secondary-button:focus-visible,
 a:focus-visible,
 input:focus-visible {
-  outline: 3px solid var(--sun);
+  outline: 3px solid var(--leaf);
   outline-offset: 3px;
 }
 

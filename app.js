@@ -116,6 +116,13 @@ function getAssets(syllable) {
   };
 }
 
+function wordFromSoundUrl(sound, syllable) {
+  const filename = decodeURIComponent(new URL(sound, window.location.href).pathname.split("/").pop() ?? "");
+  const basename = filename.replace(/\.[^.]+$/, "");
+  const prefix = `${syllable}_`;
+  return basename.startsWith(prefix) ? basename.slice(prefix.length).replaceAll("_", " ") : syllable;
+}
+
 function shuffleItems(items) {
   const shuffledItems = [...items];
 
@@ -179,12 +186,13 @@ function renderExercise(groupIndex) {
     const image = document.createElement("img");
     const label = document.createElement("span");
     const assets = getAssets(syllable);
+    const word = wordFromSoundUrl(assets.sound, syllable);
 
     button.className = "sound-tile";
     button.type = "button";
     button.dataset.sound = syllable;
     button.dataset.audio = assets.sound;
-    button.setAttribute("aria-label", `Odtwórz sylabę ${syllable}`);
+    button.setAttribute("aria-label", `Odtwórz słowo „${word}”, sylaba „${syllable}”`);
     button.setAttribute("aria-pressed", "false");
     image.alt = "";
     image.addEventListener("error", () => {
