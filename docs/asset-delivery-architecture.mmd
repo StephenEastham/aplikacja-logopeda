@@ -17,19 +17,19 @@ flowchart TB
 
   subgraph Create["2. AI materializes the specification"]
     direction TB
-    Delta["Select only missing or changed rows"]
-    Visual["Create matching SVG<br/>recognizable image + lowercase word"]
+    Mapping["Read all 156 mappings<br/>emoji generates art; None marks custom art"]
+    Visual["Generate matching emoji-based SVG<br/>recognizable image + lowercase word"]
+    Custom["Preserve custom SVG at the contract path<br/>archive replaced version in emoji-originals"]
     Voice["Create matching Polish WAV<br/>Edge TTS + FFmpeg normalization"]
     Link["Write predictable filenames<br/>and links back into assets.md"]
-    Validate["Validate the contract<br/>unique rows + files exist + previews + audio"]
+    Validate["Generator guard<br/>exactly 156 unique syllable mappings"]
 
-    Inspect --> Delta
-    Delta --> Visual & Voice
+    Inspect --> Mapping --> Validate
+    Validate --> Visual & Custom & Voice
     Visual --> Link
+    Custom --> Link
     Voice --> Link
-    Link --> Validate
-    Validate -->|asset or mapping issue| Inspect
-    Validate -->|content issue| Ask
+    Link --> Inspect
   end
 
   subgraph Bind["3. One table binds content to minimal code"]
@@ -89,9 +89,9 @@ flowchart TB
   classDef outcome fill:#E5EAF7,stroke:#405A91,color:#1D2D52,stroke-width:3px
 
   class Human,Review human
-  class Ask,Inspect,Delta,CodeIntent,CodeChange ai
+  class Ask,Inspect,Mapping,CodeIntent,CodeChange ai
   class Contract,Compatibility contract
-  class Visual,Voice,Link,Validate asset
+  class Visual,Custom,Voice,Link,Validate asset
   class Parser,UI,Discovery,CodeTest runtime
   class Version,Deploy,Pages,Update,Cache release
   class Users,Advantage outcome

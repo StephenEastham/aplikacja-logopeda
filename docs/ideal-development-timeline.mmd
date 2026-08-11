@@ -1,0 +1,116 @@
+flowchart TB
+  Start(["Start: speech-therapy exercise app"])
+
+  subgraph Discovery["1. Choose the small static architecture"]
+    direction TB
+    Scope["Use a static Polish-language app<br/>with no runtime backend or framework"]
+    Roles["Give each technology one job<br/>HTML structure, CSS presentation,<br/>JavaScript runtime, Python asset generation"]
+    Files["Keep predictable top-level files<br/>and dedicated asset, script,<br/>documentation, and workflow folders"]
+    Scope --> Roles --> Files
+  end
+
+  subgraph Contract["2. Establish the shared content contract"]
+    direction TB
+    Schema["Create assets/assets.md<br/>consonant, vowel, syllable,<br/>image link, and sound link columns"]
+    Rows["Define 156 exercise rows<br/>with Markdown image previews<br/>and clickable asset paths"]
+    Naming["Use predictable asset names<br/>syllable_word.svg and syllable_word.wav"]
+    Seed["Provide pa_papuga.svg and pa_papuga.wav<br/>as the seed and runtime fallback"]
+    Schema --> Rows --> Naming --> Seed
+  end
+
+  subgraph VerticalSlice["3. Implement the interface and generic runtime"]
+    direction TB
+    Html["Create semantic HTML views<br/>for home, exercises, and settings"]
+    Css["Style responsive grids, navigation,<br/>controls, focus, and pressed states"]
+    Parser["Fetch and parse assets.md<br/>into consonant groups and<br/>a syllable-to-assets map"]
+    Render["Render all index and exercise tiles<br/>from contract data"]
+    Behavior["Implement hash routes, playback,<br/>ordering, settings, and local preferences"]
+    Fallbacks["Use papuga for missing images;<br/>show load failure and catch audio errors"]
+    Html --> Css --> Parser --> Render --> Behavior --> Fallbacks
+  end
+
+  subgraph Generation["4. Implement Python asset generation"]
+    direction TB
+    Mapping["Define 156 syllable and word mappings<br/>emoji generates art; None marks custom art"]
+    Guard["Stop unless exactly 156 unique<br/>syllables are present"]
+    UpdateContract["Rewrite assets.md rows<br/>with mapped SVG and WAV links"]
+    Svg["Generate 154 accessible emoji SVG files<br/>with title, description, symbol,<br/>and lowercase word label"]
+    Custom["Keep custom SVG at its normal contract path<br/>and skip generation when icon is None"]
+    Archive["Store replaced emoji-generated SVG<br/>under images/emoji-originals"]
+    Wav["Generate only missing WAV files<br/>with Polish Edge TTS"]
+    Normalize["Use FFmpeg to trim silence<br/>and output mono PCM WAV at 22.05 kHz"]
+    Preserve["Preserve custom hammock art and<br/>hand-provided pa papuga image and sound"]
+    Mapping --> Guard --> UpdateContract --> Svg --> Custom --> Archive --> Wav --> Normalize --> Preserve
+  end
+
+  subgraph ContentQA["5. Connect the contract to every layer"]
+    direction TB
+    HumanView["Humans and AI edit and preview<br/>the Markdown table directly"]
+    RuntimeView["app.js reads the same table<br/>to construct the current exercises"]
+    OfflineView["service-worker.js reads its links<br/>to discover offline assets"]
+    HumanView --> RuntimeView --> OfflineView
+  end
+
+  subgraph PWA["6. Implement installation and offline delivery"]
+    direction TB
+    Manifest["Create manifest.webmanifest<br/>with Polish metadata, standalone display,<br/>theme colors, scope, and icons"]
+    Registration["Handle the install prompt<br/>and register the service worker"]
+    ShellCache["Cache the shell, contract, icons,<br/>and papuga fallback media"]
+    DynamicCache["Cache every SVG and WAV link<br/>discovered in assets.md"]
+    OfflinePolicy["Use network-first navigation fallback<br/>and cache-first for other GET requests"]
+    UpdatePolicy["Use a versioned cache, skip waiting,<br/>claim clients, and delete old caches"]
+    Manifest --> Registration --> ShellCache --> DynamicCache --> OfflinePolicy --> UpdatePolicy
+  end
+
+  subgraph SystemQA["7. Implement the GitHub Pages workflow"]
+    direction TB
+    Workflow["Create .github/workflows/deploy-pages.yml"]
+    Triggers["Run on pushes to main<br/>and manual workflow dispatch"]
+    Permissions["Grant contents read, Pages write,<br/>and ID-token write permissions;<br/>cancel superseded Pages runs"]
+    Actions["Check out the repository,<br/>configure Pages, and upload the root"]
+    Deploy["Deploy the static artifact<br/>with actions/deploy-pages"]
+    Workflow --> Triggers --> Permissions --> Actions --> Deploy
+  end
+
+  subgraph Release["8. Publish the complete static app"]
+    direction TB
+    Version["Update the visible version<br/>and bump CACHE_NAME for changed releases"]
+    Commit["Commit contract, generated assets,<br/>code, manifest, icons, and documentation"]
+    Push["Push main"]
+    Pages["GitHub Actions uploads and deploys<br/>the repository without a build step"]
+    Version --> Commit --> Push --> Pages
+  end
+
+  subgraph Maintenance["9. Make later changes through the same contract"]
+    direction TB
+    Edit["Edit assets.md and the generator mapping<br/>when exercise content changes"]
+    Regenerate["Run Python to rewrite links, regenerate<br/>emoji SVGs, preserve None-marked custom SVGs,<br/>and create missing WAVs"]
+    GenericCode["Keep app behavior generic<br/>rather than hard-coding exercises"]
+    Republish["Bump the cache version and push main<br/>to publish the changed static files"]
+    Edit --> Regenerate --> GenericCode --> Republish
+  end
+
+  Start --> Scope
+  Files --> Schema
+  Seed --> Html
+  Fallbacks --> Mapping
+  Preserve --> HumanView
+  OfflineView --> Manifest
+  UpdatePolicy --> Workflow
+  Deploy --> Version
+  Pages --> Edit
+  Republish --> Finish(["Published installable and offline app"])
+
+  classDef intent fill:#fff1bf,stroke:#9a6700,color:#3b2a00,stroke-width:2px
+  classDef contract fill:#ddf3e4,stroke:#247a47,color:#123f27,stroke-width:3px
+  classDef code fill:#e4f0fa,stroke:#356a9a,color:#153a59,stroke-width:2px
+  classDef asset fill:#efe7f6,stroke:#74538e,color:#3d2850,stroke-width:2px
+  classDef test fill:#dff3f0,stroke:#277a70,color:#123f3a,stroke-width:2px
+  classDef release fill:#fbe5dc,stroke:#a64b32,color:#552416,stroke-width:2px
+
+  class Start,Scope,Roles,Files intent
+  class Schema,Rows,Naming,Seed,HumanView,Edit contract
+  class Html,Css,Parser,Render,Behavior,Fallbacks,RuntimeView,GenericCode code
+  class Mapping,Guard,UpdateContract,Svg,Custom,Archive,Wav,Normalize,Preserve,Regenerate asset
+  class OfflineView,Manifest,Registration,ShellCache,DynamicCache,OfflinePolicy,UpdatePolicy test
+  class Workflow,Triggers,Permissions,Actions,Deploy,Version,Commit,Push,Pages,Republish,Finish release

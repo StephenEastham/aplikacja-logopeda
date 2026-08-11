@@ -26,7 +26,7 @@ ENTRIES = [
     ("fu", "futbol", "⚽"), ("fi", "filiżanka", "☕"), ("fy", "żyrafy", "🦒"),
     ("ga", "garnek", "🍲"), ("ge", "gepard", "🐆"), ("go", "gołąb", "🕊️"),
     ("gu", "guzik", "🔘"), ("gi", "gitara", "🎸"),
-    ("ha", "hamak", "🏝️"), ("he", "helikopter", "🚁"), ("ho", "hotel", "🏨"),
+    ("ha", "hamak", None), ("he", "helikopter", "🚁"), ("ho", "hotel", "🏨"),
     ("hu", "hulajnoga", "🛴"), ("hi", "hipopotam", "🦛"), ("hy", "hybryda", "🚗"),
     ("ja", "jabłko", "🍎"), ("je", "jeż", "🦔"), ("jo", "jogurt", "🥣"),
     ("ju", "judo", "🥋"),
@@ -130,7 +130,7 @@ def update_markdown() -> None:
 
 def create_svgs() -> None:
     for index, (syllable, word, emoji) in enumerate(ENTRIES):
-        if syllable == "pa":
+        if syllable == "pa" or emoji is None:
             continue
         filename = f"{syllable}_{slug(word)}.svg"
         (IMAGES_DIR / filename).write_text(svg_content(word, emoji, index), encoding="utf-8")
@@ -166,12 +166,15 @@ async def main() -> None:
     syllables = [entry[0] for entry in ENTRIES]
     if len(ENTRIES) != 156 or len(set(syllables)) != 156:
         raise RuntimeError(f"Expected 156 unique syllables, found {len(ENTRIES)} / {len(set(syllables))}")
+    generated_svg_count = sum(
+        syllable != "pa" and emoji is not None for syllable, _, emoji in ENTRIES
+    )
     update_markdown()
     create_svgs()
     semaphore = asyncio.Semaphore(4)
     with tempfile.TemporaryDirectory(prefix="logopeda-audio-") as directory:
         await asyncio.gather(*(create_audio(entry, semaphore, Path(directory)) for entry in ENTRIES))
-    print(f"Generated mappings for {len(ENTRIES)} rows, {len(ENTRIES) - 1} SVGs, and {len(ENTRIES) - 1} WAVs.")
+    print(f"Generated mappings for {len(ENTRIES)} rows, {generated_svg_count} SVGs, and {len(ENTRIES) - 1} WAVs.")
 
 
 if __name__ == "__main__":

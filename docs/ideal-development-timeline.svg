@@ -1,0 +1,360 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="536.8500000000001" height="6067.5" viewBox="0 0 536.8500000000001 6067.5" style="--bg:#fffdf8;--fg:#171512;--line:#24211d;--accent:#1d4ed8;--muted:#5f5a52;--surface:#faf5ea;--border:#24211d;--font:EB Garamond;background:#fffdf8">
+<style>
+  text { font-family: var(--font, 'EB Garamond'), system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          #171512;
+    --_text-sec:      #5f5a52;
+    --_text-muted:    #5f5a52;
+    --_text-faint:    #82807c;
+    --_line:          #24211d;
+    --_arrow:         #1d4ed8;
+    --_node-fill:     #faf5ea;
+    --_node-stroke:   #24211d;
+    --_group-fill:    #fffdf8;
+    --_group-hdr:     #f3f1ed;
+    --_inner-stroke:  #e3e1dc;
+    --_key-badge:     #e8e6e1;
+  }
+</style>
+<rect width="536.8500000000001" height="6067.5" fill="#fffdf8" data-backdrop="page" />
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="#1d4ed8" stroke="#1d4ed8" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto">
+    <polygon points="8 0, 0 2.5, 8 5" fill="#1d4ed8" stroke="#1d4ed8" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-var282d2dfg29" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="#171512" stroke="#171512" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start-var282d2dfg29" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto">
+    <polygon points="8 0, 0 2.5, 8 5" fill="#171512" stroke="#171512" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="Discovery" data-region="subgraph" data-label="1. Choose the small static architecture" data-role="group">
+  <rect x="59.80000000000007" y="135.5" width="417.25" height="408" rx="7" ry="7" fill="#fffdf8" stroke="#171512" stroke-width="1.35" data-id="group-rect:Discovery" data-role="group" />
+  <path d="M66.80000000000007,135.5 H470.05000000000007 A7,7 0 0 1 477.05000000000007,142.5 V163.5 H59.80000000000007 V142.5 A7,7 0 0 1 66.80000000000007,135.5 Z" fill="#f3f1ed" stroke="#171512" stroke-width="1.35" />
+  <text x="83.80000000000007" y="149.5" font-size="12" font-weight="700" letter-spacing="0.08" fill="#171512" dy="4.199999999999999" textLength="288.52" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">1. CHOOSE THE SMALL STATIC ARCHITECTURE</text>
+</g>
+<g class="subgraph" data-id="Contract" data-region="subgraph" data-label="2. Establish the shared content contract" data-role="group">
+  <rect x="58.450000000000045" y="591.5" width="419.95000000000005" height="523" rx="7" ry="7" fill="#fffdf8" stroke="#171512" stroke-width="1.35" data-id="group-rect:Contract" data-role="group" />
+  <path d="M65.45000000000005,591.5 H471.4000000000001 A7,7 0 0 1 478.4000000000001,598.5 V619.5 H58.450000000000045 V598.5 A7,7 0 0 1 65.45000000000005,591.5 Z" fill="#f3f1ed" stroke="#171512" stroke-width="1.35" />
+  <text x="82.45000000000005" y="605.5" font-size="12" font-weight="700" letter-spacing="0.08" fill="#171512" dy="4.199999999999999" textLength="305.16" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">2. ESTABLISH THE SHARED CONTENT CONTRACT</text>
+</g>
+<g class="subgraph" data-id="VerticalSlice" data-region="subgraph" data-label="3. Implement the interface and generic runtime" data-role="group">
+  <rect x="73.30000000000007" y="1162.5" width="390.25" height="733.5" rx="7" ry="7" fill="#fffdf8" stroke="#171512" stroke-width="1.35" data-id="group-rect:VerticalSlice" data-role="group" />
+  <path d="M80.30000000000007,1162.5 H456.55000000000007 A7,7 0 0 1 463.55000000000007,1169.5 V1190.5 H73.30000000000007 V1169.5 A7,7 0 0 1 80.30000000000007,1162.5 Z" fill="#f3f1ed" stroke="#171512" stroke-width="1.35" />
+  <text x="97.30000000000007" y="1176.5" font-size="12" font-weight="700" letter-spacing="0.08" fill="#171512" dy="4.199999999999999" textLength="340.2" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">3. IMPLEMENT THE INTERFACE AND GENERIC RUNTIME</text>
+</g>
+<g class="subgraph" data-id="Generation" data-region="subgraph" data-label="4. Implement Python asset generation" data-role="group">
+  <rect x="63.85000000000011" y="1944" width="409.1499999999999" height="1078.5" rx="7" ry="7" fill="#fffdf8" stroke="#171512" stroke-width="1.35" data-id="group-rect:Generation" data-role="group" />
+  <path d="M70.85000000000011,1944 H466 A7,7 0 0 1 473,1951 V1972 H63.85000000000011 V1951 A7,7 0 0 1 70.85000000000011,1944 Z" fill="#f3f1ed" stroke="#171512" stroke-width="1.35" />
+  <text x="87.85000000000011" y="1958" font-size="12" font-weight="700" letter-spacing="0.08" fill="#171512" dy="4.199999999999999" textLength="275.32" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">4. IMPLEMENT PYTHON ASSET GENERATION</text>
+</g>
+<g class="subgraph" data-id="ContentQA" data-region="subgraph" data-label="5. Connect the contract to every layer" data-role="group">
+  <rect x="96.70000000000005" y="3070.5" width="343.45000000000005" height="369" rx="7" ry="7" fill="#fffdf8" stroke="#171512" stroke-width="1.35" data-id="group-rect:ContentQA" data-role="group" />
+  <path d="M103.70000000000005,3070.5 H433.1500000000001 A7,7 0 0 1 440.1500000000001,3077.5 V3098.5 H96.70000000000005 V3077.5 A7,7 0 0 1 103.70000000000005,3070.5 Z" fill="#f3f1ed" stroke="#171512" stroke-width="1.35" />
+  <text x="120.70000000000005" y="3084.5" font-size="12" font-weight="700" letter-spacing="0.08" fill="#171512" dy="4.199999999999999" textLength="287" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">5. CONNECT THE CONTRACT TO EVERY LAYER</text>
+</g>
+<g class="subgraph" data-id="PWA" data-region="subgraph" data-label="6. Implement installation and offline delivery" data-role="group">
+  <rect x="75.10000000000011" y="3487.5" width="386.6499999999999" height="733.5" rx="7" ry="7" fill="#fffdf8" stroke="#171512" stroke-width="1.35" data-id="group-rect:PWA" data-role="group" />
+  <path d="M82.10000000000011,3487.5 H454.75 A7,7 0 0 1 461.75,3494.5 V3515.5 H75.10000000000011 V3494.5 A7,7 0 0 1 82.10000000000011,3487.5 Z" fill="#f3f1ed" stroke="#171512" stroke-width="1.35" />
+  <text x="99.10000000000011" y="3501.5" font-size="12" font-weight="700" letter-spacing="0.08" fill="#171512" dy="4.199999999999999" textLength="338.76" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">6. IMPLEMENT INSTALLATION AND OFFLINE DELIVERY</text>
+</g>
+<g class="subgraph" data-id="SystemQA" data-region="subgraph" data-label="7. Implement the GitHub Pages workflow" data-role="group">
+  <rect x="65.20000000000005" y="4269" width="406.45000000000005" height="599" rx="7" ry="7" fill="#fffdf8" stroke="#171512" stroke-width="1.35" data-id="group-rect:SystemQA" data-role="group" />
+  <path d="M72.20000000000005,4269 H464.6500000000001 A7,7 0 0 1 471.6500000000001,4276 V4297 H65.20000000000005 V4276 A7,7 0 0 1 72.20000000000005,4269 Z" fill="#f3f1ed" stroke="#171512" stroke-width="1.35" />
+  <text x="89.20000000000005" y="4283" font-size="12" font-weight="700" letter-spacing="0.08" fill="#171512" dy="4.199999999999999" textLength="290.6" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">7. IMPLEMENT THE GITHUB PAGES WORKFLOW</text>
+</g>
+<g class="subgraph" data-id="Release" data-region="subgraph" data-label="8. Publish the complete static app" data-role="group">
+  <rect x="49.90000000000012" y="4916" width="437.0499999999999" height="464.5" rx="7" ry="7" fill="#fffdf8" stroke="#171512" stroke-width="1.35" data-id="group-rect:Release" data-role="group" />
+  <path d="M56.90000000000012,4916 H479.95000000000005 A7,7 0 0 1 486.95000000000005,4923 V4944 H49.90000000000012 V4923 A7,7 0 0 1 56.90000000000012,4916 Z" fill="#f3f1ed" stroke="#171512" stroke-width="1.35" />
+  <text x="73.90000000000012" y="4930" font-size="12" font-weight="700" letter-spacing="0.08" fill="#171512" dy="4.199999999999999" textLength="249.24" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">8. PUBLISH THE COMPLETE STATIC APP</text>
+</g>
+<g class="subgraph" data-id="Maintenance" data-region="subgraph" data-label="9. Make later changes through the same contract" data-role="group">
+  <rect x="40" y="5428.5" width="456.85000000000014" height="503.5" rx="7" ry="7" fill="#fffdf8" stroke="#171512" stroke-width="1.35" data-id="group-rect:Maintenance" data-role="group" />
+  <path d="M47,5428.5 H489.85000000000014 A7,7 0 0 1 496.85000000000014,5435.5 V5456.5 H40 V5435.5 A7,7 0 0 1 47,5428.5 Z" fill="#f3f1ed" stroke="#171512" stroke-width="1.35" />
+  <text x="64" y="5442.5" font-size="12" font-weight="700" letter-spacing="0.08" fill="#171512" dy="4.199999999999999" textLength="363.32" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">9. MAKE LATER CHANGES THROUGH THE SAME CONTRACT</text>
+</g>
+<path class="edge" data-from="Start" data-to="Scope" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,87.5 L268.42500000000007,185.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Start-&gt;Scope#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Start to Scope" />
+<path class="edge" data-from="Files" data-to="Schema" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,521.5 L268.42500000000007,641.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Files-&gt;Schema#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Files to Schema" />
+<path class="edge" data-from="Seed" data-to="Html" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,1092.5 L268.42500000000007,1212.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Seed-&gt;Html#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Seed to Html" />
+<path class="edge" data-from="Fallbacks" data-to="Mapping" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,1874 L268.42500000000007,1994" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Fallbacks-&gt;Mapping#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Fallbacks to Mapping" />
+<path class="edge" data-from="Preserve" data-to="HumanView" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,3000.5 L268.42500000000007,3120.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Preserve-&gt;HumanView#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Preserve to HumanView" />
+<path class="edge" data-from="OfflineView" data-to="Manifest" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,3417.5 L268.42500000000007,3537.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:OfflineView-&gt;Manifest#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="OfflineView to Manifest" />
+<path class="edge" data-from="UpdatePolicy" data-to="Workflow" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,4199 L268.42500000000007,4319" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:UpdatePolicy-&gt;Workflow#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="UpdatePolicy to Workflow" />
+<path class="edge" data-from="Deploy" data-to="Version" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,4846 L268.42500000000007,4966" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Deploy-&gt;Version#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Deploy to Version" />
+<path class="edge" data-from="Pages" data-to="Edit" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,5358.5 L268.42500000000007,5478.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Pages-&gt;Edit#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Pages to Edit" />
+<path class="edge" data-from="Republish" data-to="Finish" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,5910 L268.42500000000007,5980" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Republish-&gt;Finish#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Republish to Finish" />
+<path class="edge" data-from="Scope" data-to="Roles" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,252.5 L268.42500000000007,300.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Scope-&gt;Roles#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Scope to Roles" />
+<path class="edge" data-from="Roles" data-to="Files" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,387 L268.42500000000007,435" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Roles-&gt;Files#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Roles to Files" />
+<path class="edge" data-from="Schema" data-to="Rows" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,728 L268.42500000000007,776" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Schema-&gt;Rows#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Schema to Rows" />
+<path class="edge" data-from="Rows" data-to="Naming" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,862.5 L268.42500000000007,910.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Rows-&gt;Naming#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Rows to Naming" />
+<path class="edge" data-from="Naming" data-to="Seed" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,977.5 L268.42500000000007,1025.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Naming-&gt;Seed#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Naming to Seed" />
+<path class="edge" data-from="Html" data-to="Css" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,1279.5 L268.42500000000007,1327.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Html-&gt;Css#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Html to Css" />
+<path class="edge" data-from="Css" data-to="Parser" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,1394.5 L268.42500000000007,1442.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Css-&gt;Parser#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Css to Parser" />
+<path class="edge" data-from="Parser" data-to="Render" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,1529 L268.42500000000007,1577" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Parser-&gt;Render#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Parser to Render" />
+<path class="edge" data-from="Render" data-to="Behavior" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,1644 L268.42500000000007,1692" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Render-&gt;Behavior#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Render to Behavior" />
+<path class="edge" data-from="Behavior" data-to="Fallbacks" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,1759 L268.42500000000007,1807" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Behavior-&gt;Fallbacks#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Behavior to Fallbacks" />
+<path class="edge" data-from="Mapping" data-to="Guard" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,2061 L268.42500000000007,2109" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Mapping-&gt;Guard#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Mapping to Guard" />
+<path class="edge" data-from="Guard" data-to="UpdateContract" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,2176 L268.42500000000007,2224" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Guard-&gt;UpdateContract#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Guard to UpdateContract" />
+<path class="edge" data-from="UpdateContract" data-to="Svg" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,2291 L268.42500000000007,2339" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:UpdateContract-&gt;Svg#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="UpdateContract to Svg" />
+<path class="edge" data-from="Svg" data-to="Custom" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,2425.5 L268.42500000000007,2473.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Svg-&gt;Custom#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Svg to Custom" />
+<path class="edge" data-from="Custom" data-to="Archive" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,2540.5 L268.42500000000007,2588.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Custom-&gt;Archive#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Custom to Archive" />
+<path class="edge" data-from="Archive" data-to="Wav" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,2655.5 L268.42500000000007,2703.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Archive-&gt;Wav#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Archive to Wav" />
+<path class="edge" data-from="Wav" data-to="Normalize" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,2770.5 L268.42500000000007,2818.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Wav-&gt;Normalize#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Wav to Normalize" />
+<path class="edge" data-from="Normalize" data-to="Preserve" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,2885.5 L268.42500000000007,2933.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Normalize-&gt;Preserve#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Normalize to Preserve" />
+<path class="edge" data-from="HumanView" data-to="RuntimeView" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,3187.5 L268.42500000000007,3235.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:HumanView-&gt;RuntimeView#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="HumanView to RuntimeView" />
+<path class="edge" data-from="RuntimeView" data-to="OfflineView" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,3302.5 L268.42500000000007,3350.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:RuntimeView-&gt;OfflineView#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="RuntimeView to OfflineView" />
+<path class="edge" data-from="Manifest" data-to="Registration" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,3624 L268.42500000000007,3672" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Manifest-&gt;Registration#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Manifest to Registration" />
+<path class="edge" data-from="Registration" data-to="ShellCache" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,3739 L268.42500000000007,3787" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Registration-&gt;ShellCache#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Registration to ShellCache" />
+<path class="edge" data-from="ShellCache" data-to="DynamicCache" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,3854 L268.42500000000007,3902" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:ShellCache-&gt;DynamicCache#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="ShellCache to DynamicCache" />
+<path class="edge" data-from="DynamicCache" data-to="OfflinePolicy" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,3969 L268.42500000000007,4017" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:DynamicCache-&gt;OfflinePolicy#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="DynamicCache to OfflinePolicy" />
+<path class="edge" data-from="OfflinePolicy" data-to="UpdatePolicy" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,4084 L268.42500000000007,4132" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:OfflinePolicy-&gt;UpdatePolicy#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="OfflinePolicy to UpdatePolicy" />
+<path class="edge" data-from="Workflow" data-to="Triggers" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,4366.5 L268.42500000000007,4414.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Workflow-&gt;Triggers#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Workflow to Triggers" />
+<path class="edge" data-from="Triggers" data-to="Permissions" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,4481.5 L268.42500000000007,4529.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Triggers-&gt;Permissions#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Triggers to Permissions" />
+<path class="edge" data-from="Permissions" data-to="Actions" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,4616 L268.42500000000007,4664" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Permissions-&gt;Actions#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Permissions to Actions" />
+<path class="edge" data-from="Actions" data-to="Deploy" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,4731 L268.42500000000007,4779" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Actions-&gt;Deploy#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Actions to Deploy" />
+<path class="edge" data-from="Version" data-to="Commit" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,5033 L268.42500000000007,5081" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Version-&gt;Commit#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Version to Commit" />
+<path class="edge" data-from="Commit" data-to="Push" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,5148 L268.42500000000007,5196" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Commit-&gt;Push#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Commit to Push" />
+<path class="edge" data-from="Push" data-to="Pages" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,5243.5 L268.42500000000007,5291.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Push-&gt;Pages#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Push to Pages" />
+<path class="edge" data-from="Edit" data-to="Regenerate" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,5545.5 L268.42500000000007,5593.5" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Edit-&gt;Regenerate#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Edit to Regenerate" />
+<path class="edge" data-from="Regenerate" data-to="GenericCode" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,5680 L268.42500000000007,5728" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:Regenerate-&gt;GenericCode#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="Regenerate to GenericCode" />
+<path class="edge" data-from="GenericCode" data-to="Republish" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-marker-end="arrow" d="M268.42500000000007,5795 L268.42500000000007,5843" fill="none" stroke="#171512" stroke-width="1.45" marker-end="url(#arrowhead-var282d2dfg29)" data-relationship="flowchart-edge" data-direction="forward" data-id="edge:GenericCode-&gt;Republish#0" data-role="edge" role="graphics-symbol" aria-roledescription="relation" aria-label="GenericCode to Republish" />
+<g class="node intent" data-id="Start" data-label="Start: speech-therapy exercise app" data-shape="stadium" data-role="node">
+  <rect x="115.30000000000007" y="40" width="306.25" height="47.5" rx="23.75" ry="23.75" fill="#fff1bf" stroke="#9a6700" stroke-width="2px" data-id="node-shape:Start" data-role="node" />
+  <text x="268.42500000000007" y="63.75" text-anchor="middle" font-size="15" font-weight="700" fill="#3b2a00" dy="5.25" textLength="254.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Start: speech-therapy exercise app</text>
+</g>
+<g class="node intent" data-id="Scope" data-label="Use a static Polish-language app
+with no runtime backend or framework" data-shape="rectangle" data-role="node">
+  <rect x="108.55000000000007" y="185.5" width="319.75" height="67" rx="7" ry="7" fill="#fff1bf" stroke="#9a6700" stroke-width="2px" data-id="node-shape:Scope" data-role="node" />
+  <text x="268.42500000000007" y="219" text-anchor="middle" font-size="15" font-weight="700" fill="#3b2a00"><tspan x="268.42500000000007" dy="-4.5" textLength="231.75" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Use a static Polish-language app</tspan><tspan x="268.42500000000007" dy="19.5" textLength="267.75" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">with no runtime backend or framework</tspan></text>
+</g>
+<g class="node intent" data-id="Roles" data-label="Give each technology one job
+HTML structure, CSS presentation,
+JavaScript runtime, Python asset generation" data-shape="rectangle" data-role="node">
+  <rect x="83.80000000000007" y="300.5" width="369.25" height="86.5" rx="7" ry="7" fill="#fff1bf" stroke="#9a6700" stroke-width="2px" data-id="node-shape:Roles" data-role="node" />
+  <text x="268.42500000000007" y="343.75" text-anchor="middle" font-size="15" font-weight="700" fill="#3b2a00"><tspan x="268.42500000000007" dy="-14.25" textLength="209.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Give each technology one job</tspan><tspan x="268.42500000000007" dy="19.5" textLength="252.45" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">HTML structure, CSS presentation,</tspan><tspan x="268.42500000000007" dy="19.5" textLength="317.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">JavaScript runtime, Python asset generation</tspan></text>
+</g>
+<g class="node intent" data-id="Files" data-label="Keep predictable top-level files
+and dedicated asset, script,
+documentation, and workflow folders" data-shape="rectangle" data-role="node">
+  <rect x="113.95000000000007" y="435" width="308.95" height="86.5" rx="7" ry="7" fill="#fff1bf" stroke="#9a6700" stroke-width="2px" data-id="node-shape:Files" data-role="node" />
+  <text x="268.42500000000007" y="478.25" text-anchor="middle" font-size="15" font-weight="700" fill="#3b2a00"><tspan x="268.42500000000007" dy="-14.25" textLength="218.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Keep predictable top-level files</tspan><tspan x="268.42500000000007" dy="19.5" textLength="195.75" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">and dedicated asset, script,</tspan><tspan x="268.42500000000007" dy="19.5" textLength="256.95" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">documentation, and workflow folders</tspan></text>
+</g>
+<g class="node contract" data-id="Schema" data-label="Create assets/assets.md
+consonant, vowel, syllable,
+image link, and sound link columns" data-shape="rectangle" data-role="node">
+  <rect x="121.15000000000009" y="641.5" width="294.54999999999995" height="86.5" rx="7" ry="7" fill="#ddf3e4" stroke="#247a47" stroke-width="3px" data-id="node-shape:Schema" data-role="node" />
+  <text x="268.42500000000007" y="684.75" text-anchor="middle" font-size="15" font-weight="700" fill="#123f27"><tspan x="268.42500000000007" dy="-14.25" textLength="178.65" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Create assets/assets.md</tspan><tspan x="268.42500000000007" dy="19.5" textLength="191.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">consonant, vowel, syllable,</tspan><tspan x="268.42500000000007" dy="19.5" textLength="242.55" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">image link, and sound link columns</tspan></text>
+</g>
+<g class="node contract" data-id="Rows" data-label="Define 156 exercise rows
+with Markdown image previews
+and clickable asset paths" data-shape="rectangle" data-role="node">
+  <rect x="131.50000000000006" y="776" width="273.85" height="86.5" rx="7" ry="7" fill="#ddf3e4" stroke="#247a47" stroke-width="3px" data-id="node-shape:Rows" data-role="node" />
+  <text x="268.42500000000007" y="819.25" text-anchor="middle" font-size="15" font-weight="700" fill="#123f27"><tspan x="268.42500000000007" dy="-14.25" textLength="177.75" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Define 156 exercise rows</tspan><tspan x="268.42500000000007" dy="19.5" textLength="221.85" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">with Markdown image previews</tspan><tspan x="268.42500000000007" dy="19.5" textLength="181.35" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">and clickable asset paths</tspan></text>
+</g>
+<g class="node contract" data-id="Naming" data-label="Use predictable asset names
+syllable_word.svg and syllable_word.wav" data-shape="rectangle" data-role="node">
+  <rect x="92.80000000000007" y="910.5" width="351.25" height="67" rx="7" ry="7" fill="#ddf3e4" stroke="#247a47" stroke-width="3px" data-id="node-shape:Naming" data-role="node" />
+  <text x="268.42500000000007" y="944" text-anchor="middle" font-size="15" font-weight="700" fill="#123f27"><tspan x="268.42500000000007" dy="-4.5" textLength="206.55" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Use predictable asset names</tspan><tspan x="268.42500000000007" dy="19.5" textLength="299.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">syllable_word.svg and syllable_word.wav</tspan></text>
+</g>
+<g class="node contract" data-id="Seed" data-label="Provide pa_papuga.svg and pa_papuga.wav
+as the seed and runtime fallback" data-shape="rectangle" data-role="node">
+  <rect x="82.45000000000005" y="1025.5" width="371.95000000000005" height="67" rx="7" ry="7" fill="#ddf3e4" stroke="#247a47" stroke-width="3px" data-id="node-shape:Seed" data-role="node" />
+  <text x="268.42500000000007" y="1059" text-anchor="middle" font-size="15" font-weight="700" fill="#123f27"><tspan x="268.42500000000007" dy="-4.5" textLength="319.95" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Provide pa_papuga.svg and pa_papuga.wav</tspan><tspan x="268.42500000000007" dy="19.5" textLength="226.35" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">as the seed and runtime fallback</tspan></text>
+</g>
+<g class="node code" data-id="Html" data-label="Create semantic HTML views
+for home, exercises, and settings" data-shape="rectangle" data-role="node">
+  <rect x="125.2000000000001" y="1212.5" width="286.44999999999993" height="67" rx="7" ry="7" fill="#e4f0fa" stroke="#356a9a" stroke-width="2px" data-id="node-shape:Html" data-role="node" />
+  <text x="268.42500000000007" y="1246" text-anchor="middle" font-size="15" font-weight="700" fill="#153a59"><tspan x="268.42500000000007" dy="-4.5" textLength="209.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Create semantic HTML views</tspan><tspan x="268.42500000000007" dy="19.5" textLength="234.45" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">for home, exercises, and settings</tspan></text>
+</g>
+<g class="node code" data-id="Css" data-label="Style responsive grids, navigation,
+controls, focus, and pressed states" data-shape="rectangle" data-role="node">
+  <rect x="117.10000000000008" y="1327.5" width="302.65" height="67" rx="7" ry="7" fill="#e4f0fa" stroke="#356a9a" stroke-width="2px" data-id="node-shape:Css" data-role="node" />
+  <text x="268.42500000000007" y="1361" text-anchor="middle" font-size="15" font-weight="700" fill="#153a59"><tspan x="268.42500000000007" dy="-4.5" textLength="247.95" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Style responsive grids, navigation,</tspan><tspan x="268.42500000000007" dy="19.5" textLength="250.65" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">controls, focus, and pressed states</tspan></text>
+</g>
+<g class="node code" data-id="Parser" data-label="Fetch and parse assets.md
+into consonant groups and
+a syllable-to-assets map" data-shape="rectangle" data-role="node">
+  <rect x="145.4500000000001" y="1442.5" width="245.94999999999996" height="86.5" rx="7" ry="7" fill="#e4f0fa" stroke="#356a9a" stroke-width="2px" data-id="node-shape:Parser" data-role="node" />
+  <text x="268.42500000000007" y="1485.75" text-anchor="middle" font-size="15" font-weight="700" fill="#153a59"><tspan x="268.42500000000007" dy="-14.25" textLength="193.95" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Fetch and parse assets.md</tspan><tspan x="268.42500000000007" dy="19.5" textLength="190.35" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">into consonant groups and</tspan><tspan x="268.42500000000007" dy="19.5" textLength="171.45" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">a syllable-to-assets map</tspan></text>
+</g>
+<g class="node code" data-id="Render" data-label="Render all index and exercise tiles
+from contract data" data-shape="rectangle" data-role="node">
+  <rect x="119.35000000000008" y="1577" width="298.15" height="67" rx="7" ry="7" fill="#e4f0fa" stroke="#356a9a" stroke-width="2px" data-id="node-shape:Render" data-role="node" />
+  <text x="268.42500000000007" y="1610.5" text-anchor="middle" font-size="15" font-weight="700" fill="#153a59"><tspan x="268.42500000000007" dy="-4.5" textLength="246.15" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Render all index and exercise tiles</tspan><tspan x="268.42500000000007" dy="19.5" textLength="128.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">from contract data</tspan></text>
+</g>
+<g class="node code" data-id="Behavior" data-label="Implement hash routes, playback,
+ordering, settings, and local preferences" data-shape="rectangle" data-role="node">
+  <rect x="97.30000000000007" y="1692" width="342.25" height="67" rx="7" ry="7" fill="#e4f0fa" stroke="#356a9a" stroke-width="2px" data-id="node-shape:Behavior" data-role="node" />
+  <text x="268.42500000000007" y="1725.5" text-anchor="middle" font-size="15" font-weight="700" fill="#153a59"><tspan x="268.42500000000007" dy="-4.5" textLength="235.35" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Implement hash routes, playback,</tspan><tspan x="268.42500000000007" dy="19.5" textLength="290.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">ordering, settings, and local preferences</tspan></text>
+</g>
+<g class="node code" data-id="Fallbacks" data-label="Use papuga for missing images;
+show load failure and catch audio errors" data-shape="rectangle" data-role="node">
+  <rect x="99.10000000000005" y="1807" width="338.65000000000003" height="67" rx="7" ry="7" fill="#e4f0fa" stroke="#356a9a" stroke-width="2px" data-id="node-shape:Fallbacks" data-role="node" />
+  <text x="268.42500000000007" y="1840.5" text-anchor="middle" font-size="15" font-weight="700" fill="#153a59"><tspan x="268.42500000000007" dy="-4.5" textLength="223.65" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Use papuga for missing images;</tspan><tspan x="268.42500000000007" dy="19.5" textLength="286.65" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">show load failure and catch audio errors</tspan></text>
+</g>
+<g class="node asset" data-id="Mapping" data-label="Define 156 syllable and word mappings
+emoji generates art; None marks custom art" data-shape="rectangle" data-role="node">
+  <rect x="90.10000000000008" y="1994" width="356.65" height="67" rx="7" ry="7" fill="#efe7f6" stroke="#74538e" stroke-width="2px" data-id="node-shape:Mapping" data-role="node" />
+  <text x="268.42500000000007" y="2027.5" text-anchor="middle" font-size="15" font-weight="700" fill="#3d2850"><tspan x="268.42500000000007" dy="-4.5" textLength="269.55" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Define 156 syllable and word mappings</tspan><tspan x="268.42500000000007" dy="19.5" textLength="304.65" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">emoji generates art; None marks custom art</tspan></text>
+</g>
+<g class="node asset" data-id="Guard" data-label="Stop unless exactly 156 unique
+syllables are present" data-shape="rectangle" data-role="node">
+  <rect x="134.20000000000007" y="2109" width="268.45" height="67" rx="7" ry="7" fill="#efe7f6" stroke="#74538e" stroke-width="2px" data-id="node-shape:Guard" data-role="node" />
+  <text x="268.42500000000007" y="2142.5" text-anchor="middle" font-size="15" font-weight="700" fill="#3d2850"><tspan x="268.42500000000007" dy="-4.5" textLength="216.45" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Stop unless exactly 156 unique</tspan><tspan x="268.42500000000007" dy="19.5" textLength="153.45" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">syllables are present</tspan></text>
+</g>
+<g class="node asset" data-id="UpdateContract" data-label="Rewrite assets.md rows
+with mapped SVG and WAV links" data-shape="rectangle" data-role="node">
+  <rect x="128.80000000000007" y="2224" width="279.25" height="67" rx="7" ry="7" fill="#efe7f6" stroke="#74538e" stroke-width="2px" data-id="node-shape:UpdateContract" data-role="node" />
+  <text x="268.42500000000007" y="2257.5" text-anchor="middle" font-size="15" font-weight="700" fill="#3d2850"><tspan x="268.42500000000007" dy="-4.5" textLength="169.65" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Rewrite assets.md rows</tspan><tspan x="268.42500000000007" dy="19.5" textLength="227.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">with mapped SVG and WAV links</tspan></text>
+</g>
+<g class="node asset" data-id="Svg" data-label="Generate 154 accessible emoji SVG files
+with title, description, symbol,
+and lowercase word label" data-shape="rectangle" data-role="node">
+  <rect x="102.25000000000011" y="2339" width="332.3499999999999" height="86.5" rx="7" ry="7" fill="#efe7f6" stroke="#74538e" stroke-width="2px" data-id="node-shape:Svg" data-role="node" />
+  <text x="268.42500000000007" y="2382.25" text-anchor="middle" font-size="15" font-weight="700" fill="#3d2850"><tspan x="268.42500000000007" dy="-14.25" textLength="280.35" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Generate 154 accessible emoji SVG files</tspan><tspan x="268.42500000000007" dy="19.5" textLength="202.95" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">with title, description, symbol,</tspan><tspan x="268.42500000000007" dy="19.5" textLength="183.15" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">and lowercase word label</tspan></text>
+</g>
+<g class="node asset" data-id="Custom" data-label="Keep custom SVG at its normal contract path
+and skip generation when icon is None" data-shape="rectangle" data-role="node">
+  <rect x="87.85000000000011" y="2473.5" width="361.1499999999999" height="67" rx="7" ry="7" fill="#efe7f6" stroke="#74538e" stroke-width="2px" data-id="node-shape:Custom" data-role="node" />
+  <text x="268.42500000000007" y="2507" text-anchor="middle" font-size="15" font-weight="700" fill="#3d2850"><tspan x="268.42500000000007" dy="-4.5" textLength="309.15" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Keep custom SVG at its normal contract path</tspan><tspan x="268.42500000000007" dy="19.5" textLength="272.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">and skip generation when icon is None</tspan></text>
+</g>
+<g class="node asset" data-id="Archive" data-label="Store replaced emoji-generated SVG
+under images/emoji-originals" data-shape="rectangle" data-role="node">
+  <rect x="111.7000000000001" y="2588.5" width="313.44999999999993" height="67" rx="7" ry="7" fill="#efe7f6" stroke="#74538e" stroke-width="2px" data-id="node-shape:Archive" data-role="node" />
+  <text x="268.42500000000007" y="2622" text-anchor="middle" font-size="15" font-weight="700" fill="#3d2850"><tspan x="268.42500000000007" dy="-4.5" textLength="261.45" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Store replaced emoji-generated SVG</tspan><tspan x="268.42500000000007" dy="19.5" textLength="206.55" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">under images/emoji-originals</tspan></text>
+</g>
+<g class="node asset" data-id="Wav" data-label="Generate only missing WAV files
+with Polish Edge TTS" data-shape="rectangle" data-role="node">
+  <rect x="128.3500000000001" y="2703.5" width="280.1499999999999" height="67" rx="7" ry="7" fill="#efe7f6" stroke="#74538e" stroke-width="2px" data-id="node-shape:Wav" data-role="node" />
+  <text x="268.42500000000007" y="2737" text-anchor="middle" font-size="15" font-weight="700" fill="#3d2850"><tspan x="268.42500000000007" dy="-4.5" textLength="228.15" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Generate only missing WAV files</tspan><tspan x="268.42500000000007" dy="19.5" textLength="152.55" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">with Polish Edge TTS</tspan></text>
+</g>
+<g class="node asset" data-id="Normalize" data-label="Use FFmpeg to trim silence
+and output mono PCM WAV at 22.05 kHz" data-shape="rectangle" data-role="node">
+  <rect x="102.25000000000009" y="2818.5" width="332.34999999999997" height="67" rx="7" ry="7" fill="#efe7f6" stroke="#74538e" stroke-width="2px" data-id="node-shape:Normalize" data-role="node" />
+  <text x="268.42500000000007" y="2852" text-anchor="middle" font-size="15" font-weight="700" fill="#3d2850"><tspan x="268.42500000000007" dy="-4.5" textLength="191.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Use FFmpeg to trim silence</tspan><tspan x="268.42500000000007" dy="19.5" textLength="280.35" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">and output mono PCM WAV at 22.05 kHz</tspan></text>
+</g>
+<g class="node asset" data-id="Preserve" data-label="Preserve custom hammock art and
+hand-provided pa papuga image and sound" data-shape="rectangle" data-role="node">
+  <rect x="89.20000000000005" y="2933.5" width="358.45000000000005" height="67" rx="7" ry="7" fill="#efe7f6" stroke="#74538e" stroke-width="2px" data-id="node-shape:Preserve" data-role="node" />
+  <text x="268.42500000000007" y="2967" text-anchor="middle" font-size="15" font-weight="700" fill="#3d2850"><tspan x="268.42500000000007" dy="-4.5" textLength="247.05" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Preserve custom hammock art and</tspan><tspan x="268.42500000000007" dy="19.5" textLength="306.45" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">hand-provided pa papuga image and sound</tspan></text>
+</g>
+<g class="node contract" data-id="HumanView" data-label="Humans and AI edit and preview
+the Markdown table directly" data-shape="rectangle" data-role="node">
+  <rect x="130.1500000000001" y="3120.5" width="276.54999999999995" height="67" rx="7" ry="7" fill="#ddf3e4" stroke="#247a47" stroke-width="3px" data-id="node-shape:HumanView" data-role="node" />
+  <text x="268.42500000000007" y="3154" text-anchor="middle" font-size="15" font-weight="700" fill="#123f27"><tspan x="268.42500000000007" dy="-4.5" textLength="224.55" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Humans and AI edit and preview</tspan><tspan x="268.42500000000007" dy="19.5" textLength="196.65" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">the Markdown table directly</tspan></text>
+</g>
+<g class="node code" data-id="RuntimeView" data-label="app.js reads the same table
+to construct the current exercises" data-shape="rectangle" data-role="node">
+  <rect x="120.70000000000005" y="3235.5" width="295.45000000000005" height="67" rx="7" ry="7" fill="#e4f0fa" stroke="#356a9a" stroke-width="2px" data-id="node-shape:RuntimeView" data-role="node" />
+  <text x="268.42500000000007" y="3269" text-anchor="middle" font-size="15" font-weight="700" fill="#153a59"><tspan x="268.42500000000007" dy="-4.5" textLength="193.05" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">app.js reads the same table</tspan><tspan x="268.42500000000007" dy="19.5" textLength="243.45" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">to construct the current exercises</tspan></text>
+</g>
+<g class="node test" data-id="OfflineView" data-label="service-worker.js reads its links
+to discover offline assets" data-shape="rectangle" data-role="node">
+  <rect x="126.10000000000008" y="3350.5" width="284.65" height="67" rx="7" ry="7" fill="#dff3f0" stroke="#277a70" stroke-width="2px" data-id="node-shape:OfflineView" data-role="node" />
+  <text x="268.42500000000007" y="3384" text-anchor="middle" font-size="15" font-weight="700" fill="#123f3a"><tspan x="268.42500000000007" dy="-4.5" textLength="232.65" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">service-worker.js reads its links</tspan><tspan x="268.42500000000007" dy="19.5" textLength="177.75" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">to discover offline assets</tspan></text>
+</g>
+<g class="node test" data-id="Manifest" data-label="Create manifest.webmanifest
+with Polish metadata, standalone display,
+theme colors, scope, and icons" data-shape="rectangle" data-role="node">
+  <rect x="99.10000000000011" y="3537.5" width="338.6499999999999" height="86.5" rx="7" ry="7" fill="#dff3f0" stroke="#277a70" stroke-width="2px" data-id="node-shape:Manifest" data-role="node" />
+  <text x="268.42500000000007" y="3580.75" text-anchor="middle" font-size="15" font-weight="700" fill="#123f3a"><tspan x="268.42500000000007" dy="-14.25" textLength="201.15" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Create manifest.webmanifest</tspan><tspan x="268.42500000000007" dy="19.5" textLength="286.65" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">with Polish metadata, standalone display,</tspan><tspan x="268.42500000000007" dy="19.5" textLength="220.05" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">theme colors, scope, and icons</tspan></text>
+</g>
+<g class="node test" data-id="Registration" data-label="Handle the install prompt
+and register the service worker" data-shape="rectangle" data-role="node">
+  <rect x="128.80000000000007" y="3672" width="279.25" height="67" rx="7" ry="7" fill="#dff3f0" stroke="#277a70" stroke-width="2px" data-id="node-shape:Registration" data-role="node" />
+  <text x="268.42500000000007" y="3705.5" text-anchor="middle" font-size="15" font-weight="700" fill="#123f3a"><tspan x="268.42500000000007" dy="-4.5" textLength="172.35" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Handle the install prompt</tspan><tspan x="268.42500000000007" dy="19.5" textLength="227.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">and register the service worker</tspan></text>
+</g>
+<g class="node test" data-id="ShellCache" data-label="Cache the shell, contract, icons,
+and papuga fallback media" data-shape="rectangle" data-role="node">
+  <rect x="129.7000000000001" y="3787" width="277.44999999999993" height="67" rx="7" ry="7" fill="#dff3f0" stroke="#277a70" stroke-width="2px" data-id="node-shape:ShellCache" data-role="node" />
+  <text x="268.42500000000007" y="3820.5" text-anchor="middle" font-size="15" font-weight="700" fill="#123f3a"><tspan x="268.42500000000007" dy="-4.5" textLength="225.45" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Cache the shell, contract, icons,</tspan><tspan x="268.42500000000007" dy="19.5" textLength="188.55" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">and papuga fallback media</tspan></text>
+</g>
+<g class="node test" data-id="DynamicCache" data-label="Cache every SVG and WAV link
+discovered in assets.md" data-shape="rectangle" data-role="node">
+  <rect x="129.7000000000001" y="3902" width="277.44999999999993" height="67" rx="7" ry="7" fill="#dff3f0" stroke="#277a70" stroke-width="2px" data-id="node-shape:DynamicCache" data-role="node" />
+  <text x="268.42500000000007" y="3935.5" text-anchor="middle" font-size="15" font-weight="700" fill="#123f3a"><tspan x="268.42500000000007" dy="-4.5" textLength="225.45" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Cache every SVG and WAV link</tspan><tspan x="268.42500000000007" dy="19.5" textLength="175.05" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">discovered in assets.md</tspan></text>
+</g>
+<g class="node test" data-id="OfflinePolicy" data-label="Use network-first navigation fallback
+and cache-first for other GET requests" data-shape="rectangle" data-role="node">
+  <rect x="105.40000000000006" y="4017" width="326.05" height="67" rx="7" ry="7" fill="#dff3f0" stroke="#277a70" stroke-width="2px" data-id="node-shape:OfflinePolicy" data-role="node" />
+  <text x="268.42500000000007" y="4050.5" text-anchor="middle" font-size="15" font-weight="700" fill="#123f3a"><tspan x="268.42500000000007" dy="-4.5" textLength="257.85" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Use network-first navigation fallback</tspan><tspan x="268.42500000000007" dy="19.5" textLength="274.05" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">and cache-first for other GET requests</tspan></text>
+</g>
+<g class="node test" data-id="UpdatePolicy" data-label="Use a versioned cache, skip waiting,
+claim clients, and delete old caches" data-shape="rectangle" data-role="node">
+  <rect x="113.0500000000001" y="4132" width="310.74999999999994" height="67" rx="7" ry="7" fill="#dff3f0" stroke="#277a70" stroke-width="2px" data-id="node-shape:UpdatePolicy" data-role="node" />
+  <text x="268.42500000000007" y="4165.5" text-anchor="middle" font-size="15" font-weight="700" fill="#123f3a"><tspan x="268.42500000000007" dy="-4.5" textLength="258.75" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Use a versioned cache, skip waiting,</tspan><tspan x="268.42500000000007" dy="19.5" textLength="247.95" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">claim clients, and delete old caches</tspan></text>
+</g>
+<g class="node release" data-id="Workflow" data-label="Create .github/workflows/deploy-pages.yml" data-shape="rectangle" data-role="node">
+  <rect x="89.20000000000005" y="4319" width="358.45000000000005" height="47.5" rx="7" ry="7" fill="#fbe5dc" stroke="#a64b32" stroke-width="2px" data-id="node-shape:Workflow" data-role="node" />
+  <text x="268.42500000000007" y="4342.75" text-anchor="middle" font-size="15" font-weight="700" fill="#552416" dy="5.25" textLength="306.45" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Create .github/workflows/deploy-pages.yml</text>
+</g>
+<g class="node release" data-id="Triggers" data-label="Run on pushes to main
+and manual workflow dispatch" data-shape="rectangle" data-role="node">
+  <rect x="136.45000000000007" y="4414.5" width="263.95" height="67" rx="7" ry="7" fill="#fbe5dc" stroke="#a64b32" stroke-width="2px" data-id="node-shape:Triggers" data-role="node" />
+  <text x="268.42500000000007" y="4448" text-anchor="middle" font-size="15" font-weight="700" fill="#552416"><tspan x="268.42500000000007" dy="-4.5" textLength="158.85" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Run on pushes to main</tspan><tspan x="268.42500000000007" dy="19.5" textLength="211.95" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">and manual workflow dispatch</tspan></text>
+</g>
+<g class="node release" data-id="Permissions" data-label="Grant contents read, Pages write,
+and ID-token write permissions;
+cancel superseded Pages runs" data-shape="rectangle" data-role="node">
+  <rect x="124.3000000000001" y="4529.5" width="288.24999999999994" height="86.5" rx="7" ry="7" fill="#fbe5dc" stroke="#a64b32" stroke-width="2px" data-id="node-shape:Permissions" data-role="node" />
+  <text x="268.42500000000007" y="4572.75" text-anchor="middle" font-size="15" font-weight="700" fill="#552416"><tspan x="268.42500000000007" dy="-14.25" textLength="236.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Grant contents read, Pages write,</tspan><tspan x="268.42500000000007" dy="19.5" textLength="221.85" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">and ID-token write permissions;</tspan><tspan x="268.42500000000007" dy="19.5" textLength="228.15" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">cancel superseded Pages runs</tspan></text>
+</g>
+<g class="node release" data-id="Actions" data-label="Check out the repository,
+configure Pages, and upload the root" data-shape="rectangle" data-role="node">
+  <rect x="112.15000000000006" y="4664" width="312.55" height="67" rx="7" ry="7" fill="#fbe5dc" stroke="#a64b32" stroke-width="2px" data-id="node-shape:Actions" data-role="node" />
+  <text x="268.42500000000007" y="4697.5" text-anchor="middle" font-size="15" font-weight="700" fill="#552416"><tspan x="268.42500000000007" dy="-4.5" textLength="179.55" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Check out the repository,</tspan><tspan x="268.42500000000007" dy="19.5" textLength="260.55" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">configure Pages, and upload the root</tspan></text>
+</g>
+<g class="node release" data-id="Deploy" data-label="Deploy the static artifact
+with actions/deploy-pages" data-shape="rectangle" data-role="node">
+  <rect x="149.05000000000007" y="4779" width="238.75" height="67" rx="7" ry="7" fill="#fbe5dc" stroke="#a64b32" stroke-width="2px" data-id="node-shape:Deploy" data-role="node" />
+  <text x="268.42500000000007" y="4812.5" text-anchor="middle" font-size="15" font-weight="700" fill="#552416"><tspan x="268.42500000000007" dy="-4.5" textLength="168.75" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Deploy the static artifact</tspan><tspan x="268.42500000000007" dy="19.5" textLength="186.75" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">with actions/deploy-pages</tspan></text>
+</g>
+<g class="node release" data-id="Version" data-label="Update the visible version
+and bump CACHE_NAME for changed releases" data-shape="rectangle" data-role="node">
+  <rect x="73.90000000000012" y="4966" width="389.0499999999999" height="67" rx="7" ry="7" fill="#fbe5dc" stroke="#a64b32" stroke-width="2px" data-id="node-shape:Version" data-role="node" />
+  <text x="268.42500000000007" y="4999.5" text-anchor="middle" font-size="15" font-weight="700" fill="#552416"><tspan x="268.42500000000007" dy="-4.5" textLength="184.95" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Update the visible version</tspan><tspan x="268.42500000000007" dy="19.5" textLength="337.05" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">and bump CACHE_NAME for changed releases</tspan></text>
+</g>
+<g class="node release" data-id="Commit" data-label="Commit contract, generated assets,
+code, manifest, icons, and documentation" data-shape="rectangle" data-role="node">
+  <rect x="99.10000000000008" y="5081" width="338.65" height="67" rx="7" ry="7" fill="#fbe5dc" stroke="#a64b32" stroke-width="2px" data-id="node-shape:Commit" data-role="node" />
+  <text x="268.42500000000007" y="5114.5" text-anchor="middle" font-size="15" font-weight="700" fill="#552416"><tspan x="268.42500000000007" dy="-4.5" textLength="247.95" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Commit contract, generated assets,</tspan><tspan x="268.42500000000007" dy="19.5" textLength="286.65" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">code, manifest, icons, and documentation</tspan></text>
+</g>
+<g class="node release" data-id="Push" data-label="Push main" data-shape="rectangle" data-role="node">
+  <rect x="204.85000000000005" y="5196" width="127.15000000000002" height="47.5" rx="7" ry="7" fill="#fbe5dc" stroke="#a64b32" stroke-width="2px" data-id="node-shape:Push" data-role="node" />
+  <text x="268.42500000000007" y="5219.75" text-anchor="middle" font-size="15" font-weight="700" fill="#552416" dy="5.25" textLength="75.15" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Push main</text>
+</g>
+<g class="node release" data-id="Pages" data-label="GitHub Actions uploads and deploys
+the repository without a build step" data-shape="rectangle" data-role="node">
+  <rect x="114.40000000000006" y="5291.5" width="308.05" height="67" rx="7" ry="7" fill="#fbe5dc" stroke="#a64b32" stroke-width="2px" data-id="node-shape:Pages" data-role="node" />
+  <text x="268.42500000000007" y="5325" text-anchor="middle" font-size="15" font-weight="700" fill="#552416"><tspan x="268.42500000000007" dy="-4.5" textLength="256.05" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">GitHub Actions uploads and deploys</tspan><tspan x="268.42500000000007" dy="19.5" textLength="235.35" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">the repository without a build step</tspan></text>
+</g>
+<g class="node contract" data-id="Edit" data-label="Edit assets.md and the generator mapping
+when exercise content changes" data-shape="rectangle" data-role="node">
+  <rect x="95.05000000000007" y="5478.5" width="346.75" height="67" rx="7" ry="7" fill="#ddf3e4" stroke="#247a47" stroke-width="3px" data-id="node-shape:Edit" data-role="node" />
+  <text x="268.42500000000007" y="5512" text-anchor="middle" font-size="15" font-weight="700" fill="#123f27"><tspan x="268.42500000000007" dy="-4.5" textLength="294.75" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Edit assets.md and the generator mapping</tspan><tspan x="268.42500000000007" dy="19.5" textLength="228.15" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">when exercise content changes</tspan></text>
+</g>
+<g class="node asset" data-id="Regenerate" data-label="Run Python to rewrite links, regenerate
+emoji SVGs, preserve None-marked custom SVGs,
+and create missing WAVs" data-shape="rectangle" data-role="node">
+  <rect x="64" y="5593.5" width="408.85000000000014" height="86.5" rx="7" ry="7" fill="#efe7f6" stroke="#74538e" stroke-width="2px" data-id="node-shape:Regenerate" data-role="node" />
+  <text x="268.42500000000007" y="5636.75" text-anchor="middle" font-size="15" font-weight="700" fill="#3d2850"><tspan x="268.42500000000007" dy="-14.25" textLength="276.75" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Run Python to rewrite links, regenerate</tspan><tspan x="268.42500000000007" dy="19.5" textLength="356.85" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">emoji SVGs, preserve None-marked custom SVGs,</tspan><tspan x="268.42500000000007" dy="19.5" textLength="182.25" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">and create missing WAVs</tspan></text>
+</g>
+<g class="node code" data-id="GenericCode" data-label="Keep app behavior generic
+rather than hard-coding exercises" data-shape="rectangle" data-role="node">
+  <rect x="118.90000000000009" y="5728" width="299.04999999999995" height="67" rx="7" ry="7" fill="#e4f0fa" stroke="#356a9a" stroke-width="2px" data-id="node-shape:GenericCode" data-role="node" />
+  <text x="268.42500000000007" y="5761.5" text-anchor="middle" font-size="15" font-weight="700" fill="#153a59"><tspan x="268.42500000000007" dy="-4.5" textLength="195.75" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Keep app behavior generic</tspan><tspan x="268.42500000000007" dy="19.5" textLength="247.05" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">rather than hard-coding exercises</tspan></text>
+</g>
+<g class="node release" data-id="Republish" data-label="Bump the cache version and push main
+to publish the changed static files" data-shape="rectangle" data-role="node">
+  <rect x="104.50000000000009" y="5843" width="327.84999999999997" height="67" rx="7" ry="7" fill="#fbe5dc" stroke="#a64b32" stroke-width="2px" data-id="node-shape:Republish" data-role="node" />
+  <text x="268.42500000000007" y="5876.5" text-anchor="middle" font-size="15" font-weight="700" fill="#552416"><tspan x="268.42500000000007" dy="-4.5" textLength="275.85" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Bump the cache version and push main</tspan><tspan x="268.42500000000007" dy="19.5" textLength="231.75" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">to publish the changed static files</tspan></text>
+</g>
+<g class="node release" data-id="Finish" data-label="Published installable and offline app" data-shape="stadium" data-role="node">
+  <rect x="116.20000000000007" y="5980" width="304.45" height="47.5" rx="23.75" ry="23.75" fill="#fbe5dc" stroke="#a64b32" stroke-width="2px" data-id="node-shape:Finish" data-role="node" />
+  <text x="268.42500000000007" y="6003.75" text-anchor="middle" font-size="15" font-weight="700" fill="#552416" dy="5.25" textLength="252.45" lengthAdjust="spacingAndGlyphs" data-font-metrics="deterministic-fit">Published installable and offline app</text>
+</g>
+</svg>
