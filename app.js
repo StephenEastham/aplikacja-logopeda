@@ -5,12 +5,15 @@ const settingsView = document.querySelector("#settings-view");
 const soundIndex = document.querySelector("#sound-index");
 const exerciseGrid = document.querySelector("#exercise-grid");
 const exerciseTitle = document.querySelector("#exercise-title");
+const playAllSounds = document.querySelector("#play-all-sounds");
 const previousSound = document.querySelector("#previous-sound");
 const nextSound = document.querySelector("#next-sound");
 const orderControls = document.querySelector("#order-controls");
 const orderButtons = [...document.querySelectorAll("[data-order]")];
 const soundEnabled = document.querySelector("#sound-enabled");
 const volume = document.querySelector("#volume");
+const playbackPause = document.querySelector("#playback-pause");
+const playbackPauseValue = document.querySelector("#playback-pause-value");
 const installButton = document.querySelector("#install-button");
 const helpContent = document.querySelector("#help-content");
 const parrotImage = "./assets/images/pa_papuga.svg";
@@ -20,11 +23,17 @@ let orderedGroups = [];
 let assetsBySyllable = new Map();
 let itemOrder = "ascending";
 let activeButton = null;
+let playbackQueue = [];
+let playbackQueueIndex = -1;
+let playbackTimer = null;
 let installPrompt = null;
 
 function loadPreferences() {
   soundEnabled.checked = localStorage.getItem("soundEnabled") !== "false";
   volume.value = localStorage.getItem("volume") ?? "1";
+  const savedPause = Number(localStorage.getItem("playbackPause"));
+  playbackPause.value = savedPause >= 400 && savedPause <= 700 ? String(savedPause) : "500";
+  playbackPauseValue.value = `${playbackPause.value} ms`;
   audio.volume = Number(volume.value);
 }
 
@@ -33,6 +42,42 @@ function resetPlayback() {
     activeButton.setAttribute("aria-pressed", "false");
   }
   activeButton = null;
+}
+
+function setPlayAllState(isPlaying) {
+  const consonant = playAllSounds.textContent;
+  playAllSounds.setAttribute("aria-pressed", String(isPlaying));
+  if (consonant) {
+    playAllSounds.setAttribute(
+      "aria-label",
+      `${isPlaying ? "Zatrzymaj" : "Odtwórz"} wszystkie dźwięki dla litery ${consonant}`,
+    );
+  }
+}
+
+function cancelPlayback() {
+  window.clearTimeout(playbackTimer);
+  playbackTimer = null;
+  playbackQueue = [];
+  playbackQueueIndex = -1;
+  setPlayAllState(false);
+  audio.pause();
+  audio.currentTime = 0;
+  resetPlayback();
+}
+
+async function playSound(button) {
+  resetPlayback();
+  activeButton = button;
+  button.setAttribute("aria-pressed", "true");
+  audio.src = button.dataset.audio;
+
+  try {
+    await audio.play();
+  } catch (error) {
+    cancelPlayback();
+    console.error("Audio playback failed", error);
+  }
 }
 
 async function toggleSound(button) {
@@ -46,19 +91,28 @@ async function toggleSound(button) {
     return;
   }
 
-  audio.pause();
-  audio.currentTime = 0;
-  resetPlayback();
-  activeButton = button;
-  button.setAttribute("aria-pressed", "true");
-  audio.src = button.dataset.audio;
+  cancelPlayback();
+  await playSound(button);
+}
 
-  try {
-    await audio.play();
-  } catch (error) {
-    resetPlayback();
-    console.error("Audio playback failed", error);
+async function toggleAllSounds() {
+  if (!soundEnabled.checked) {
+    return;
   }
+
+  if (!audio.paused || playbackQueue.length > 0) {
+    cancelPlayback();
+    return;
+  }
+
+  playbackQueue = [...exerciseGrid.querySelectorAll("[data-sound]")];
+  playbackQueueIndex = 0;
+  if (playbackQueue.length === 0) {
+    return;
+  }
+
+  setPlayAllState(true);
+  await playSound(playbackQueue[playbackQueueIndex]);
 }
 
 function soundUrl(consonant) {
@@ -260,8 +314,9 @@ function renderExercise(groupIndex) {
     fragment.append(button);
   });
 
-  resetPlayback();
-  exerciseTitle.textContent = group.consonant;
+  cancelPlayback();
+  playAllSounds.textContent = group.consonant;
+  setPlayAllState(false);
   previousSound.href = soundUrl(soundGroups[previousIndex].consonant);
   previousSound.setAttribute("aria-label", `Poprzedni dźwięk: ${soundGroups[previousIndex].consonant}`);
   nextSound.href = soundUrl(soundGroups[nextIndex].consonant);
@@ -290,7 +345,7 @@ function renderRoute() {
   } else if (showExercise) {
     renderExercise(groupIndex);
     document.title = `${soundGroups[groupIndex].consonant} | Logopeda`;
-    exerciseTitle.focus({ preventScroll: true });
+    playAllSounds.focus({ preventScroll: true });
   } else {
     document.title = "Logopeda";
   }
@@ -317,21 +372,40 @@ orderButtons.forEach((button) => {
   button.addEventListener("click", () => setItemOrder(button.dataset.order));
 });
 
-audio.addEventListener("ended", resetPlayback);
-audio.addEventListener("error", resetPlayback);
+playAllSounds.addEventListener("click", toggleAllSounds);
+audio.addEventListener("ended", () => {
+  resetPlayback();
+  playbackQueueIndex += 1;
+
+  if (playbackQueueIndex < playbackQueue.length) {
+    playbackTimer = window.setTimeout(() => {
+      playbackTimer = null;
+      playSound(playbackQueue[playbackQueueIndex]);
+    }, Number(playbackPause.value));
+  } else {
+    playbackQueue = [];
+    playbackQueueIndex = -1;
+    setPlayAllState(false);
+  }
+});
+audio.addEventListener("error", cancelPlayback);
 window.addEventListener("popstate", renderRoute);
 
 soundEnabled.addEventListener("change", () => {
   localStorage.setItem("soundEnabled", String(soundEnabled.checked));
   if (!soundEnabled.checked) {
-    audio.pause();
-    resetPlayback();
+    cancelPlayback();
   }
 });
 
 volume.addEventListener("input", () => {
   audio.volume = Number(volume.value);
   localStorage.setItem("volume", volume.value);
+});
+
+playbackPause.addEventListener("input", () => {
+  playbackPauseValue.value = `${playbackPause.value} ms`;
+  localStorage.setItem("playbackPause", playbackPause.value);
 });
 
 window.addEventListener("beforeinstallprompt", (event) => {

@@ -9,7 +9,7 @@ Aplikacja została zaprojektowana tak, aby można było korzystać z niej za pom
 
 ## Dźwięk
 
-W ustawieniach można wyłączyć dźwięk lub zmienić jego głośność. Każdy przycisk ćwiczenia ma opis, który podaje sylabę oraz słowo odtwarzane w nagraniu.
+W ustawieniach można wyłączyć dźwięk, zmienić jego głośność oraz ustawić długość pauzy między nagraniami. Każdy przycisk ćwiczenia ma opis, który podaje sylabę oraz słowo odtwarzane w nagraniu.
 
 ## Czytniki ekranu
 

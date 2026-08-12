@@ -262,6 +262,20 @@ h1 {
   text-align: center;
 }
 
+.exercise-title-button {
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  line-height: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--sun);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  cursor: pointer;
+}
+
 .exercise-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -318,6 +332,7 @@ h1 {
 .order-button:focus-visible,
 .random-order-button:focus-visible,
 .secondary-button:focus-visible,
+.exercise-title-button:focus-visible,
 a:focus-visible,
 input:focus-visible {
   outline: 3px solid var(--leaf);
@@ -351,9 +366,31 @@ input:focus-visible {
   accent-color: var(--leaf);
 }
 
-.volume-row input {
+.volume-row input,
+.range-setting {
   width: min(55%, 280px);
+}
+
+.volume-row input,
+.range-setting input {
   accent-color: var(--leaf);
+}
+
+.range-setting {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 64px;
+  align-items: center;
+  gap: 12px;
+}
+
+.range-setting input {
+  width: 100%;
+}
+
+.range-setting output {
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: right;
 }
 
 .help-section h2 {
