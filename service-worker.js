@@ -1,4 +1,4 @@
-const CACHE_NAME = "logopeda-v39";
+const CACHE_NAME = "logopeda-v40";
 const APP_FILES = [
   "./",
   "./index.html",

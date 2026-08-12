@@ -9,7 +9,12 @@ Aplikacja została zaprojektowana tak, aby można było korzystać z niej za pom
 
 ## Dźwięk
 
-W ustawieniach można wyłączyć dźwięk, zmienić jego głośność oraz ustawić długość pauzy między nagraniami. Każdy przycisk ćwiczenia ma opis, który podaje sylabę oraz słowo odtwarzane w nagraniu.
+- Naciśnij kafelek, aby odtworzyć przypisane do niego nagranie.
+- Naciśnij dużą, żółto podkreśloną literę, aby odtworzyć po kolei wszystkie nagrania na stronie. Nagrania są odtwarzane zgodnie z aktualnie wybraną kolejnością.
+- Naciśnij literę ponownie podczas odtwarzania lub pauzy, aby anulować pozostałe nagrania.
+- Naciśnij przycisk Litery, aby wrócić do indeksu liter.
+
+W ustawieniach można wyłączyć dźwięk, zmienić jego głośność oraz ustawić długość pauzy między nagraniami od 400 do 700 ms. Domyślna pauza wynosi 500 ms. Każdy przycisk ćwiczenia ma opis, który podaje sylabę oraz słowo odtwarzane w nagraniu.
 
 ## Czytniki ekranu
 
