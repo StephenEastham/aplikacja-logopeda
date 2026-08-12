@@ -16,6 +16,7 @@ const playbackPause = document.querySelector("#playback-pause");
 const playbackPauseValue = document.querySelector("#playback-pause-value");
 const installButton = document.querySelector("#install-button");
 const helpContent = document.querySelector("#help-content");
+const developerHelpContent = document.querySelector("#developer-help-content");
 const parrotImage = "./assets/images/pa_papuga.svg";
 const parrotSound = "./assets/sounds/pa_papuga.wav";
 let soundGroups = [];
@@ -180,18 +181,38 @@ function wordFromSoundUrl(sound, syllable) {
   return basename.startsWith(prefix) ? basename.slice(prefix.length).replaceAll("_", " ") : syllable;
 }
 
-function renderHelp(markdown) {
+function renderMarkdown(markdown, target) {
   const fragment = document.createDocumentFragment();
   let list = null;
+  let code = null;
 
   markdown.split("\n").forEach((line) => {
     const text = line.trim();
+
+    if (text.startsWith("```")) {
+      if (code) {
+        code = null;
+      } else {
+        const pre = document.createElement("pre");
+        code = document.createElement("code");
+        pre.append(code);
+        fragment.append(pre);
+      }
+      list = null;
+      return;
+    }
+
+    if (code) {
+      code.textContent += `${line}\n`;
+      return;
+    }
+
     if (!text) {
       list = null;
       return;
     }
 
-    const heading = text.match(/^(#{2,3})\s+(.+)$/);
+    const heading = text.match(/^(#{1,3})\s+(.+)$/);
     if (heading) {
       const element = document.createElement(`h${heading[1].length + 1}`);
       element.textContent = heading[2];
@@ -201,12 +222,24 @@ function renderHelp(markdown) {
     }
 
     if (text.startsWith("- ")) {
-      if (!list) {
+      if (!list || list.tagName !== "UL") {
         list = document.createElement("ul");
         fragment.append(list);
       }
       const item = document.createElement("li");
       item.textContent = text.slice(2);
+      list.append(item);
+      return;
+    }
+
+    const orderedItem = text.match(/^\d+\.\s+(.+)$/);
+    if (orderedItem) {
+      if (!list || list.tagName !== "OL") {
+        list = document.createElement("ol");
+        fragment.append(list);
+      }
+      const item = document.createElement("li");
+      item.textContent = orderedItem[1];
       list.append(item);
       return;
     }
@@ -217,20 +250,31 @@ function renderHelp(markdown) {
     list = null;
   });
 
-  helpContent.replaceChildren(fragment);
+  target.replaceChildren(fragment);
+}
+
+async function loadMarkdown(url, target, errorMessage) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Unable to load ${url}: ${response.status}`);
+    }
+    renderMarkdown(await response.text(), target);
+  } catch (error) {
+    target.textContent = errorMessage;
+    console.error(error);
+  }
 }
 
 async function loadHelp() {
-  try {
-    const response = await fetch("./assets/pomoc/pomoc.md");
-    if (!response.ok) {
-      throw new Error(`Unable to load help: ${response.status}`);
-    }
-    renderHelp(await response.text());
-  } catch (error) {
-    helpContent.textContent = "Nie udało się wczytać pomocy.";
-    console.error(error);
-  }
+  await Promise.all([
+    loadMarkdown("./assets/pomoc/pomoc.md", helpContent, "Nie udało się wczytać pomocy."),
+    loadMarkdown(
+      "./assets/pomoc/dla-developera.md",
+      developerHelpContent,
+      "Nie udało się wczytać informacji dla developera.",
+    ),
+  ]);
 }
 
 function shuffleItems(items) {

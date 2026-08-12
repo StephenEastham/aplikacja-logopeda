@@ -435,24 +435,38 @@ input:focus-visible {
 }
 
 .help-content h2,
-.help-content h3 {
+.help-content h3,
+.help-content h4 {
   margin: 24px 0 8px;
   font-family: Georgia, serif;
 }
 
 .help-content h2:first-child,
 .help-content h3:first-child,
+.help-content h4:first-child,
 .help-content p:first-child {
   margin-top: 0;
 }
 
 .help-content p,
-.help-content ul {
+.help-content ul,
+.help-content ol,
+.help-content pre {
   margin: 0 0 14px;
 }
 
 .help-content li + li {
   margin-top: 8px;
+}
+
+.help-content pre {
+  overflow-x: auto;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--canvas);
+  font-size: 0.85rem;
+  line-height: 1.45;
 }
 
 [hidden] {

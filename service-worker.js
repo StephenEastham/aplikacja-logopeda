@@ -1,4 +1,4 @@
-const CACHE_NAME = "logopeda-v51";
+const CACHE_NAME = "logopeda-v54";
 const APP_FILES = [
   "./",
   "./index.html",
@@ -7,6 +7,7 @@ const APP_FILES = [
   "./manifest.webmanifest",
   "./assets/assets.md",
   "./assets/pomoc/pomoc.md",
+  "./assets/pomoc/dla-developera.md",
   "./assets/images/pa_papuga.svg",
   "./assets/images/icon-192.png",
   "./assets/images/icon-512.png",
