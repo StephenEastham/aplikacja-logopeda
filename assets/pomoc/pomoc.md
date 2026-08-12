@@ -9,7 +9,8 @@ Aplikacja została zaprojektowana tak, aby można było korzystać z niej za pom
 
 ## Dźwięk
 
-- Naciśnij kafelek, aby odtworzyć przypisane do niego nagranie.
+- Naciśnij obraz w kafelku, aby odtworzyć nagranie przykładowego słowa.
+- Naciśnij żółto podkreśloną sylabę pod obrazem, aby odtworzyć nagranie samej sylaby.
 - Naciśnij dużą, żółto podkreśloną literę, aby odtworzyć po kolei wszystkie nagrania na stronie. Nagrania są odtwarzane zgodnie z aktualnie wybraną kolejnością.
 - Naciśnij literę ponownie podczas odtwarzania lub pauzy, aby anulować pozostałe nagrania.
 - Naciśnij przycisk Litery, aby wrócić do indeksu liter.

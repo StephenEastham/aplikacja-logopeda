@@ -105,7 +105,7 @@ async function toggleAllSounds() {
     return;
   }
 
-  playbackQueue = [...exerciseGrid.querySelectorAll("[data-sound]")];
+  playbackQueue = [...exerciseGrid.querySelectorAll("[data-word-sound]")];
   playbackQueueIndex = 0;
   if (playbackQueue.length === 0) {
     return;
@@ -141,7 +141,7 @@ function parseExercises(markdown, sourceUrl) {
     .slice(1)
     .map((line) => line.split("|").slice(1, -1).map((cell) => cell.trim()));
 
-  rows.forEach(([consonant, , syllable, imageCell, soundCell]) => {
+  rows.forEach(([consonant, , syllable, syllableSoundCell, wordSoundCell, imageCell]) => {
     if (!consonant || !syllable) {
       return;
     }
@@ -152,9 +152,10 @@ function parseExercises(markdown, sourceUrl) {
     groups.get(consonant).push(syllable);
 
     const image = resolveLink(imageCell);
-    const sound = resolveLink(soundCell);
-    if (image && sound) {
-      assets.set(syllable, { image, sound });
+    const syllableSound = resolveLink(syllableSoundCell);
+    const wordSound = resolveLink(wordSoundCell);
+    if (image && syllableSound && wordSound) {
+      assets.set(syllable, { image, syllableSound, sound: wordSound });
     }
   });
 
@@ -167,6 +168,7 @@ function parseExercises(markdown, sourceUrl) {
 function getAssets(syllable) {
   return assetsBySyllable.get(syllable) ?? assetsBySyllable.get("*") ?? {
     image: parrotImage,
+    syllableSound: parrotSound,
     sound: parrotSound,
   };
 }
@@ -290,18 +292,21 @@ function renderExercise(groupIndex) {
   const fragment = document.createDocumentFragment();
 
   orderItems(group.syllables, itemOrder).forEach((syllable) => {
-    const button = document.createElement("button");
+    const tile = document.createElement("article");
+    const wordButton = document.createElement("button");
     const image = document.createElement("img");
-    const label = document.createElement("span");
+    const syllableButton = document.createElement("button");
     const assets = getAssets(syllable);
     const word = wordFromSoundUrl(assets.sound, syllable);
 
-    button.className = "sound-tile";
-    button.type = "button";
-    button.dataset.sound = syllable;
-    button.dataset.audio = assets.sound;
-    button.setAttribute("aria-label", `Odtwórz słowo „${word}”, sylaba „${syllable}”`);
-    button.setAttribute("aria-pressed", "false");
+    tile.className = "sound-tile";
+    wordButton.className = "word-sound-button";
+    wordButton.type = "button";
+    wordButton.dataset.sound = syllable;
+    wordButton.dataset.wordSound = "";
+    wordButton.dataset.audio = assets.sound;
+    wordButton.setAttribute("aria-label", `Odtwórz słowo „${word}”`);
+    wordButton.setAttribute("aria-pressed", "false");
     image.alt = "";
     image.addEventListener("error", () => {
       if (!image.src.endsWith("/assets/images/pa_papuga.svg")) {
@@ -309,9 +314,16 @@ function renderExercise(groupIndex) {
       }
     });
     image.src = assets.image;
-    label.textContent = syllable;
-    button.append(image, label);
-    fragment.append(button);
+    syllableButton.className = "syllable-sound-button";
+    syllableButton.type = "button";
+    syllableButton.dataset.sound = syllable;
+    syllableButton.dataset.audio = assets.syllableSound;
+    syllableButton.setAttribute("aria-label", `Odtwórz sylabę „${syllable}”`);
+    syllableButton.setAttribute("aria-pressed", "false");
+    syllableButton.textContent = syllable;
+    wordButton.append(image);
+    tile.append(wordButton, syllableButton);
+    fragment.append(tile);
   });
 
   cancelPlayback();

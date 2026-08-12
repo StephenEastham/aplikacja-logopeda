@@ -1,162 +1,162 @@
 # Syllables, images, and sounds
 
-This table is the source for the app. Each row creates one syllable tile, previews its image, and shows clickable image and sound filepaths. Asset names follow `<syllable>_papuga.svg` and `<syllable>_papuga.wav`. Add each file to the `images` or `sounds` folder; missing images temporarily fall back to `pa_papuga.svg` in the app.
+This table is the source for the app. Each row creates one tile with separate syllable and example-word sounds plus a supporting image. Syllable sounds use `sounds/syllables/<syllable>.wav`; word sounds and images use `<syllable>_<word>.wav` and `<syllable>_<word>.svg`. Missing images temporarily fall back to `pa_papuga.svg` in the app.
 
-| Consonant | Vowel | Syllable | Image | Sound |
-| --- | --- | --- | --- | --- |
-| B | a | ba | ![ba_balon.svg](./images/ba_balon.svg) [./images/ba_balon.svg](./images/ba_balon.svg) | [ba_balon.wav](./sounds/ba_balon.wav) |
-| B | e | be | ![be_beczka.svg](./images/be_beczka.svg) [./images/be_beczka.svg](./images/be_beczka.svg) | [be_beczka.wav](./sounds/be_beczka.wav) |
-| B | o | bo | ![bo_bocian.svg](./images/bo_bocian.svg) [./images/bo_bocian.svg](./images/bo_bocian.svg) | [bo_bocian.wav](./sounds/bo_bocian.wav) |
-| B | u | bu | ![bu_but.svg](./images/bu_but.svg) [./images/bu_but.svg](./images/bu_but.svg) | [bu_but.wav](./sounds/bu_but.wav) |
-| B | i | bi | ![bi_bilet.svg](./images/bi_bilet.svg) [./images/bi_bilet.svg](./images/bi_bilet.svg) | [bi_bilet.wav](./sounds/bi_bilet.wav) |
-| B | y | by | ![by_byk.svg](./images/by_byk.svg) [./images/by_byk.svg](./images/by_byk.svg) | [by_byk.wav](./sounds/by_byk.wav) |
-| C | a | ca | ![ca_całus.svg](./images/ca_całus.svg) [./images/ca_całus.svg](./images/ca_całus.svg) | [ca_całus.wav](./sounds/ca_całus.wav) |
-| C | e | ce | ![ce_cebula.svg](./images/ce_cebula.svg) [./images/ce_cebula.svg](./images/ce_cebula.svg) | [ce_cebula.wav](./sounds/ce_cebula.wav) |
-| C | o | co | ![co_corgi.svg](./images/co_corgi.svg) [./images/co_corgi.svg](./images/co_corgi.svg) | [co_corgi.wav](./sounds/co_corgi.wav) |
-| C | u | cu | ![cu_cukierek.svg](./images/cu_cukierek.svg) [./images/cu_cukierek.svg](./images/cu_cukierek.svg) | [cu_cukierek.wav](./sounds/cu_cukierek.wav) |
-| C | y | cy | ![cy_cytryna.svg](./images/cy_cytryna.svg) [./images/cy_cytryna.svg](./images/cy_cytryna.svg) | [cy_cytryna.wav](./sounds/cy_cytryna.wav) |
-| Ć | a | cia | ![cia_ciastko.svg](./images/cia_ciastko.svg) [./images/cia_ciastko.svg](./images/cia_ciastko.svg) | [cia_ciastko.wav](./sounds/cia_ciastko.wav) |
-| Ć | e | cie | ![cie_cielę.svg](./images/cie_cielę.svg) [./images/cie_cielę.svg](./images/cie_cielę.svg) | [cie_cielę.wav](./sounds/cie_cielę.wav) |
-| Ć | o | cio | ![cio_ciocia.svg](./images/cio_ciocia.svg) [./images/cio_ciocia.svg](./images/cio_ciocia.svg) | [cio_ciocia.wav](./sounds/cio_ciocia.wav) |
-| Ć | u | ciu | ![ciu_ciuchcia.svg](./images/ciu_ciuchcia.svg) [./images/ciu_ciuchcia.svg](./images/ciu_ciuchcia.svg) | [ciu_ciuchcia.wav](./sounds/ciu_ciuchcia.wav) |
-| Ć | i | ci | ![ci_cichy.svg](./images/ci_cichy.svg) [./images/ci_cichy.svg](./images/ci_cichy.svg) | [ci_cichy.wav](./sounds/ci_cichy.wav) |
-| D | a | da | ![da_dach.svg](./images/da_dach.svg) [./images/da_dach.svg](./images/da_dach.svg) | [da_dach.wav](./sounds/da_dach.wav) |
-| D | e | de | ![de_deska.svg](./images/de_deska.svg) [./images/de_deska.svg](./images/de_deska.svg) | [de_deska.wav](./sounds/de_deska.wav) |
-| D | o | do | ![do_dom.svg](./images/do_dom.svg) [./images/do_dom.svg](./images/do_dom.svg) | [do_dom.wav](./sounds/do_dom.wav) |
-| D | u | du | ![du_duch.svg](./images/du_duch.svg) [./images/du_duch.svg](./images/du_duch.svg) | [du_duch.wav](./sounds/du_duch.wav) |
-| D | y | dy | ![dy_dynia.svg](./images/dy_dynia.svg) [./images/dy_dynia.svg](./images/dy_dynia.svg) | [dy_dynia.wav](./sounds/dy_dynia.wav) |
-| F | a | fa | ![fa_farby.svg](./images/fa_farby.svg) [./images/fa_farby.svg](./images/fa_farby.svg) | [fa_farby.wav](./sounds/fa_farby.wav) |
-| F | e | fe | ![fe_ferie.svg](./images/fe_ferie.svg) [./images/fe_ferie.svg](./images/fe_ferie.svg) | [fe_ferie.wav](./sounds/fe_ferie.wav) |
-| F | o | fo | ![fo_foka.svg](./images/fo_foka.svg) [./images/fo_foka.svg](./images/fo_foka.svg) | [fo_foka.wav](./sounds/fo_foka.wav) |
-| F | u | fu | ![fu_futbol.svg](./images/fu_futbol.svg) [./images/fu_futbol.svg](./images/fu_futbol.svg) | [fu_futbol.wav](./sounds/fu_futbol.wav) |
-| F | i | fi | ![fi_filiżanka.svg](./images/fi_filiżanka.svg) [./images/fi_filiżanka.svg](./images/fi_filiżanka.svg) | [fi_filiżanka.wav](./sounds/fi_filiżanka.wav) |
-| F | y | fy | ![fy_żyrafy.svg](./images/fy_żyrafy.svg) [./images/fy_żyrafy.svg](./images/fy_żyrafy.svg) | [fy_żyrafy.wav](./sounds/fy_żyrafy.wav) |
-| G | a | ga | ![ga_garnek.svg](./images/ga_garnek.svg) [./images/ga_garnek.svg](./images/ga_garnek.svg) | [ga_garnek.wav](./sounds/ga_garnek.wav) |
-| G | e | ge | ![ge_gepard.svg](./images/ge_gepard.svg) [./images/ge_gepard.svg](./images/ge_gepard.svg) | [ge_gepard.wav](./sounds/ge_gepard.wav) |
-| G | o | go | ![go_gołąb.svg](./images/go_gołąb.svg) [./images/go_gołąb.svg](./images/go_gołąb.svg) | [go_gołąb.wav](./sounds/go_gołąb.wav) |
-| G | u | gu | ![gu_guzik.svg](./images/gu_guzik.svg) [./images/gu_guzik.svg](./images/gu_guzik.svg) | [gu_guzik.wav](./sounds/gu_guzik.wav) |
-| G | i | gi | ![gi_gitara.svg](./images/gi_gitara.svg) [./images/gi_gitara.svg](./images/gi_gitara.svg) | [gi_gitara.wav](./sounds/gi_gitara.wav) |
-| H | a | ha | ![ha_hamak.svg](./images/ha_hamak.svg) [./images/ha_hamak.svg](./images/ha_hamak.svg) | [ha_hamak.wav](./sounds/ha_hamak.wav) |
-| H | e | he | ![he_helikopter.svg](./images/he_helikopter.svg) [./images/he_helikopter.svg](./images/he_helikopter.svg) | [he_helikopter.wav](./sounds/he_helikopter.wav) |
-| H | o | ho | ![ho_hotel.svg](./images/ho_hotel.svg) [./images/ho_hotel.svg](./images/ho_hotel.svg) | [ho_hotel.wav](./sounds/ho_hotel.wav) |
-| H | u | hu | ![hu_hulajnoga.svg](./images/hu_hulajnoga.svg) [./images/hu_hulajnoga.svg](./images/hu_hulajnoga.svg) | [hu_hulajnoga.wav](./sounds/hu_hulajnoga.wav) |
-| H | i | hi | ![hi_hipopotam.svg](./images/hi_hipopotam.svg) [./images/hi_hipopotam.svg](./images/hi_hipopotam.svg) | [hi_hipopotam.wav](./sounds/hi_hipopotam.wav) |
-| H | y | hy | ![hy_hybryda.svg](./images/hy_hybryda.svg) [./images/hy_hybryda.svg](./images/hy_hybryda.svg) | [hy_hybryda.wav](./sounds/hy_hybryda.wav) |
-| J | a | ja | ![ja_jabłko.svg](./images/ja_jabłko.svg) [./images/ja_jabłko.svg](./images/ja_jabłko.svg) | [ja_jabłko.wav](./sounds/ja_jabłko.wav) |
-| J | e | je | ![je_jeż.svg](./images/je_jeż.svg) [./images/je_jeż.svg](./images/je_jeż.svg) | [je_jeż.wav](./sounds/je_jeż.wav) |
-| J | o | jo | ![jo_jogurt.svg](./images/jo_jogurt.svg) [./images/jo_jogurt.svg](./images/jo_jogurt.svg) | [jo_jogurt.wav](./sounds/jo_jogurt.wav) |
-| J | u | ju | ![ju_judo.svg](./images/ju_judo.svg) [./images/ju_judo.svg](./images/ju_judo.svg) | [ju_judo.wav](./sounds/ju_judo.wav) |
-| K | a | ka | ![ka_kaczka.svg](./images/ka_kaczka.svg) [./images/ka_kaczka.svg](./images/ka_kaczka.svg) | [ka_kaczka.wav](./sounds/ka_kaczka.wav) |
-| K | e | ke | ![ke_kelner.svg](./images/ke_kelner.svg) [./images/ke_kelner.svg](./images/ke_kelner.svg) | [ke_kelner.wav](./sounds/ke_kelner.wav) |
-| K | o | ko | ![ko_kot.svg](./images/ko_kot.svg) [./images/ko_kot.svg](./images/ko_kot.svg) | [ko_kot.wav](./sounds/ko_kot.wav) |
-| K | u | ku | ![ku_kura.svg](./images/ku_kura.svg) [./images/ku_kura.svg](./images/ku_kura.svg) | [ku_kura.wav](./sounds/ku_kura.wav) |
-| K | i | ki | ![ki_kino.svg](./images/ki_kino.svg) [./images/ki_kino.svg](./images/ki_kino.svg) | [ki_kino.wav](./sounds/ki_kino.wav) |
-| L | a | la | ![la_lalka.svg](./images/la_lalka.svg) [./images/la_lalka.svg](./images/la_lalka.svg) | [la_lalka.wav](./sounds/la_lalka.wav) |
-| L | e | le | ![le_lew.svg](./images/le_lew.svg) [./images/le_lew.svg](./images/le_lew.svg) | [le_lew.wav](./sounds/le_lew.wav) |
-| L | o | lo | ![lo_lody.svg](./images/lo_lody.svg) [./images/lo_lody.svg](./images/lo_lody.svg) | [lo_lody.wav](./sounds/lo_lody.wav) |
-| L | u | lu | ![lu_lupa.svg](./images/lu_lupa.svg) [./images/lu_lupa.svg](./images/lu_lupa.svg) | [lu_lupa.wav](./sounds/lu_lupa.wav) |
-| L | i | li | ![li_lis.svg](./images/li_lis.svg) [./images/li_lis.svg](./images/li_lis.svg) | [li_lis.wav](./sounds/li_lis.wav) |
-| Ł | a | ła | ![ła_łapa.svg](./images/ła_łapa.svg) [./images/ła_łapa.svg](./images/ła_łapa.svg) | [ła_łapa.wav](./sounds/ła_łapa.wav) |
-| Ł | e | łe | ![łe_łezka.svg](./images/łe_łezka.svg) [./images/łe_łezka.svg](./images/łe_łezka.svg) | [łe_łezka.wav](./sounds/łe_łezka.wav) |
-| Ł | o | ło | ![ło_łoś.svg](./images/ło_łoś.svg) [./images/ło_łoś.svg](./images/ło_łoś.svg) | [ło_łoś.wav](./sounds/ło_łoś.wav) |
-| Ł | u | łu | ![łu_łuk.svg](./images/łu_łuk.svg) [./images/łu_łuk.svg](./images/łu_łuk.svg) | [łu_łuk.wav](./sounds/łu_łuk.wav) |
-| Ł | y | ły | ![ły_łyżka.svg](./images/ły_łyżka.svg) [./images/ły_łyżka.svg](./images/ły_łyżka.svg) | [ły_łyżka.wav](./sounds/ły_łyżka.wav) |
-| M | a | ma | ![ma_mama.svg](./images/ma_mama.svg) [./images/ma_mama.svg](./images/ma_mama.svg) | [ma_mama.wav](./sounds/ma_mama.wav) |
-| M | e | me | ![me_medal.svg](./images/me_medal.svg) [./images/me_medal.svg](./images/me_medal.svg) | [me_medal.wav](./sounds/me_medal.wav) |
-| M | o | mo | ![mo_motyl.svg](./images/mo_motyl.svg) [./images/mo_motyl.svg](./images/mo_motyl.svg) | [mo_motyl.wav](./sounds/mo_motyl.wav) |
-| M | u | mu | ![mu_mucha.svg](./images/mu_mucha.svg) [./images/mu_mucha.svg](./images/mu_mucha.svg) | [mu_mucha.wav](./sounds/mu_mucha.wav) |
-| M | i | mi | ![mi_miś.svg](./images/mi_miś.svg) [./images/mi_miś.svg](./images/mi_miś.svg) | [mi_miś.wav](./sounds/mi_miś.wav) |
-| M | y | my | ![my_mysz.svg](./images/my_mysz.svg) [./images/my_mysz.svg](./images/my_mysz.svg) | [my_mysz.wav](./sounds/my_mysz.wav) |
-| N | a | na | ![na_namiot.svg](./images/na_namiot.svg) [./images/na_namiot.svg](./images/na_namiot.svg) | [na_namiot.wav](./sounds/na_namiot.wav) |
-| N | e | ne | ![ne_neon.svg](./images/ne_neon.svg) [./images/ne_neon.svg](./images/ne_neon.svg) | [ne_neon.wav](./sounds/ne_neon.wav) |
-| N | o | no | ![no_nos.svg](./images/no_nos.svg) [./images/no_nos.svg](./images/no_nos.svg) | [no_nos.wav](./sounds/no_nos.wav) |
-| N | u | nu | ![nu_nurek.svg](./images/nu_nurek.svg) [./images/nu_nurek.svg](./images/nu_nurek.svg) | [nu_nurek.wav](./sounds/nu_nurek.wav) |
-| N | y | ny | ![ny_balony.svg](./images/ny_balony.svg) [./images/ny_balony.svg](./images/ny_balony.svg) | [ny_balony.wav](./sounds/ny_balony.wav) |
-| Ń | a | nia | ![nia_niania.svg](./images/nia_niania.svg) [./images/nia_niania.svg](./images/nia_niania.svg) | [nia_niania.wav](./sounds/nia_niania.wav) |
-| Ń | e | nie | ![nie_niedźwiedź.svg](./images/nie_niedźwiedź.svg) [./images/nie_niedźwiedź.svg](./images/nie_niedźwiedź.svg) | [nie_niedźwiedź.wav](./sounds/nie_niedźwiedź.wav) |
-| Ń | o | nio | ![nio_anioł.svg](./images/nio_anioł.svg) [./images/nio_anioł.svg](./images/nio_anioł.svg) | [nio_anioł.wav](./sounds/nio_anioł.wav) |
-| Ń | u | niu | ![niu_niunia.svg](./images/niu_niunia.svg) [./images/niu_niunia.svg](./images/niu_niunia.svg) | [niu_niunia.wav](./sounds/niu_niunia.wav) |
-| Ń | i | ni | ![ni_nitka.svg](./images/ni_nitka.svg) [./images/ni_nitka.svg](./images/ni_nitka.svg) | [ni_nitka.wav](./sounds/ni_nitka.wav) |
-| P | a | pa | ![pa_papuga.svg](./images/pa_papuga.svg) [./images/pa_papuga.svg](./images/pa_papuga.svg) | [pa_papuga.wav](./sounds/pa_papuga.wav) |
-| P | e | pe | ![pe_peleryna.svg](./images/pe_peleryna.svg) [./images/pe_peleryna.svg](./images/pe_peleryna.svg) | [pe_peleryna.wav](./sounds/pe_peleryna.wav) |
-| P | o | po | ![po_pociąg.svg](./images/po_pociąg.svg) [./images/po_pociąg.svg](./images/po_pociąg.svg) | [po_pociąg.wav](./sounds/po_pociąg.wav) |
-| P | u | pu | ![pu_pudełko.svg](./images/pu_pudełko.svg) [./images/pu_pudełko.svg](./images/pu_pudełko.svg) | [pu_pudełko.wav](./sounds/pu_pudełko.wav) |
-| P | i | pi | ![pi_piłka.svg](./images/pi_piłka.svg) [./images/pi_piłka.svg](./images/pi_piłka.svg) | [pi_piłka.wav](./sounds/pi_piłka.wav) |
-| P | y | py | ![py_pytajnik.svg](./images/py_pytajnik.svg) [./images/py_pytajnik.svg](./images/py_pytajnik.svg) | [py_pytajnik.wav](./sounds/py_pytajnik.wav) |
-| R | a | ra | ![ra_rak.svg](./images/ra_rak.svg) [./images/ra_rak.svg](./images/ra_rak.svg) | [ra_rak.wav](./sounds/ra_rak.wav) |
-| R | e | re | ![re_rekin.svg](./images/re_rekin.svg) [./images/re_rekin.svg](./images/re_rekin.svg) | [re_rekin.wav](./sounds/re_rekin.wav) |
-| R | o | ro | ![ro_rower.svg](./images/ro_rower.svg) [./images/ro_rower.svg](./images/ro_rower.svg) | [ro_rower.wav](./sounds/ro_rower.wav) |
-| R | u | ru | ![ru_rura.svg](./images/ru_rura.svg) [./images/ru_rura.svg](./images/ru_rura.svg) | [ru_rura.wav](./sounds/ru_rura.wav) |
-| R | y | ry | ![ry_ryba.svg](./images/ry_ryba.svg) [./images/ry_ryba.svg](./images/ry_ryba.svg) | [ry_ryba.wav](./sounds/ry_ryba.wav) |
-| S | a | sa | ![sa_samolot.svg](./images/sa_samolot.svg) [./images/sa_samolot.svg](./images/sa_samolot.svg) | [sa_samolot.wav](./sounds/sa_samolot.wav) |
-| S | e | se | ![se_ser.svg](./images/se_ser.svg) [./images/se_ser.svg](./images/se_ser.svg) | [se_ser.wav](./sounds/se_ser.wav) |
-| S | o | so | ![so_sowa.svg](./images/so_sowa.svg) [./images/so_sowa.svg](./images/so_sowa.svg) | [so_sowa.wav](./sounds/so_sowa.wav) |
-| S | u | su | ![su_suwak.svg](./images/su_suwak.svg) [./images/su_suwak.svg](./images/su_suwak.svg) | [su_suwak.wav](./sounds/su_suwak.wav) |
-| S | y | sy | ![sy_syrena.svg](./images/sy_syrena.svg) [./images/sy_syrena.svg](./images/sy_syrena.svg) | [sy_syrena.wav](./sounds/sy_syrena.wav) |
-| Ś | a | sia | ![sia_siatka.svg](./images/sia_siatka.svg) [./images/sia_siatka.svg](./images/sia_siatka.svg) | [sia_siatka.wav](./sounds/sia_siatka.wav) |
-| Ś | e | sie | ![sie_siekiera.svg](./images/sie_siekiera.svg) [./images/sie_siekiera.svg](./images/sie_siekiera.svg) | [sie_siekiera.wav](./sounds/sie_siekiera.wav) |
-| Ś | o | sio | ![sio_siodło.svg](./images/sio_siodło.svg) [./images/sio_siodło.svg](./images/sio_siodło.svg) | [sio_siodło.wav](./sounds/sio_siodło.wav) |
-| Ś | u | siu | ![siu_siup.svg](./images/siu_siup.svg) [./images/siu_siup.svg](./images/siu_siup.svg) | [siu_siup.wav](./sounds/siu_siup.wav) |
-| Ś | i | si | ![si_sito.svg](./images/si_sito.svg) [./images/si_sito.svg](./images/si_sito.svg) | [si_sito.wav](./sounds/si_sito.wav) |
-| T | a | ta | ![ta_tata.svg](./images/ta_tata.svg) [./images/ta_tata.svg](./images/ta_tata.svg) | [ta_tata.wav](./sounds/ta_tata.wav) |
-| T | e | te | ![te_telefon.svg](./images/te_telefon.svg) [./images/te_telefon.svg](./images/te_telefon.svg) | [te_telefon.wav](./sounds/te_telefon.wav) |
-| T | o | to | ![to_tort.svg](./images/to_tort.svg) [./images/to_tort.svg](./images/to_tort.svg) | [to_tort.wav](./sounds/to_tort.wav) |
-| T | u | tu | ![tu_tulipan.svg](./images/tu_tulipan.svg) [./images/tu_tulipan.svg](./images/tu_tulipan.svg) | [tu_tulipan.wav](./sounds/tu_tulipan.wav) |
-| T | y | ty | ![ty_tygrys.svg](./images/ty_tygrys.svg) [./images/ty_tygrys.svg](./images/ty_tygrys.svg) | [ty_tygrys.wav](./sounds/ty_tygrys.wav) |
-| W | a | wa | ![wa_walizka.svg](./images/wa_walizka.svg) [./images/wa_walizka.svg](./images/wa_walizka.svg) | [wa_walizka.wav](./sounds/wa_walizka.wav) |
-| W | e | we | ![we_wentylator.svg](./images/we_wentylator.svg) [./images/we_wentylator.svg](./images/we_wentylator.svg) | [we_wentylator.wav](./sounds/we_wentylator.wav) |
-| W | o | wo | ![wo_worek.svg](./images/wo_worek.svg) [./images/wo_worek.svg](./images/wo_worek.svg) | [wo_worek.wav](./sounds/wo_worek.wav) |
-| W | u | wu | ![wu_wujek.svg](./images/wu_wujek.svg) [./images/wu_wujek.svg](./images/wu_wujek.svg) | [wu_wujek.wav](./sounds/wu_wujek.wav) |
-| W | i | wi | ![wi_widelec.svg](./images/wi_widelec.svg) [./images/wi_widelec.svg](./images/wi_widelec.svg) | [wi_widelec.wav](./sounds/wi_widelec.wav) |
-| W | y | wy | ![wy_wyspa.svg](./images/wy_wyspa.svg) [./images/wy_wyspa.svg](./images/wy_wyspa.svg) | [wy_wyspa.wav](./sounds/wy_wyspa.wav) |
-| Z | a | za | ![za_zamek.svg](./images/za_zamek.svg) [./images/za_zamek.svg](./images/za_zamek.svg) | [za_zamek.wav](./sounds/za_zamek.wav) |
-| Z | e | ze | ![ze_zebra.svg](./images/ze_zebra.svg) [./images/ze_zebra.svg](./images/ze_zebra.svg) | [ze_zebra.wav](./sounds/ze_zebra.wav) |
-| Z | o | zo | ![zo_zoo.svg](./images/zo_zoo.svg) [./images/zo_zoo.svg](./images/zo_zoo.svg) | [zo_zoo.wav](./sounds/zo_zoo.wav) |
-| Z | u | zu | ![zu_zupa.svg](./images/zu_zupa.svg) [./images/zu_zupa.svg](./images/zu_zupa.svg) | [zu_zupa.wav](./sounds/zu_zupa.wav) |
-| Z | y | zy | ![zy_pozytywka.svg](./images/zy_pozytywka.svg) [./images/zy_pozytywka.svg](./images/zy_pozytywka.svg) | [zy_pozytywka.wav](./sounds/zy_pozytywka.wav) |
-| Ź | a | zia | ![zia_ziarno.svg](./images/zia_ziarno.svg) [./images/zia_ziarno.svg](./images/zia_ziarno.svg) | [zia_ziarno.wav](./sounds/zia_ziarno.wav) |
-| Ź | e | zie | ![zie_ziemniak.svg](./images/zie_ziemniak.svg) [./images/zie_ziemniak.svg](./images/zie_ziemniak.svg) | [zie_ziemniak.wav](./sounds/zie_ziemniak.wav) |
-| Ź | o | zio | ![zio_zioła.svg](./images/zio_zioła.svg) [./images/zio_zioła.svg](./images/zio_zioła.svg) | [zio_zioła.wav](./sounds/zio_zioła.wav) |
-| Ź | u | ziu | ![ziu_józiu.svg](./images/ziu_józiu.svg) [./images/ziu_józiu.svg](./images/ziu_józiu.svg) | [ziu_józiu.wav](./sounds/ziu_józiu.wav) |
-| Ź | i | zi | ![zi_zima.svg](./images/zi_zima.svg) [./images/zi_zima.svg](./images/zi_zima.svg) | [zi_zima.wav](./sounds/zi_zima.wav) |
-| Ż | a | ża | ![ża_żaba.svg](./images/ża_żaba.svg) [./images/ża_żaba.svg](./images/ża_żaba.svg) | [ża_żaba.wav](./sounds/ża_żaba.wav) |
-| Ż | e | że | ![że_żeglarz.svg](./images/że_żeglarz.svg) [./images/że_żeglarz.svg](./images/że_żeglarz.svg) | [że_żeglarz.wav](./sounds/że_żeglarz.wav) |
-| Ż | o | żo | ![żo_żonkil.svg](./images/żo_żonkil.svg) [./images/żo_żonkil.svg](./images/żo_żonkil.svg) | [żo_żonkil.wav](./sounds/żo_żonkil.wav) |
-| Ż | u | żu | ![żu_żuk.svg](./images/żu_żuk.svg) [./images/żu_żuk.svg](./images/żu_żuk.svg) | [żu_żuk.wav](./sounds/żu_żuk.wav) |
-| Ż | y | ży | ![ży_żyrafa.svg](./images/ży_żyrafa.svg) [./images/ży_żyrafa.svg](./images/ży_żyrafa.svg) | [ży_żyrafa.wav](./sounds/ży_żyrafa.wav) |
-| Ch | a | cha | ![cha_chata.svg](./images/cha_chata.svg) [./images/cha_chata.svg](./images/cha_chata.svg) | [cha_chata.wav](./sounds/cha_chata.wav) |
-| Ch | e | che | ![che_chemik.svg](./images/che_chemik.svg) [./images/che_chemik.svg](./images/che_chemik.svg) | [che_chemik.wav](./sounds/che_chemik.wav) |
-| Ch | o | cho | ![cho_choinka.svg](./images/cho_choinka.svg) [./images/cho_choinka.svg](./images/cho_choinka.svg) | [cho_choinka.wav](./sounds/cho_choinka.wav) |
-| Ch | u | chu | ![chu_chustka.svg](./images/chu_chustka.svg) [./images/chu_chustka.svg](./images/chu_chustka.svg) | [chu_chustka.wav](./sounds/chu_chustka.wav) |
-| Ch | i | chi | ![chi_orchidea.svg](./images/chi_orchidea.svg) [./images/chi_orchidea.svg](./images/chi_orchidea.svg) | [chi_orchidea.wav](./sounds/chi_orchidea.wav) |
-| Ch | y | chy | ![chy_chytry.svg](./images/chy_chytry.svg) [./images/chy_chytry.svg](./images/chy_chytry.svg) | [chy_chytry.wav](./sounds/chy_chytry.wav) |
-| Cz | a | cza | ![cza_czapka.svg](./images/cza_czapka.svg) [./images/cza_czapka.svg](./images/cza_czapka.svg) | [cza_czapka.wav](./sounds/cza_czapka.wav) |
-| Cz | e | cze | ![cze_czekolada.svg](./images/cze_czekolada.svg) [./images/cze_czekolada.svg](./images/cze_czekolada.svg) | [cze_czekolada.wav](./sounds/cze_czekolada.wav) |
-| Cz | o | czo | ![czo_czoło.svg](./images/czo_czoło.svg) [./images/czo_czoło.svg](./images/czo_czoło.svg) | [czo_czoło.wav](./sounds/czo_czoło.wav) |
-| Cz | u | czu | ![czu_czułki.svg](./images/czu_czułki.svg) [./images/czu_czułki.svg](./images/czu_czułki.svg) | [czu_czułki.wav](./sounds/czu_czułki.wav) |
-| Cz | y | czy | ![czy_czytanie.svg](./images/czy_czytanie.svg) [./images/czy_czytanie.svg](./images/czy_czytanie.svg) | [czy_czytanie.wav](./sounds/czy_czytanie.wav) |
-| Dz | a | dza | ![dza_kukurydza.svg](./images/dza_kukurydza.svg) [./images/dza_kukurydza.svg](./images/dza_kukurydza.svg) | [dza_kukurydza.wav](./sounds/dza_kukurydza.wav) |
-| Dz | e | dze | ![dze_pieniądze.svg](./images/dze_pieniądze.svg) [./images/dze_pieniądze.svg](./images/dze_pieniądze.svg) | [dze_pieniądze.wav](./sounds/dze_pieniądze.wav) |
-| Dz | o | dzo | ![dzo_bardzo.svg](./images/dzo_bardzo.svg) [./images/dzo_bardzo.svg](./images/dzo_bardzo.svg) | [dzo_bardzo.wav](./sounds/dzo_bardzo.wav) |
-| Dz | u | dzu | ![dzu_wodzu.svg](./images/dzu_wodzu.svg) [./images/dzu_wodzu.svg](./images/dzu_wodzu.svg) | [dzu_wodzu.wav](./sounds/dzu_wodzu.wav) |
-| Dz | y | dzy | ![dzy_koledzy.svg](./images/dzy_koledzy.svg) [./images/dzy_koledzy.svg](./images/dzy_koledzy.svg) | [dzy_koledzy.wav](./sounds/dzy_koledzy.wav) |
-| Dź | a | dzia | ![dzia_dziadek.svg](./images/dzia_dziadek.svg) [./images/dzia_dziadek.svg](./images/dzia_dziadek.svg) | [dzia_dziadek.wav](./sounds/dzia_dziadek.wav) |
-| Dź | e | dzie | ![dzie_dziecko.svg](./images/dzie_dziecko.svg) [./images/dzie_dziecko.svg](./images/dzie_dziecko.svg) | [dzie_dziecko.wav](./sounds/dzie_dziecko.wav) |
-| Dź | o | dzio | ![dzio_dziobak.svg](./images/dzio_dziobak.svg) [./images/dzio_dziobak.svg](./images/dzio_dziobak.svg) | [dzio_dziobak.wav](./sounds/dzio_dziobak.wav) |
-| Dź | u | dziu | ![dziu_dziura.svg](./images/dziu_dziura.svg) [./images/dziu_dziura.svg](./images/dziu_dziura.svg) | [dziu_dziura.wav](./sounds/dziu_dziura.wav) |
-| Dź | i | dzi | ![dzi_dzik.svg](./images/dzi_dzik.svg) [./images/dzi_dzik.svg](./images/dzi_dzik.svg) | [dzi_dzik.wav](./sounds/dzi_dzik.wav) |
-| Dż | a | dża | ![dża_dżakarta.svg](./images/dża_dżakarta.svg) [./images/dża_dżakarta.svg](./images/dża_dżakarta.svg) | [dża_dżakarta.wav](./sounds/dża_dżakarta.wav) |
-| Dż | e | dże | ![dże_dżem.svg](./images/dże_dżem.svg) [./images/dże_dżem.svg](./images/dże_dżem.svg) | [dże_dżem.wav](./sounds/dże_dżem.wav) |
-| Dż | o | dżo | ![dżo_dżokej.svg](./images/dżo_dżokej.svg) [./images/dżo_dżokej.svg](./images/dżo_dżokej.svg) | [dżo_dżokej.wav](./sounds/dżo_dżokej.wav) |
-| Dż | u | dżu | ![dżu_dżungla.svg](./images/dżu_dżungla.svg) [./images/dżu_dżungla.svg](./images/dżu_dżungla.svg) | [dżu_dżungla.wav](./sounds/dżu_dżungla.wav) |
-| Dż | y | dży | ![dży_dżdżysty.svg](./images/dży_dżdżysty.svg) [./images/dży_dżdżysty.svg](./images/dży_dżdżysty.svg) | [dży_dżdżysty.wav](./sounds/dży_dżdżysty.wav) |
-| Rz | a | rza | ![rza_marzanna.svg](./images/rza_marzanna.svg) [./images/rza_marzanna.svg](./images/rza_marzanna.svg) | [rza_marzanna.wav](./sounds/rza_marzanna.wav) |
-| Rz | e | rze | ![rze_rzeka.svg](./images/rze_rzeka.svg) [./images/rze_rzeka.svg](./images/rze_rzeka.svg) | [rze_rzeka.wav](./sounds/rze_rzeka.wav) |
-| Rz | o | rzo | ![rzo_rzodkiewka.svg](./images/rzo_rzodkiewka.svg) [./images/rzo_rzodkiewka.svg](./images/rzo_rzodkiewka.svg) | [rzo_rzodkiewka.wav](./sounds/rzo_rzodkiewka.wav) |
-| Rz | u | rzu | ![rzu_rzutka.svg](./images/rzu_rzutka.svg) [./images/rzu_rzutka.svg](./images/rzu_rzutka.svg) | [rzu_rzutka.wav](./sounds/rzu_rzutka.wav) |
-| Rz | y | rzy | ![rzy_grzyb.svg](./images/rzy_grzyb.svg) [./images/rzy_grzyb.svg](./images/rzy_grzyb.svg) | [rzy_grzyb.wav](./sounds/rzy_grzyb.wav) |
-| Sz | a | sza | ![sza_szafa.svg](./images/sza_szafa.svg) [./images/sza_szafa.svg](./images/sza_szafa.svg) | [sza_szafa.wav](./sounds/sza_szafa.wav) |
-| Sz | e | sze | ![sze_szelki.svg](./images/sze_szelki.svg) [./images/sze_szelki.svg](./images/sze_szelki.svg) | [sze_szelki.wav](./sounds/sze_szelki.wav) |
-| Sz | o | szo | ![szo_szop.svg](./images/szo_szop.svg) [./images/szo_szop.svg](./images/szo_szop.svg) | [szo_szop.wav](./sounds/szo_szop.wav) |
-| Sz | u | szu | ![szu_szuflada.svg](./images/szu_szuflada.svg) [./images/szu_szuflada.svg](./images/szu_szuflada.svg) | [szu_szuflada.wav](./sounds/szu_szuflada.wav) |
-| Sz | y | szy | ![szy_szyszka.svg](./images/szy_szyszka.svg) [./images/szy_szyszka.svg](./images/szy_szyszka.svg) | [szy_szyszka.wav](./sounds/szy_szyszka.wav) |
+| Consonant | Vowel | Syllable | Syllable sound | Word sound | Image |
+| --- | --- | --- | --- | --- | --- |
+| B | a | ba | [ba.wav](./sounds/syllables/ba.wav) | [ba_balon.wav](./sounds/ba_balon.wav) | ![ba_balon.svg](./images/ba_balon.svg) [./images/ba_balon.svg](./images/ba_balon.svg) |
+| B | e | be | [be.wav](./sounds/syllables/be.wav) | [be_beczka.wav](./sounds/be_beczka.wav) | ![be_beczka.svg](./images/be_beczka.svg) [./images/be_beczka.svg](./images/be_beczka.svg) |
+| B | o | bo | [bo.wav](./sounds/syllables/bo.wav) | [bo_bocian.wav](./sounds/bo_bocian.wav) | ![bo_bocian.svg](./images/bo_bocian.svg) [./images/bo_bocian.svg](./images/bo_bocian.svg) |
+| B | u | bu | [bu.wav](./sounds/syllables/bu.wav) | [bu_but.wav](./sounds/bu_but.wav) | ![bu_but.svg](./images/bu_but.svg) [./images/bu_but.svg](./images/bu_but.svg) |
+| B | i | bi | [bi.wav](./sounds/syllables/bi.wav) | [bi_bilet.wav](./sounds/bi_bilet.wav) | ![bi_bilet.svg](./images/bi_bilet.svg) [./images/bi_bilet.svg](./images/bi_bilet.svg) |
+| B | y | by | [by.wav](./sounds/syllables/by.wav) | [by_byk.wav](./sounds/by_byk.wav) | ![by_byk.svg](./images/by_byk.svg) [./images/by_byk.svg](./images/by_byk.svg) |
+| C | a | ca | [ca.wav](./sounds/syllables/ca.wav) | [ca_całus.wav](./sounds/ca_całus.wav) | ![ca_całus.svg](./images/ca_całus.svg) [./images/ca_całus.svg](./images/ca_całus.svg) |
+| C | e | ce | [ce.wav](./sounds/syllables/ce.wav) | [ce_cebula.wav](./sounds/ce_cebula.wav) | ![ce_cebula.svg](./images/ce_cebula.svg) [./images/ce_cebula.svg](./images/ce_cebula.svg) |
+| C | o | co | [co.wav](./sounds/syllables/co.wav) | [co_cokół.wav](./sounds/co_cokół.wav) | ![co_cokół.svg](./images/co_cokół.svg) [./images/co_cokół.svg](./images/co_cokół.svg) |
+| C | u | cu | [cu.wav](./sounds/syllables/cu.wav) | [cu_cukierek.wav](./sounds/cu_cukierek.wav) | ![cu_cukierek.svg](./images/cu_cukierek.svg) [./images/cu_cukierek.svg](./images/cu_cukierek.svg) |
+| C | y | cy | [cy.wav](./sounds/syllables/cy.wav) | [cy_cytryna.wav](./sounds/cy_cytryna.wav) | ![cy_cytryna.svg](./images/cy_cytryna.svg) [./images/cy_cytryna.svg](./images/cy_cytryna.svg) |
+| Ć | a | cia | [cia.wav](./sounds/syllables/cia.wav) | [cia_ciastko.wav](./sounds/cia_ciastko.wav) | ![cia_ciastko.svg](./images/cia_ciastko.svg) [./images/cia_ciastko.svg](./images/cia_ciastko.svg) |
+| Ć | e | cie | [cie.wav](./sounds/syllables/cie.wav) | [cie_cielę.wav](./sounds/cie_cielę.wav) | ![cie_cielę.svg](./images/cie_cielę.svg) [./images/cie_cielę.svg](./images/cie_cielę.svg) |
+| Ć | o | cio | [cio.wav](./sounds/syllables/cio.wav) | [cio_ciocia.wav](./sounds/cio_ciocia.wav) | ![cio_ciocia.svg](./images/cio_ciocia.svg) [./images/cio_ciocia.svg](./images/cio_ciocia.svg) |
+| Ć | u | ciu | [ciu.wav](./sounds/syllables/ciu.wav) | [ciu_ciuchcia.wav](./sounds/ciu_ciuchcia.wav) | ![ciu_ciuchcia.svg](./images/ciu_ciuchcia.svg) [./images/ciu_ciuchcia.svg](./images/ciu_ciuchcia.svg) |
+| Ć | i | ci | [ci.wav](./sounds/syllables/ci.wav) | [ci_cichy.wav](./sounds/ci_cichy.wav) | ![ci_cichy.svg](./images/ci_cichy.svg) [./images/ci_cichy.svg](./images/ci_cichy.svg) |
+| D | a | da | [da.wav](./sounds/syllables/da.wav) | [da_dach.wav](./sounds/da_dach.wav) | ![da_dach.svg](./images/da_dach.svg) [./images/da_dach.svg](./images/da_dach.svg) |
+| D | e | de | [de.wav](./sounds/syllables/de.wav) | [de_deska.wav](./sounds/de_deska.wav) | ![de_deska.svg](./images/de_deska.svg) [./images/de_deska.svg](./images/de_deska.svg) |
+| D | o | do | [do.wav](./sounds/syllables/do.wav) | [do_dom.wav](./sounds/do_dom.wav) | ![do_dom.svg](./images/do_dom.svg) [./images/do_dom.svg](./images/do_dom.svg) |
+| D | u | du | [du.wav](./sounds/syllables/du.wav) | [du_duch.wav](./sounds/du_duch.wav) | ![du_duch.svg](./images/du_duch.svg) [./images/du_duch.svg](./images/du_duch.svg) |
+| D | y | dy | [dy.wav](./sounds/syllables/dy.wav) | [dy_dynia.wav](./sounds/dy_dynia.wav) | ![dy_dynia.svg](./images/dy_dynia.svg) [./images/dy_dynia.svg](./images/dy_dynia.svg) |
+| F | a | fa | [fa.wav](./sounds/syllables/fa.wav) | [fa_farby.wav](./sounds/fa_farby.wav) | ![fa_farby.svg](./images/fa_farby.svg) [./images/fa_farby.svg](./images/fa_farby.svg) |
+| F | e | fe | [fe.wav](./sounds/syllables/fe.wav) | [fe_ferie.wav](./sounds/fe_ferie.wav) | ![fe_ferie.svg](./images/fe_ferie.svg) [./images/fe_ferie.svg](./images/fe_ferie.svg) |
+| F | o | fo | [fo.wav](./sounds/syllables/fo.wav) | [fo_foka.wav](./sounds/fo_foka.wav) | ![fo_foka.svg](./images/fo_foka.svg) [./images/fo_foka.svg](./images/fo_foka.svg) |
+| F | u | fu | [fu.wav](./sounds/syllables/fu.wav) | [fu_futbol.wav](./sounds/fu_futbol.wav) | ![fu_futbol.svg](./images/fu_futbol.svg) [./images/fu_futbol.svg](./images/fu_futbol.svg) |
+| F | i | fi | [fi.wav](./sounds/syllables/fi.wav) | [fi_filiżanka.wav](./sounds/fi_filiżanka.wav) | ![fi_filiżanka.svg](./images/fi_filiżanka.svg) [./images/fi_filiżanka.svg](./images/fi_filiżanka.svg) |
+| F | y | fy | [fy.wav](./sounds/syllables/fy.wav) | [fy_żyrafy.wav](./sounds/fy_żyrafy.wav) | ![fy_żyrafy.svg](./images/fy_żyrafy.svg) [./images/fy_żyrafy.svg](./images/fy_żyrafy.svg) |
+| G | a | ga | [ga.wav](./sounds/syllables/ga.wav) | [ga_garnek.wav](./sounds/ga_garnek.wav) | ![ga_garnek.svg](./images/ga_garnek.svg) [./images/ga_garnek.svg](./images/ga_garnek.svg) |
+| G | e | ge | [ge.wav](./sounds/syllables/ge.wav) | [ge_gepard.wav](./sounds/ge_gepard.wav) | ![ge_gepard.svg](./images/ge_gepard.svg) [./images/ge_gepard.svg](./images/ge_gepard.svg) |
+| G | o | go | [go.wav](./sounds/syllables/go.wav) | [go_gołąb.wav](./sounds/go_gołąb.wav) | ![go_gołąb.svg](./images/go_gołąb.svg) [./images/go_gołąb.svg](./images/go_gołąb.svg) |
+| G | u | gu | [gu.wav](./sounds/syllables/gu.wav) | [gu_guzik.wav](./sounds/gu_guzik.wav) | ![gu_guzik.svg](./images/gu_guzik.svg) [./images/gu_guzik.svg](./images/gu_guzik.svg) |
+| G | i | gi | [gi.wav](./sounds/syllables/gi.wav) | [gi_gitara.wav](./sounds/gi_gitara.wav) | ![gi_gitara.svg](./images/gi_gitara.svg) [./images/gi_gitara.svg](./images/gi_gitara.svg) |
+| H | a | ha | [ha.wav](./sounds/syllables/ha.wav) | [ha_hamak.wav](./sounds/ha_hamak.wav) | ![ha_hamak.svg](./images/ha_hamak.svg) [./images/ha_hamak.svg](./images/ha_hamak.svg) |
+| H | e | he | [he.wav](./sounds/syllables/he.wav) | [he_helikopter.wav](./sounds/he_helikopter.wav) | ![he_helikopter.svg](./images/he_helikopter.svg) [./images/he_helikopter.svg](./images/he_helikopter.svg) |
+| H | o | ho | [ho.wav](./sounds/syllables/ho.wav) | [ho_hotel.wav](./sounds/ho_hotel.wav) | ![ho_hotel.svg](./images/ho_hotel.svg) [./images/ho_hotel.svg](./images/ho_hotel.svg) |
+| H | u | hu | [hu.wav](./sounds/syllables/hu.wav) | [hu_hulajnoga.wav](./sounds/hu_hulajnoga.wav) | ![hu_hulajnoga.svg](./images/hu_hulajnoga.svg) [./images/hu_hulajnoga.svg](./images/hu_hulajnoga.svg) |
+| H | i | hi | [hi.wav](./sounds/syllables/hi.wav) | [hi_hipopotam.wav](./sounds/hi_hipopotam.wav) | ![hi_hipopotam.svg](./images/hi_hipopotam.svg) [./images/hi_hipopotam.svg](./images/hi_hipopotam.svg) |
+| H | y | hy | [hy.wav](./sounds/syllables/hy.wav) | [hy_hybryda.wav](./sounds/hy_hybryda.wav) | ![hy_hybryda.svg](./images/hy_hybryda.svg) [./images/hy_hybryda.svg](./images/hy_hybryda.svg) |
+| J | a | ja | [ja.wav](./sounds/syllables/ja.wav) | [ja_jabłko.wav](./sounds/ja_jabłko.wav) | ![ja_jabłko.svg](./images/ja_jabłko.svg) [./images/ja_jabłko.svg](./images/ja_jabłko.svg) |
+| J | e | je | [je.wav](./sounds/syllables/je.wav) | [je_jeż.wav](./sounds/je_jeż.wav) | ![je_jeż.svg](./images/je_jeż.svg) [./images/je_jeż.svg](./images/je_jeż.svg) |
+| J | o | jo | [jo.wav](./sounds/syllables/jo.wav) | [jo_jogurt.wav](./sounds/jo_jogurt.wav) | ![jo_jogurt.svg](./images/jo_jogurt.svg) [./images/jo_jogurt.svg](./images/jo_jogurt.svg) |
+| J | u | ju | [ju.wav](./sounds/syllables/ju.wav) | [ju_judo.wav](./sounds/ju_judo.wav) | ![ju_judo.svg](./images/ju_judo.svg) [./images/ju_judo.svg](./images/ju_judo.svg) |
+| K | a | ka | [ka.wav](./sounds/syllables/ka.wav) | [ka_kaczka.wav](./sounds/ka_kaczka.wav) | ![ka_kaczka.svg](./images/ka_kaczka.svg) [./images/ka_kaczka.svg](./images/ka_kaczka.svg) |
+| K | e | ke | [ke.wav](./sounds/syllables/ke.wav) | [ke_kelner.wav](./sounds/ke_kelner.wav) | ![ke_kelner.svg](./images/ke_kelner.svg) [./images/ke_kelner.svg](./images/ke_kelner.svg) |
+| K | o | ko | [ko.wav](./sounds/syllables/ko.wav) | [ko_kot.wav](./sounds/ko_kot.wav) | ![ko_kot.svg](./images/ko_kot.svg) [./images/ko_kot.svg](./images/ko_kot.svg) |
+| K | u | ku | [ku.wav](./sounds/syllables/ku.wav) | [ku_kura.wav](./sounds/ku_kura.wav) | ![ku_kura.svg](./images/ku_kura.svg) [./images/ku_kura.svg](./images/ku_kura.svg) |
+| K | i | ki | [ki.wav](./sounds/syllables/ki.wav) | [ki_kino.wav](./sounds/ki_kino.wav) | ![ki_kino.svg](./images/ki_kino.svg) [./images/ki_kino.svg](./images/ki_kino.svg) |
+| L | a | la | [la.wav](./sounds/syllables/la.wav) | [la_lalka.wav](./sounds/la_lalka.wav) | ![la_lalka.svg](./images/la_lalka.svg) [./images/la_lalka.svg](./images/la_lalka.svg) |
+| L | e | le | [le.wav](./sounds/syllables/le.wav) | [le_lew.wav](./sounds/le_lew.wav) | ![le_lew.svg](./images/le_lew.svg) [./images/le_lew.svg](./images/le_lew.svg) |
+| L | o | lo | [lo.wav](./sounds/syllables/lo.wav) | [lo_lody.wav](./sounds/lo_lody.wav) | ![lo_lody.svg](./images/lo_lody.svg) [./images/lo_lody.svg](./images/lo_lody.svg) |
+| L | u | lu | [lu.wav](./sounds/syllables/lu.wav) | [lu_lupa.wav](./sounds/lu_lupa.wav) | ![lu_lupa.svg](./images/lu_lupa.svg) [./images/lu_lupa.svg](./images/lu_lupa.svg) |
+| L | i | li | [li.wav](./sounds/syllables/li.wav) | [li_lis.wav](./sounds/li_lis.wav) | ![li_lis.svg](./images/li_lis.svg) [./images/li_lis.svg](./images/li_lis.svg) |
+| Ł | a | ła | [ła.wav](./sounds/syllables/ła.wav) | [ła_łapa.wav](./sounds/ła_łapa.wav) | ![ła_łapa.svg](./images/ła_łapa.svg) [./images/ła_łapa.svg](./images/ła_łapa.svg) |
+| Ł | e | łe | [łe.wav](./sounds/syllables/łe.wav) | [łe_łezka.wav](./sounds/łe_łezka.wav) | ![łe_łezka.svg](./images/łe_łezka.svg) [./images/łe_łezka.svg](./images/łe_łezka.svg) |
+| Ł | o | ło | [ło.wav](./sounds/syllables/ło.wav) | [ło_łoś.wav](./sounds/ło_łoś.wav) | ![ło_łoś.svg](./images/ło_łoś.svg) [./images/ło_łoś.svg](./images/ło_łoś.svg) |
+| Ł | u | łu | [łu.wav](./sounds/syllables/łu.wav) | [łu_łuk.wav](./sounds/łu_łuk.wav) | ![łu_łuk.svg](./images/łu_łuk.svg) [./images/łu_łuk.svg](./images/łu_łuk.svg) |
+| Ł | y | ły | [ły.wav](./sounds/syllables/ły.wav) | [ły_łyżka.wav](./sounds/ły_łyżka.wav) | ![ły_łyżka.svg](./images/ły_łyżka.svg) [./images/ły_łyżka.svg](./images/ły_łyżka.svg) |
+| M | a | ma | [ma.wav](./sounds/syllables/ma.wav) | [ma_mama.wav](./sounds/ma_mama.wav) | ![ma_mama.svg](./images/ma_mama.svg) [./images/ma_mama.svg](./images/ma_mama.svg) |
+| M | e | me | [me.wav](./sounds/syllables/me.wav) | [me_medal.wav](./sounds/me_medal.wav) | ![me_medal.svg](./images/me_medal.svg) [./images/me_medal.svg](./images/me_medal.svg) |
+| M | o | mo | [mo.wav](./sounds/syllables/mo.wav) | [mo_motyl.wav](./sounds/mo_motyl.wav) | ![mo_motyl.svg](./images/mo_motyl.svg) [./images/mo_motyl.svg](./images/mo_motyl.svg) |
+| M | u | mu | [mu.wav](./sounds/syllables/mu.wav) | [mu_mucha.wav](./sounds/mu_mucha.wav) | ![mu_mucha.svg](./images/mu_mucha.svg) [./images/mu_mucha.svg](./images/mu_mucha.svg) |
+| M | i | mi | [mi.wav](./sounds/syllables/mi.wav) | [mi_miś.wav](./sounds/mi_miś.wav) | ![mi_miś.svg](./images/mi_miś.svg) [./images/mi_miś.svg](./images/mi_miś.svg) |
+| M | y | my | [my.wav](./sounds/syllables/my.wav) | [my_mysz.wav](./sounds/my_mysz.wav) | ![my_mysz.svg](./images/my_mysz.svg) [./images/my_mysz.svg](./images/my_mysz.svg) |
+| N | a | na | [na.wav](./sounds/syllables/na.wav) | [na_namiot.wav](./sounds/na_namiot.wav) | ![na_namiot.svg](./images/na_namiot.svg) [./images/na_namiot.svg](./images/na_namiot.svg) |
+| N | e | ne | [ne.wav](./sounds/syllables/ne.wav) | [ne_neon.wav](./sounds/ne_neon.wav) | ![ne_neon.svg](./images/ne_neon.svg) [./images/ne_neon.svg](./images/ne_neon.svg) |
+| N | o | no | [no.wav](./sounds/syllables/no.wav) | [no_nos.wav](./sounds/no_nos.wav) | ![no_nos.svg](./images/no_nos.svg) [./images/no_nos.svg](./images/no_nos.svg) |
+| N | u | nu | [nu.wav](./sounds/syllables/nu.wav) | [nu_nurek.wav](./sounds/nu_nurek.wav) | ![nu_nurek.svg](./images/nu_nurek.svg) [./images/nu_nurek.svg](./images/nu_nurek.svg) |
+| N | y | ny | [ny.wav](./sounds/syllables/ny.wav) | [ny_balony.wav](./sounds/ny_balony.wav) | ![ny_balony.svg](./images/ny_balony.svg) [./images/ny_balony.svg](./images/ny_balony.svg) |
+| Ń | a | nia | [nia.wav](./sounds/syllables/nia.wav) | [nia_niania.wav](./sounds/nia_niania.wav) | ![nia_niania.svg](./images/nia_niania.svg) [./images/nia_niania.svg](./images/nia_niania.svg) |
+| Ń | e | nie | [nie.wav](./sounds/syllables/nie.wav) | [nie_niedźwiedź.wav](./sounds/nie_niedźwiedź.wav) | ![nie_niedźwiedź.svg](./images/nie_niedźwiedź.svg) [./images/nie_niedźwiedź.svg](./images/nie_niedźwiedź.svg) |
+| Ń | o | nio | [nio.wav](./sounds/syllables/nio.wav) | [nio_anioł.wav](./sounds/nio_anioł.wav) | ![nio_anioł.svg](./images/nio_anioł.svg) [./images/nio_anioł.svg](./images/nio_anioł.svg) |
+| Ń | u | niu | [niu.wav](./sounds/syllables/niu.wav) | [niu_niunia.wav](./sounds/niu_niunia.wav) | ![niu_niunia.svg](./images/niu_niunia.svg) [./images/niu_niunia.svg](./images/niu_niunia.svg) |
+| Ń | i | ni | [ni.wav](./sounds/syllables/ni.wav) | [ni_nitka.wav](./sounds/ni_nitka.wav) | ![ni_nitka.svg](./images/ni_nitka.svg) [./images/ni_nitka.svg](./images/ni_nitka.svg) |
+| P | a | pa | [pa.wav](./sounds/syllables/pa.wav) | [pa_papuga.wav](./sounds/pa_papuga.wav) | ![pa_papuga.svg](./images/pa_papuga.svg) [./images/pa_papuga.svg](./images/pa_papuga.svg) |
+| P | e | pe | [pe.wav](./sounds/syllables/pe.wav) | [pe_peleryna.wav](./sounds/pe_peleryna.wav) | ![pe_peleryna.svg](./images/pe_peleryna.svg) [./images/pe_peleryna.svg](./images/pe_peleryna.svg) |
+| P | o | po | [po.wav](./sounds/syllables/po.wav) | [po_pociąg.wav](./sounds/po_pociąg.wav) | ![po_pociąg.svg](./images/po_pociąg.svg) [./images/po_pociąg.svg](./images/po_pociąg.svg) |
+| P | u | pu | [pu.wav](./sounds/syllables/pu.wav) | [pu_pudełko.wav](./sounds/pu_pudełko.wav) | ![pu_pudełko.svg](./images/pu_pudełko.svg) [./images/pu_pudełko.svg](./images/pu_pudełko.svg) |
+| P | i | pi | [pi.wav](./sounds/syllables/pi.wav) | [pi_piłka.wav](./sounds/pi_piłka.wav) | ![pi_piłka.svg](./images/pi_piłka.svg) [./images/pi_piłka.svg](./images/pi_piłka.svg) |
+| P | y | py | [py.wav](./sounds/syllables/py.wav) | [py_pytajnik.wav](./sounds/py_pytajnik.wav) | ![py_pytajnik.svg](./images/py_pytajnik.svg) [./images/py_pytajnik.svg](./images/py_pytajnik.svg) |
+| R | a | ra | [ra.wav](./sounds/syllables/ra.wav) | [ra_rak.wav](./sounds/ra_rak.wav) | ![ra_rak.svg](./images/ra_rak.svg) [./images/ra_rak.svg](./images/ra_rak.svg) |
+| R | e | re | [re.wav](./sounds/syllables/re.wav) | [re_rekin.wav](./sounds/re_rekin.wav) | ![re_rekin.svg](./images/re_rekin.svg) [./images/re_rekin.svg](./images/re_rekin.svg) |
+| R | o | ro | [ro.wav](./sounds/syllables/ro.wav) | [ro_rower.wav](./sounds/ro_rower.wav) | ![ro_rower.svg](./images/ro_rower.svg) [./images/ro_rower.svg](./images/ro_rower.svg) |
+| R | u | ru | [ru.wav](./sounds/syllables/ru.wav) | [ru_rura.wav](./sounds/ru_rura.wav) | ![ru_rura.svg](./images/ru_rura.svg) [./images/ru_rura.svg](./images/ru_rura.svg) |
+| R | y | ry | [ry.wav](./sounds/syllables/ry.wav) | [ry_ryba.wav](./sounds/ry_ryba.wav) | ![ry_ryba.svg](./images/ry_ryba.svg) [./images/ry_ryba.svg](./images/ry_ryba.svg) |
+| S | a | sa | [sa.wav](./sounds/syllables/sa.wav) | [sa_samolot.wav](./sounds/sa_samolot.wav) | ![sa_samolot.svg](./images/sa_samolot.svg) [./images/sa_samolot.svg](./images/sa_samolot.svg) |
+| S | e | se | [se.wav](./sounds/syllables/se.wav) | [se_ser.wav](./sounds/se_ser.wav) | ![se_ser.svg](./images/se_ser.svg) [./images/se_ser.svg](./images/se_ser.svg) |
+| S | o | so | [so.wav](./sounds/syllables/so.wav) | [so_sowa.wav](./sounds/so_sowa.wav) | ![so_sowa.svg](./images/so_sowa.svg) [./images/so_sowa.svg](./images/so_sowa.svg) |
+| S | u | su | [su.wav](./sounds/syllables/su.wav) | [su_suwak.wav](./sounds/su_suwak.wav) | ![su_suwak.svg](./images/su_suwak.svg) [./images/su_suwak.svg](./images/su_suwak.svg) |
+| S | y | sy | [sy.wav](./sounds/syllables/sy.wav) | [sy_syrena.wav](./sounds/sy_syrena.wav) | ![sy_syrena.svg](./images/sy_syrena.svg) [./images/sy_syrena.svg](./images/sy_syrena.svg) |
+| Ś | a | sia | [sia.wav](./sounds/syllables/sia.wav) | [sia_siatka.wav](./sounds/sia_siatka.wav) | ![sia_siatka.svg](./images/sia_siatka.svg) [./images/sia_siatka.svg](./images/sia_siatka.svg) |
+| Ś | e | sie | [sie.wav](./sounds/syllables/sie.wav) | [sie_siekiera.wav](./sounds/sie_siekiera.wav) | ![sie_siekiera.svg](./images/sie_siekiera.svg) [./images/sie_siekiera.svg](./images/sie_siekiera.svg) |
+| Ś | o | sio | [sio.wav](./sounds/syllables/sio.wav) | [sio_siodło.wav](./sounds/sio_siodło.wav) | ![sio_siodło.svg](./images/sio_siodło.svg) [./images/sio_siodło.svg](./images/sio_siodło.svg) |
+| Ś | u | siu | [siu.wav](./sounds/syllables/siu.wav) | [siu_siup.wav](./sounds/siu_siup.wav) | ![siu_siup.svg](./images/siu_siup.svg) [./images/siu_siup.svg](./images/siu_siup.svg) |
+| Ś | i | si | [si.wav](./sounds/syllables/si.wav) | [si_sito.wav](./sounds/si_sito.wav) | ![si_sito.svg](./images/si_sito.svg) [./images/si_sito.svg](./images/si_sito.svg) |
+| T | a | ta | [ta.wav](./sounds/syllables/ta.wav) | [ta_tata.wav](./sounds/ta_tata.wav) | ![ta_tata.svg](./images/ta_tata.svg) [./images/ta_tata.svg](./images/ta_tata.svg) |
+| T | e | te | [te.wav](./sounds/syllables/te.wav) | [te_telefon.wav](./sounds/te_telefon.wav) | ![te_telefon.svg](./images/te_telefon.svg) [./images/te_telefon.svg](./images/te_telefon.svg) |
+| T | o | to | [to.wav](./sounds/syllables/to.wav) | [to_tort.wav](./sounds/to_tort.wav) | ![to_tort.svg](./images/to_tort.svg) [./images/to_tort.svg](./images/to_tort.svg) |
+| T | u | tu | [tu.wav](./sounds/syllables/tu.wav) | [tu_tulipan.wav](./sounds/tu_tulipan.wav) | ![tu_tulipan.svg](./images/tu_tulipan.svg) [./images/tu_tulipan.svg](./images/tu_tulipan.svg) |
+| T | y | ty | [ty.wav](./sounds/syllables/ty.wav) | [ty_tygrys.wav](./sounds/ty_tygrys.wav) | ![ty_tygrys.svg](./images/ty_tygrys.svg) [./images/ty_tygrys.svg](./images/ty_tygrys.svg) |
+| W | a | wa | [wa.wav](./sounds/syllables/wa.wav) | [wa_walizka.wav](./sounds/wa_walizka.wav) | ![wa_walizka.svg](./images/wa_walizka.svg) [./images/wa_walizka.svg](./images/wa_walizka.svg) |
+| W | e | we | [we.wav](./sounds/syllables/we.wav) | [we_wentylator.wav](./sounds/we_wentylator.wav) | ![we_wentylator.svg](./images/we_wentylator.svg) [./images/we_wentylator.svg](./images/we_wentylator.svg) |
+| W | o | wo | [wo.wav](./sounds/syllables/wo.wav) | [wo_worek.wav](./sounds/wo_worek.wav) | ![wo_worek.svg](./images/wo_worek.svg) [./images/wo_worek.svg](./images/wo_worek.svg) |
+| W | u | wu | [wu.wav](./sounds/syllables/wu.wav) | [wu_wujek.wav](./sounds/wu_wujek.wav) | ![wu_wujek.svg](./images/wu_wujek.svg) [./images/wu_wujek.svg](./images/wu_wujek.svg) |
+| W | i | wi | [wi.wav](./sounds/syllables/wi.wav) | [wi_widelec.wav](./sounds/wi_widelec.wav) | ![wi_widelec.svg](./images/wi_widelec.svg) [./images/wi_widelec.svg](./images/wi_widelec.svg) |
+| W | y | wy | [wy.wav](./sounds/syllables/wy.wav) | [wy_wyspa.wav](./sounds/wy_wyspa.wav) | ![wy_wyspa.svg](./images/wy_wyspa.svg) [./images/wy_wyspa.svg](./images/wy_wyspa.svg) |
+| Z | a | za | [za.wav](./sounds/syllables/za.wav) | [za_zamek.wav](./sounds/za_zamek.wav) | ![za_zamek.svg](./images/za_zamek.svg) [./images/za_zamek.svg](./images/za_zamek.svg) |
+| Z | e | ze | [ze.wav](./sounds/syllables/ze.wav) | [ze_zebra.wav](./sounds/ze_zebra.wav) | ![ze_zebra.svg](./images/ze_zebra.svg) [./images/ze_zebra.svg](./images/ze_zebra.svg) |
+| Z | o | zo | [zo.wav](./sounds/syllables/zo.wav) | [zo_zoo.wav](./sounds/zo_zoo.wav) | ![zo_zoo.svg](./images/zo_zoo.svg) [./images/zo_zoo.svg](./images/zo_zoo.svg) |
+| Z | u | zu | [zu.wav](./sounds/syllables/zu.wav) | [zu_zupa.wav](./sounds/zu_zupa.wav) | ![zu_zupa.svg](./images/zu_zupa.svg) [./images/zu_zupa.svg](./images/zu_zupa.svg) |
+| Z | y | zy | [zy.wav](./sounds/syllables/zy.wav) | [zy_pozytywka.wav](./sounds/zy_pozytywka.wav) | ![zy_pozytywka.svg](./images/zy_pozytywka.svg) [./images/zy_pozytywka.svg](./images/zy_pozytywka.svg) |
+| Ź | a | zia | [zia.wav](./sounds/syllables/zia.wav) | [zia_ziarno.wav](./sounds/zia_ziarno.wav) | ![zia_ziarno.svg](./images/zia_ziarno.svg) [./images/zia_ziarno.svg](./images/zia_ziarno.svg) |
+| Ź | e | zie | [zie.wav](./sounds/syllables/zie.wav) | [zie_ziemniak.wav](./sounds/zie_ziemniak.wav) | ![zie_ziemniak.svg](./images/zie_ziemniak.svg) [./images/zie_ziemniak.svg](./images/zie_ziemniak.svg) |
+| Ź | o | zio | [zio.wav](./sounds/syllables/zio.wav) | [zio_zioła.wav](./sounds/zio_zioła.wav) | ![zio_zioła.svg](./images/zio_zioła.svg) [./images/zio_zioła.svg](./images/zio_zioła.svg) |
+| Ź | u | ziu | [ziu.wav](./sounds/syllables/ziu.wav) | [ziu_józiu.wav](./sounds/ziu_józiu.wav) | ![ziu_józiu.svg](./images/ziu_józiu.svg) [./images/ziu_józiu.svg](./images/ziu_józiu.svg) |
+| Ź | i | zi | [zi.wav](./sounds/syllables/zi.wav) | [zi_zima.wav](./sounds/zi_zima.wav) | ![zi_zima.svg](./images/zi_zima.svg) [./images/zi_zima.svg](./images/zi_zima.svg) |
+| Ż | a | ża | [ża.wav](./sounds/syllables/ża.wav) | [ża_żaba.wav](./sounds/ża_żaba.wav) | ![ża_żaba.svg](./images/ża_żaba.svg) [./images/ża_żaba.svg](./images/ża_żaba.svg) |
+| Ż | e | że | [że.wav](./sounds/syllables/że.wav) | [że_żeglarz.wav](./sounds/że_żeglarz.wav) | ![że_żeglarz.svg](./images/że_żeglarz.svg) [./images/że_żeglarz.svg](./images/że_żeglarz.svg) |
+| Ż | o | żo | [żo.wav](./sounds/syllables/żo.wav) | [żo_żonkil.wav](./sounds/żo_żonkil.wav) | ![żo_żonkil.svg](./images/żo_żonkil.svg) [./images/żo_żonkil.svg](./images/żo_żonkil.svg) |
+| Ż | u | żu | [żu.wav](./sounds/syllables/żu.wav) | [żu_żuk.wav](./sounds/żu_żuk.wav) | ![żu_żuk.svg](./images/żu_żuk.svg) [./images/żu_żuk.svg](./images/żu_żuk.svg) |
+| Ż | y | ży | [ży.wav](./sounds/syllables/ży.wav) | [ży_żyrafa.wav](./sounds/ży_żyrafa.wav) | ![ży_żyrafa.svg](./images/ży_żyrafa.svg) [./images/ży_żyrafa.svg](./images/ży_żyrafa.svg) |
+| Ch | a | cha | [cha.wav](./sounds/syllables/cha.wav) | [cha_chata.wav](./sounds/cha_chata.wav) | ![cha_chata.svg](./images/cha_chata.svg) [./images/cha_chata.svg](./images/cha_chata.svg) |
+| Ch | e | che | [che.wav](./sounds/syllables/che.wav) | [che_chemik.wav](./sounds/che_chemik.wav) | ![che_chemik.svg](./images/che_chemik.svg) [./images/che_chemik.svg](./images/che_chemik.svg) |
+| Ch | o | cho | [cho.wav](./sounds/syllables/cho.wav) | [cho_choinka.wav](./sounds/cho_choinka.wav) | ![cho_choinka.svg](./images/cho_choinka.svg) [./images/cho_choinka.svg](./images/cho_choinka.svg) |
+| Ch | u | chu | [chu.wav](./sounds/syllables/chu.wav) | [chu_chustka.wav](./sounds/chu_chustka.wav) | ![chu_chustka.svg](./images/chu_chustka.svg) [./images/chu_chustka.svg](./images/chu_chustka.svg) |
+| Ch | i | chi | [chi.wav](./sounds/syllables/chi.wav) | [chi_orchidea.wav](./sounds/chi_orchidea.wav) | ![chi_orchidea.svg](./images/chi_orchidea.svg) [./images/chi_orchidea.svg](./images/chi_orchidea.svg) |
+| Ch | y | chy | [chy.wav](./sounds/syllables/chy.wav) | [chy_chytry.wav](./sounds/chy_chytry.wav) | ![chy_chytry.svg](./images/chy_chytry.svg) [./images/chy_chytry.svg](./images/chy_chytry.svg) |
+| Cz | a | cza | [cza.wav](./sounds/syllables/cza.wav) | [cza_czapka.wav](./sounds/cza_czapka.wav) | ![cza_czapka.svg](./images/cza_czapka.svg) [./images/cza_czapka.svg](./images/cza_czapka.svg) |
+| Cz | e | cze | [cze.wav](./sounds/syllables/cze.wav) | [cze_czekolada.wav](./sounds/cze_czekolada.wav) | ![cze_czekolada.svg](./images/cze_czekolada.svg) [./images/cze_czekolada.svg](./images/cze_czekolada.svg) |
+| Cz | o | czo | [czo.wav](./sounds/syllables/czo.wav) | [czo_czoło.wav](./sounds/czo_czoło.wav) | ![czo_czoło.svg](./images/czo_czoło.svg) [./images/czo_czoło.svg](./images/czo_czoło.svg) |
+| Cz | u | czu | [czu.wav](./sounds/syllables/czu.wav) | [czu_czułki.wav](./sounds/czu_czułki.wav) | ![czu_czułki.svg](./images/czu_czułki.svg) [./images/czu_czułki.svg](./images/czu_czułki.svg) |
+| Cz | y | czy | [czy.wav](./sounds/syllables/czy.wav) | [czy_czytanie.wav](./sounds/czy_czytanie.wav) | ![czy_czytanie.svg](./images/czy_czytanie.svg) [./images/czy_czytanie.svg](./images/czy_czytanie.svg) |
+| Dz | a | dza | [dza.wav](./sounds/syllables/dza.wav) | [dza_kukurydza.wav](./sounds/dza_kukurydza.wav) | ![dza_kukurydza.svg](./images/dza_kukurydza.svg) [./images/dza_kukurydza.svg](./images/dza_kukurydza.svg) |
+| Dz | e | dze | [dze.wav](./sounds/syllables/dze.wav) | [dze_pieniądze.wav](./sounds/dze_pieniądze.wav) | ![dze_pieniądze.svg](./images/dze_pieniądze.svg) [./images/dze_pieniądze.svg](./images/dze_pieniądze.svg) |
+| Dz | o | dzo | [dzo.wav](./sounds/syllables/dzo.wav) | [dzo_bardzo.wav](./sounds/dzo_bardzo.wav) | ![dzo_bardzo.svg](./images/dzo_bardzo.svg) [./images/dzo_bardzo.svg](./images/dzo_bardzo.svg) |
+| Dz | u | dzu | [dzu.wav](./sounds/syllables/dzu.wav) | [dzu_wodzu.wav](./sounds/dzu_wodzu.wav) | ![dzu_wodzu.svg](./images/dzu_wodzu.svg) [./images/dzu_wodzu.svg](./images/dzu_wodzu.svg) |
+| Dz | y | dzy | [dzy.wav](./sounds/syllables/dzy.wav) | [dzy_koledzy.wav](./sounds/dzy_koledzy.wav) | ![dzy_koledzy.svg](./images/dzy_koledzy.svg) [./images/dzy_koledzy.svg](./images/dzy_koledzy.svg) |
+| Dź | a | dzia | [dzia.wav](./sounds/syllables/dzia.wav) | [dzia_dziadek.wav](./sounds/dzia_dziadek.wav) | ![dzia_dziadek.svg](./images/dzia_dziadek.svg) [./images/dzia_dziadek.svg](./images/dzia_dziadek.svg) |
+| Dź | e | dzie | [dzie.wav](./sounds/syllables/dzie.wav) | [dzie_dziecko.wav](./sounds/dzie_dziecko.wav) | ![dzie_dziecko.svg](./images/dzie_dziecko.svg) [./images/dzie_dziecko.svg](./images/dzie_dziecko.svg) |
+| Dź | o | dzio | [dzio.wav](./sounds/syllables/dzio.wav) | [dzio_dziobak.wav](./sounds/dzio_dziobak.wav) | ![dzio_dziobak.svg](./images/dzio_dziobak.svg) [./images/dzio_dziobak.svg](./images/dzio_dziobak.svg) |
+| Dź | u | dziu | [dziu.wav](./sounds/syllables/dziu.wav) | [dziu_dziura.wav](./sounds/dziu_dziura.wav) | ![dziu_dziura.svg](./images/dziu_dziura.svg) [./images/dziu_dziura.svg](./images/dziu_dziura.svg) |
+| Dź | i | dzi | [dzi.wav](./sounds/syllables/dzi.wav) | [dzi_dzik.wav](./sounds/dzi_dzik.wav) | ![dzi_dzik.svg](./images/dzi_dzik.svg) [./images/dzi_dzik.svg](./images/dzi_dzik.svg) |
+| Dż | a | dża | [dża.wav](./sounds/syllables/dża.wav) | [dża_dżakarta.wav](./sounds/dża_dżakarta.wav) | ![dża_dżakarta.svg](./images/dża_dżakarta.svg) [./images/dża_dżakarta.svg](./images/dża_dżakarta.svg) |
+| Dż | e | dże | [dże.wav](./sounds/syllables/dże.wav) | [dże_dżem.wav](./sounds/dże_dżem.wav) | ![dże_dżem.svg](./images/dże_dżem.svg) [./images/dże_dżem.svg](./images/dże_dżem.svg) |
+| Dż | o | dżo | [dżo.wav](./sounds/syllables/dżo.wav) | [dżo_dżokej.wav](./sounds/dżo_dżokej.wav) | ![dżo_dżokej.svg](./images/dżo_dżokej.svg) [./images/dżo_dżokej.svg](./images/dżo_dżokej.svg) |
+| Dż | u | dżu | [dżu.wav](./sounds/syllables/dżu.wav) | [dżu_dżungla.wav](./sounds/dżu_dżungla.wav) | ![dżu_dżungla.svg](./images/dżu_dżungla.svg) [./images/dżu_dżungla.svg](./images/dżu_dżungla.svg) |
+| Dż | y | dży | [dży.wav](./sounds/syllables/dży.wav) | [dży_dżdżysty.wav](./sounds/dży_dżdżysty.wav) | ![dży_dżdżysty.svg](./images/dży_dżdżysty.svg) [./images/dży_dżdżysty.svg](./images/dży_dżdżysty.svg) |
+| Rz | a | rza | [rza.wav](./sounds/syllables/rza.wav) | [rza_marzanna.wav](./sounds/rza_marzanna.wav) | ![rza_marzanna.svg](./images/rza_marzanna.svg) [./images/rza_marzanna.svg](./images/rza_marzanna.svg) |
+| Rz | e | rze | [rze.wav](./sounds/syllables/rze.wav) | [rze_rzeka.wav](./sounds/rze_rzeka.wav) | ![rze_rzeka.svg](./images/rze_rzeka.svg) [./images/rze_rzeka.svg](./images/rze_rzeka.svg) |
+| Rz | o | rzo | [rzo.wav](./sounds/syllables/rzo.wav) | [rzo_rzodkiewka.wav](./sounds/rzo_rzodkiewka.wav) | ![rzo_rzodkiewka.svg](./images/rzo_rzodkiewka.svg) [./images/rzo_rzodkiewka.svg](./images/rzo_rzodkiewka.svg) |
+| Rz | u | rzu | [rzu.wav](./sounds/syllables/rzu.wav) | [rzu_rzutka.wav](./sounds/rzu_rzutka.wav) | ![rzu_rzutka.svg](./images/rzu_rzutka.svg) [./images/rzu_rzutka.svg](./images/rzu_rzutka.svg) |
+| Rz | y | rzy | [rzy.wav](./sounds/syllables/rzy.wav) | [rzy_grzyb.wav](./sounds/rzy_grzyb.wav) | ![rzy_grzyb.svg](./images/rzy_grzyb.svg) [./images/rzy_grzyb.svg](./images/rzy_grzyb.svg) |
+| Sz | a | sza | [sza.wav](./sounds/syllables/sza.wav) | [sza_szafa.wav](./sounds/sza_szafa.wav) | ![sza_szafa.svg](./images/sza_szafa.svg) [./images/sza_szafa.svg](./images/sza_szafa.svg) |
+| Sz | e | sze | [sze.wav](./sounds/syllables/sze.wav) | [sze_szelki.wav](./sounds/sze_szelki.wav) | ![sze_szelki.svg](./images/sze_szelki.svg) [./images/sze_szelki.svg](./images/sze_szelki.svg) |
+| Sz | o | szo | [szo.wav](./sounds/syllables/szo.wav) | [szo_szop.wav](./sounds/szo_szop.wav) | ![szo_szop.svg](./images/szo_szop.svg) [./images/szo_szop.svg](./images/szo_szop.svg) |
+| Sz | u | szu | [szu.wav](./sounds/syllables/szu.wav) | [szu_szuflada.wav](./sounds/szu_szuflada.wav) | ![szu_szuflada.svg](./images/szu_szuflada.svg) [./images/szu_szuflada.svg](./images/szu_szuflada.svg) |
+| Sz | y | szy | [szy.wav](./sounds/syllables/szy.wav) | [szy_szyszka.wav](./sounds/szy_szyszka.wav) | ![szy_szyszka.svg](./images/szy_szyszka.svg) [./images/szy_szyszka.svg](./images/szy_szyszka.svg) |
